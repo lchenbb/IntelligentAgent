@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lastname1-lastname2-in:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/lastname1_lastname2_in_jar</output-path>
+    <root id="archive" name="lastname1-lastname2-in.jar">
+      <element id="module-output" name="lastname1-lastname2-in" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/rabbits/lib/repast.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/rabbits/lib/colt/lib/colt.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
