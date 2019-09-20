@@ -16,6 +16,6 @@ Run the program by
  The initial status of the world including ```gridSize```, ```numInitRabbits```, ```numInitGrass```, ```grassGrowthRate``` and ```birthThreshold``` can be set in the GUI generated.
 
 ## Authors
-* **CHEN Liangwei** [email](liangwei.chen@epfl.ch)
-* **LI Siyuan** [email](siyuan.li@epfl.ch)
+* **CHEN Liangwei** [email](mailto:liangwei.chen@epfl.ch)
+* **LI Siyuan** [email](mailto:siyuan.li@epfl.ch)
  
