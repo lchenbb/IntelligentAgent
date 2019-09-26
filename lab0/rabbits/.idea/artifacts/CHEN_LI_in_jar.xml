@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CHEN-LI-in:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CHEN_LI_in_jar</output-path>
+    <root id="archive" name="CHEN-LI-in.jar">
+      <element id="module-output" name="CHEN-LI-in" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/repast.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/plot.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/colt.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
