@@ -12,6 +12,7 @@ import uchicago.src.sim.util.SimUtilities;
 import uchicago.src.sim.analysis.Sequence;
 import uchicago.src.sim.analysis.DataSource;
 import uchicago.src.sim.analysis.OpenSequenceGraph;
+import uchicago.src.reflector.RangePropertyDescriptor;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -29,7 +30,8 @@ import java.util.ArrayList;
 public class RabbitsGrassSimulationModel extends SimModelImpl {		
 
 	public static void main(String[] args) {
-			
+
+			System.out.println("Hello world");
 			System.out.println("Rabbit skeleton");
 
 			SimInit init = new SimInit();
@@ -241,7 +243,7 @@ public class RabbitsGrassSimulationModel extends SimModelImpl {
 
 				colormap.mapColor(i, new Color(0, (int) i * 8 + 127, 0));
 			}
-			colormap.mapColor(0, Color.white);
+			colormap.mapColor(0, Color.black);
 
 			// Initialize Value2DDisplay object
 			Value2DDisplay displayGrass =
@@ -322,6 +324,10 @@ public class RabbitsGrassSimulationModel extends SimModelImpl {
 			registerDisplaySurface("Trivial Display", displaySurf);
 			this.registerMediaProducer("Plot", amountOfObjectInSpace);
 
+			// Build sliders
+			for (String parameter : this.getInitParam())
+				registerSlider(parameter);
+
 		}
 
 		/** Add new agent to agentList
@@ -373,6 +379,11 @@ public class RabbitsGrassSimulationModel extends SimModelImpl {
 			return count;
 		}
 
+		private void registerSlider(String parameter) {
+			RangePropertyDescriptor slider = new RangePropertyDescriptor(parameter,
+					0, 1000, 200);
+			descriptors.put(parameter, slider);
+		}
 		/**
 		 * Remove all the dead agents
 		 * @return Count of dead agents

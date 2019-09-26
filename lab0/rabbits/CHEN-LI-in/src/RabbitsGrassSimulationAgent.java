@@ -62,7 +62,7 @@ public class RabbitsGrassSimulationAgent implements Drawable {
 	public void draw(SimGraphics G) {
 		// TODO Auto-generated method stub
 
-		G.drawFastRect(Color.blue);
+		G.drawFastRect(Color.white);
 	}
 
 	public int getX() {

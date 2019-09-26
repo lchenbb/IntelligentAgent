@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="unnamed" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2a9ecaeb-52c2-462d-9d8e-d8e4ac2c1c56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/colt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/plot.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/.idea/artifacts/lastname1_lastname2_in_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/.idea/artifacts/lastname1_lastname2_in_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/MainRabbit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/RabbitsGrassSimulationAgent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/RabbitsGrassSimulationAgent$Direction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/RabbitsGrassSimulationAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/RabbitsGrassSimulationModel$1CountLiving.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/RabbitsGrassSimulationModel$1Step.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/RabbitsGrassSimulationModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/out/production/lastname1-lastname2-in/RabbitsGrassSimulationSpace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw0/rabbits/lastname1-lastname2-in/lastname1-lastname2-in.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHEN-LI-in/CHEN-LI-in.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CHEN-LI-in/CHEN-LI-in.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/plot.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/plot.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationAgent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$1CountLiving.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$1CountLiving.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$1CountObjDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$1CountObjDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$1Step.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$1Step.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$agentInSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$agentInSpace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$grassInSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel$grassInSpace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CHEN-LI-in/RabbitsGrassSimulationModel.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,55 +29,110 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="638">
+              <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/MainRabbit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationSpace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="66">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#1596#1597#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-                <element signature="e#1686#1687#0" expanded="true" />
-                <element signature="e#1789#1790#0" expanded="true" />
-                <element signature="e#1830#1831#0" expanded="true" />
-                <element signature="e#1875#1876#0" expanded="true" />
-                <element signature="e#1905#1906#0" expanded="true" />
+                <element signature="e#1579#1580#0" expanded="true" />
+                <element signature="e#1620#1621#0" expanded="true" />
+                <element signature="e#1665#1666#0" expanded="true" />
+                <element signature="e#1710#1711#0" expanded="true" />
+                <element signature="e#1813#1814#0" expanded="true" />
+                <element signature="e#1854#1855#0" expanded="true" />
+                <element signature="e#1899#1900#0" expanded="true" />
+                <element signature="e#1929#1930#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CHEN-LI-in/.classpath">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CHEN-LI-in/.project">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CHEN-LI-in/.settings/org.eclipse.jdt.core.prefs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/sun/misc/Unsafe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2002">
+              <caret line="1006" column="6" selection-start-line="1006" selection-start-column="6" selection-end-line="1006" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/awt/Component.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="4888" selection-start-line="4888" selection-end-line="4888" />
+              <folding>
+                <element signature="e#168791#168792#0" expanded="true" />
+                <element signature="e#168827#168828#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/security/ProtectionDomain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/awt/Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="2056" selection-start-line="2056" selection-end-line="2056" />
+              <folding>
+                <element signature="e#41237#41238#0" expanded="true" />
+                <element signature="e#41264#41265#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/javax/swing/JFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="304" selection-start-line="304" selection-end-line="304" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>color</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -83,8 +140,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationModel.java" />
         <option value="$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java" />
+        <option value="$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationModel.java" />
       </list>
     </option>
   </component>
@@ -100,6 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,20 +169,18 @@
             <path>
               <item name="rabbits" type="b2602c69:ProjectViewProjectNode" />
               <item name="CHEN-LI-in" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569440593010" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/colt.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569508297871" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CHEN-LI-in/src/META-INF/MANIFEST.MF" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -139,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RabbitsGrassSimulationModel">
     <configuration name="RabbitsGrassSimulationModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RabbitsGrassSimulationModel" />
       <module name="CHEN-LI-in" />
@@ -147,6 +204,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CHEN-LI" type="JarApplication" factoryName="JAR Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.RabbitsGrassSimulationModel" />
+      <item itemvalue="JAR Application.CHEN-LI" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RabbitsGrassSimulationModel" />
@@ -178,43 +244,36 @@
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25262576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Style Checker" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291536" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997236" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4629049" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Style Checker" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002764" side_tool="true" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/MainRabbit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -229,23 +288,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/repast.jar!/uchicago/src/sim/gui/RepastConsole.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="104" column="25" lean-forward="true" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/sun/misc/Unsafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="1006" column="6" selection-start-line="1006" selection-start-column="6" selection-end-line="1006" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/META-INF/.MANIFEST.MF.swp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/CHEN-LI-in/src/RabbitsGrassSimulationModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="66">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1813#1814#0" expanded="true" />
+            <element signature="e#1854#1855#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHEN-LI-in/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1356">
+          <caret line="294" column="29" selection-start-line="294" selection-start-column="29" selection-end-line="294" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHEN-LI-in/.project">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/awt/AWTEventMulticaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="359" selection-start-line="359" selection-end-line="359" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHEN-LI-in/.settings/org.eclipse.jdt.core.prefs">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -253,10 +359,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -324,7 +432,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>colt</last-edited>
+          <last-edited>repast</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

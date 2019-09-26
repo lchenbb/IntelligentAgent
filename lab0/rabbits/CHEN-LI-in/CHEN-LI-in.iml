@@ -8,7 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="repast" level="project" />
-    <orderEntry type="library" name="plot" level="project" />
-    <orderEntry type="library" name="colt" level="project" />
+    <orderEntry type="library" exported="" name="colt" level="project" />
+    <orderEntry type="library" exported="" name="plot" level="project" />
   </component>
 </module>
