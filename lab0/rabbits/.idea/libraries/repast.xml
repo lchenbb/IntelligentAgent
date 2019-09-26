@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="repast">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/repast.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="https://moodle.epfl.ch/mod/resource/view.php?id=926884" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
