@@ -24,90 +24,6 @@ import logist.topology.Topology.City;
 
 public class ReactiveTemplate implements ReactiveBehavior {
 
-	// Define unit cost for traveling
-	public static int UNIT_COST = 3;
-
-	private Random random;
-	private double pPickup;
-	private int numActions;
-	private Agent myAgent;
-	private Double discount;
-	private double LOOP_TER_THRES = 2.0;
-	private Map<State, City> PI;
-
-	@Override
-	public void setup(Topology topology, TaskDistribution td, Agent agent) {
-
-		// Reads the discount factor from the agents.xml file.
-		// If the property is not present it defaults to 0.95
-		Double discount = agent.readProperty("discount-factor", Double.class,
-				0.95);
-
-		this.random = new Random();
-		this.pPickup = discount;
-		this.numActions = 0;
-		this.myAgent = agent;
-		this.discount = discount;
-		this.PI = getOptPlan(topology, td);
-		// Get optimal strategy
-	}
-
-	/*
-	@Override
-	public Action act(Vehicle vehicle, Task availableTask) {
-		Action action;
-
-		if (availableTask == null || random.nextDouble() > pPickup) {
-			City currentCity = vehicle.getCurrentCity();
-			action = new Move(currentCity.randomNeighbor(random));
-		} else {
-			action = new Pickup(availableTask);
-		}
-		
-		if (numActions >= 1) {
-			System.out.println("The total profit after "+numActions+" actions is "+myAgent.getTotalProfit()+" (average profit: "+(myAgent.getTotalProfit() / (double)numActions)+")");
-		}
-		numActions++;
-		
-		return action;
-	}
-	*/
-
-
-	@Override
-	public Action act(Vehicle vehicle, Task availableTask) {
-
-		Action action;
-
-		// Get delivery city
-		City target = (availableTask != null) ? availableTask.deliveryCity : null;
-
-		// Get current state
-		State current = new State(vehicle.getCurrentCity(), target);
-
-		// Get optimal strategy of current state
-		City decision = this.PI.get(current);
-
-		// Conduct action
-		if (decision != null) {
-
-			// Move to decided city
-			action = new Move(decision);
-		} else {
-
-			// Pick up task
-			action = new Pickup(availableTask);
-		}
-
-		// Report
-		if (numActions >= 1) {
-			System.out.println("The total profit after "+numActions+" actions is "+myAgent.getTotalProfit()+" (average profit: "+(myAgent.getTotalProfit() / (double)numActions)+")");
-		}
-
-		numActions++;
-
-		return action;
-	}
 
 	private class Pair<T1, T2> {
 
@@ -168,6 +84,91 @@ public class ReactiveTemplate implements ReactiveBehavior {
 		}
 	}
 
+	// Define unit cost for traveling
+	public static int UNIT_COST = 3;
+
+	private Random random;
+	private double pPickup;
+	private int numActions;
+	private Agent myAgent;
+	private Double discount;
+	private double LOOP_TER_THRES = 0.01;
+	private Map<State, City> PI;
+
+	@Override
+	public void setup(Topology topology, TaskDistribution td, Agent agent) {
+
+		// Reads the discount factor from the agents.xml file.
+		// If the property is not present it defaults to 0.95
+		Double discount = agent.readProperty("discount-factor", Double.class,
+				0.95);
+
+		this.random = new Random();
+		this.pPickup = discount;
+		this.numActions = 0;
+		this.myAgent = agent;
+		this.discount = discount;
+		this.PI = getOptPlan(topology, td, agent);
+		// Get optimal strategy
+	}
+
+
+	@Override
+	public Action act(Vehicle vehicle, Task availableTask) {
+		Action action;
+
+		if (availableTask == null || random.nextDouble() > pPickup) {
+			City currentCity = vehicle.getCurrentCity();
+			action = new Move(currentCity.randomNeighbor(random));
+		} else {
+			action = new Pickup(availableTask);
+		}
+		
+		if (numActions >= 1) {
+			System.out.println("The total profit after "+numActions+" actions is "+myAgent.getTotalProfit()+" (average profit: "+(myAgent.getTotalProfit() / (double)numActions)+")");
+		}
+		numActions++;
+		
+		return action;
+	}
+
+
+	/*
+	@Override
+	public Action act(Vehicle vehicle, Task availableTask) {
+
+		Action action;
+
+		// Get delivery city
+		City target = (availableTask != null) ? availableTask.deliveryCity : null;
+
+		// Get current state
+		State current = new State(vehicle.getCurrentCity(), target);
+
+		// Get optimal strategy of current state
+		City decision = this.PI.get(current);
+
+		// Conduct action
+		if (decision != null) {
+
+			// Move to decided city
+			action = new Move(decision);
+		} else {
+
+			// Pick up task
+			action = new Pickup(availableTask);
+		}
+
+		// Report
+		if (numActions >= 1) {
+			System.out.println("The total profit after "+numActions+" actions is "+myAgent.getTotalProfit()+" (average profit: "+(myAgent.getTotalProfit() / (double)numActions)+")");
+		}
+
+		numActions++;
+
+		return action;
+	}
+	*/
 
 	/**
 	 * Obtain optimal strategy by reinforcement learning
@@ -175,8 +176,9 @@ public class ReactiveTemplate implements ReactiveBehavior {
 	 * @param td task distribution
 	 * @return
 	 */
-	private Map<State, City> getOptPlan(Topology topo, TaskDistribution td) {
+	private Map<State, City> getOptPlan(Topology topo, TaskDistribution td, Agent agent) {
 
+		System.out.println("hello world");
 		// Construct states
 		ArrayList<State> S = new ArrayList();
 
@@ -243,7 +245,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 
 					// Calculate net reward by reducing traffic cost from task reward
 					double reward = td.reward(state.src, state.target) -
-										state.src.distanceTo(state.target) * UNIT_COST;
+										state.src.distanceTo(state.target) * (double) agent.vehicles().get(0).costPerKm();
 
 					R.put(state_act, new Double(reward));
 				}
@@ -252,7 +254,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 				else {
 
 					// Calculate reward as traffic cost
-					double reward = -1 * state.src.distanceTo(action) * UNIT_COST;
+					double reward = -1 * state.src.distanceTo(action) * (double) agent.vehicles().get(0).costPerKm();
 
 					R.put(state_act, new Double(reward));
 				}
@@ -333,6 +335,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 		double diff = 0.0;
 
 		// Loop to obtain V and optimal strategy
+		int count = 0;
 		while (true) {
 
 			// Reset max difference
@@ -384,7 +387,8 @@ public class ReactiveTemplate implements ReactiveBehavior {
 				// Update V(s)
 				V.put(state, max);
 			}
-
+			System.out.println(count);
+			count += 1;
 			// Check for terminating
 			if (diff < LOOP_TER_THRES) {
 
