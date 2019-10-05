@@ -21,6 +21,7 @@ import logist.task.Task;
 import logist.task.TaskDistribution;
 import logist.topology.Topology;
 import logist.topology.Topology.City;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 public class ReactiveTemplate implements ReactiveBehavior {
 
@@ -28,14 +29,14 @@ public class ReactiveTemplate implements ReactiveBehavior {
 	private class Pair<T1, T2> {
 
 		/* Attributes */
-		public T1 src;
-		public T2 target;
+		public T1 left;
+		public T2 right;
 
 		/* Methods */
 		public Pair(T1 x, T2 y) {
 
-			this.src = x;
-			this.target = y;
+			this.left = x;
+			this.right = y;
 		}
 	}
 
@@ -112,7 +113,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 		// Get optimal strategy
 	}
 
-
+	/*
 	@Override
 	public Action act(Vehicle vehicle, Task availableTask) {
 		Action action;
@@ -131,9 +132,9 @@ public class ReactiveTemplate implements ReactiveBehavior {
 		
 		return action;
 	}
+	*/
 
 
-	/*
 	@Override
 	public Action act(Vehicle vehicle, Task availableTask) {
 
@@ -143,11 +144,20 @@ public class ReactiveTemplate implements ReactiveBehavior {
 		City target = (availableTask != null) ? availableTask.deliveryCity : null;
 
 		// Get current state
-		State current = new State(vehicle.getCurrentCity(), target);
+		State current = null;
+
+		for (State state : this.PI.keySet()) {
+
+			if (vehicle.getCurrentCity().name == state.src.name && (
+					(target != null && state.target != null && target.id == state.target.id) ||
+					(target == null && state.target == null)))
+				current = state;
+
+		}
 
 		// Get optimal strategy of current state
-		City decision = this.PI.get(current);
 
+		City decision = this.PI.get(current);
 		// Conduct action
 		if (decision != null) {
 
@@ -168,7 +178,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 
 		return action;
 	}
-	*/
+
 
 	/**
 	 * Obtain optimal strategy by reinforcement learning
@@ -178,8 +188,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 	 */
 	private Map<State, City> getOptPlan(Topology topo, TaskDistribution td, Agent agent) {
 
-		System.out.println("hello world");
-		// Construct states
+		/** Construct states **/
 		ArrayList<State> S = new ArrayList();
 
 		for (Iterator<City> iter = topo.iterator(); iter.hasNext(); ) {
@@ -187,10 +196,10 @@ public class ReactiveTemplate implements ReactiveBehavior {
 			// Get current city
 			City current = iter.next();
 
-			for (Iterator<City> iter_tar = topo.iterator(); iter.hasNext(); ) {
+			for (Iterator<City> iter_tar = topo.iterator(); iter_tar.hasNext(); ) {
 
 				// Get target city
-				City target = iter.next();
+				City target = iter_tar.next();
 
 				// Fill State with (src, target) task
 				S.add(new State(current, target));
@@ -254,7 +263,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 				else {
 
 					// Calculate reward as traffic cost
-					double reward = -1 * state.src.distanceTo(action) * (double) agent.vehicles().get(0).costPerKm();
+					double reward = -1.0 * state.src.distanceTo(action) * (double) agent.vehicles().get(0).costPerKm();
 
 					R.put(state_act, new Double(reward));
 				}
@@ -277,8 +286,21 @@ public class ReactiveTemplate implements ReactiveBehavior {
 
 				// Set list of possible states at next city
 				// as the value corresponding to current state_act
+				/*
 				TC.put(state_act, S.stream().filter(s -> s.src == next)
 											.collect(Collectors.toList()));
+				*/
+				List<State> next_state = new ArrayList<>();
+
+				for (State s : S) {
+
+					if (s.src == next) {
+
+						next_state.add(s);
+					}
+				}
+
+				TC.put(state_act, next_state);
 			}
 
 			// Handle moving to neighbour case
@@ -288,29 +310,41 @@ public class ReactiveTemplate implements ReactiveBehavior {
 				City next = state_act.action;
 
 				// Add list of possible states as value
-				TC.put(state_act, S.stream().filter(s -> s.src == next)
-											.collect(Collectors.toList()));
+				List<State> next_state = new ArrayList<>();
+
+				for (State s : S) {
+
+					if (s.src == next) {
+
+						next_state.add(s);
+					}
+				}
+
+				TC.put(state_act, next_state);
 			}
 		}
 
 		// Set transition probability T, i.e., generating probability of
 		// task at next city
-		HashMap<State_Action_State, Double> T = new HashMap();
+		// Map current_state, action -> list of possible next (state, proba)
+		Map<State_Action, List<Pair<State, Double>>> T = new HashMap();
 
 		for (State_Action state_act : R.keySet()) {
 
+			// Initialize list to hold next (state, proba)
+			List<Pair<State, Double>> next_state_proba_list = new ArrayList();
+
 			for (State next_state : TC.get(state_act)) {
 
-				// Construct State_Action_State
-				State_Action_State sas = new State_Action_State(state_act.state,
-																state_act.action,
-																next_state);
-
-				// Set entry to be choice probability
-				T.put(sas, td.probability(next_state.src, next_state.target));
+				// Add this next_state, proba to list
+				next_state_proba_list.add(new Pair(next_state,
+											new Double(td.probability(next_state.src, next_state.target))));
 			}
-		}
 
+			// Put (current_state, action) -> list(next_state, proba) into Transition map
+			T.put(state_act, next_state_proba_list);
+
+		}
 
 		/** Conduct value iteration using S, A, R, T, gamma to find the
 		 * optimal strategy
@@ -334,34 +368,33 @@ public class ReactiveTemplate implements ReactiveBehavior {
 		// Set up looping flag and old value container
 		double diff = 0.0;
 
+
 		// Loop to obtain V and optimal strategy
-		int count = 0;
 		while (true) {
 
 			// Reset max difference
 			diff = 0.0;
 
 			/** Update Q **/
-			for (State_Action state_act : R.keySet()) {
+			for (State_Action state_act : T.keySet()) {
 
 				Double value = new Double(0);
 
 				// Add immediate reward to value
 				value += R.get(state_act);
 
+				// Get list of (next_state, proba)
+				List<Pair<State, Double>> next_state_proba_list = T.get(state_act);
+
 				// Add future discounted reward to value
-				for (State next_state : TC.get(state_act)) {
+				for (Pair<State, Double> pair : next_state_proba_list) {
 
-					// Construct State_Action_State
-					State_Action_State sas = new State_Action_State(state_act.state,
-																	state_act.action,
-																	next_state);
+					// Get one candidate next state and its proba
+					State next = pair.left;
+					Double proba = pair.right;
 
-					// Get Transition probabilty
-					Double p = T.get(sas);
-
-					// Add discounted value for current next state
-					value += this.discount * p * V.get(next_state);
+					// Increment value by its discounted value
+					value += this.discount * proba * V.get(next);
 				}
 
 				// Update Q(state_act)
@@ -371,24 +404,27 @@ public class ReactiveTemplate implements ReactiveBehavior {
 			/** Update V **/
 			for (State state : V.keySet()) {
 
-				// Get optimal gain of current state
-				Double max = new Double(Double.MIN_VALUE);
+				// Initialize max_gain to be inf
+				Double max_gain = new Double(Double.MIN_VALUE);
 
-				for (City action : A.get(state)) {
+				// Update max_gain by checking all possible state_action at current state
+				for (State_Action state_act : Q.keySet()) {
 
-					Double current = Q.get(new State_Action(state, action));
+					// Check only if state_act happens at current state
+					if (state_act.state == state) {
 
-					max = new Double(Math.max(current, max));
+						// Update max_gain
+						max_gain = new Double(Math.max(Q.get(state_act), max_gain));
+					}
 				}
 
 				// Update diff
-				diff = Math.max(diff, Math.abs(V.get(state) - max));
+				diff = Math.max(diff, Math.abs(V.get(state) - max_gain));
 
 				// Update V(s)
-				V.put(state, max);
+				V.put(state, max_gain);
 			}
-			System.out.println(count);
-			count += 1;
+
 			// Check for terminating
 			if (diff < LOOP_TER_THRES) {
 
@@ -403,17 +439,18 @@ public class ReactiveTemplate implements ReactiveBehavior {
 		for (State state : S) {
 
 			// Initialize best action and max value at current state
-			double max_value = Double.MIN_VALUE;
+			double max_value = -Double.MAX_VALUE;
 			City best_action = null;
 
-			// Loop through all possible action
-			for (City action : A.get(state)) {
+			// Update best action and max_gain by checking all possible state_act
+			// origins from current state
+			for (State_Action state_act : Q.keySet()) {
 
-				// Update best action and max value if necessary
-				if (max_value < Q.get(new State_Action(state, action))) {
+				if (state_act.state == state && Q.get(state_act) > max_value) {
 
-					best_action = action;
-					max_value = Q.get(new State_Action(state, action));
+					// Update best action and max value
+					max_value = Q.get(state_act);
+					best_action = state_act.action;
 				}
 			}
 
@@ -421,6 +458,37 @@ public class ReactiveTemplate implements ReactiveBehavior {
 			PI.put(state, best_action);
 		}
 
+		// Displaying Value table
+		System.out.println("Displaying Value table");
+		System.out.printf("Source %-30s Dst\n", "");
+		for (State state : V.keySet()) {
+
+			System.out.printf("State: %-30s to %-20s\t\t Value: %.2f\n", state.src, state.target, V.get(state));
+		}
+
+
+		// Display PI
+		System.out.println("\nDisplaying Optimal Strategy");
+		System.out.printf("Source %-30s Dst\n", "");
+		for (State state : PI.keySet()) {
+
+			System.out.printf("State: %-30s to %-20s\t\t Action: %s\n", state.src.name,
+								state.target != null ? state.target.name : "no task",
+								PI.get(state) != null ?"move to " + PI.get(state).name : "pick up");
+
+		}
+
+		// Check whether not picking up is optimal for some case
+		for (State state : PI.keySet()) {
+
+			if (state.target != null && PI.get(state) != null) {
+
+				System.out.println("Exists not picking up as optimal");
+				System.out.printf("State: %-30s to %-20s\t\t Action: %s\n", state.src.name,
+						state.target != null ? state.target.name : "no task",
+						PI.get(state) != null ? "move to " + PI.get(state).name : "pick up");
+			}
+		}
 		return PI;
 	}
 
