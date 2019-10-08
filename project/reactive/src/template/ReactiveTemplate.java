@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.stream.Collectors;
 
-import com.sun.corba.se.pept.transport.ResponseWaitingRoom;
+//import com.sun.corba.se.pept.transport.ResponseWaitingRoom;
 import logist.simulation.Vehicle;
 import logist.agent.Agent;
 import logist.behavior.ReactiveBehavior;
@@ -84,9 +84,6 @@ public class ReactiveTemplate implements ReactiveBehavior {
 			this.next_state = next_state;
 		}
 	}
-
-	// Define unit cost for traveling
-	public static int UNIT_COST = 3;
 
 	private Random random;
 	private double pPickup;
@@ -171,7 +168,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 
 		// Report
 		if (numActions >= 1) {
-			System.out.println("The total profit after "+numActions+" actions is "+myAgent.getTotalProfit()+" (average profit: "+(myAgent.getTotalProfit() / (double)numActions)+")");
+			System.out.println(vehicle.name() + ":The total profit after "+numActions+" actions is "+myAgent.getTotalProfit()+" (average profit: "+(myAgent.getTotalProfit() / (double)numActions)+")");
 		}
 
 		numActions++;
@@ -290,7 +287,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 				TC.put(state_act, S.stream().filter(s -> s.src == next)
 											.collect(Collectors.toList()));
 				*/
-				List<State> next_state = new ArrayList<>();
+				List<State> next_state = new ArrayList();
 
 				for (State s : S) {
 
@@ -310,7 +307,7 @@ public class ReactiveTemplate implements ReactiveBehavior {
 				City next = state_act.action;
 
 				// Add list of possible states as value
-				List<State> next_state = new ArrayList<>();
+				List<State> next_state = new ArrayList();
 
 				for (State s : S) {
 
