@@ -15,6 +15,8 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.io.PrintWriter;
 import java.util.*;
+import java.util.PriorityQueue;
+import java.util.Comparator;
 
 /**
  * An optimal planner for one vehicle.
@@ -388,9 +390,9 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 	}
 	private Plan BFSPlan(Vehicle vehicle, TaskSet notDeliveredTask) {
 
-		// 1. Put initial state into queue. Initialize map and queue holding the states.
+		// 1. Put initial state into queue. Initialize stateMap and queue holding the states.
 		// 2. Recurrently pop from the queue,
-		// try to update neighbors' cost and add updated neighbors into queue
+		// try to update neighbors' cost, add freshly detected and updated neighbors into queue
 		// 3. Repeat until queue becomes empty
 		// 4. Select best route from all possible terminating state
 
@@ -425,6 +427,112 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 		return optPlan;
 	}
+
+	/**
+	 * Compute EstCost from current state to terminal state as
+	 * max(d(currentCity, task.pickupcity) + d(task.PickupCity, task.DeliverCity)
+	 * among all undelivered task
+	 *@param state
+	 * @return
+	 */
+	public double heuristic(State state) {
+
+		double h = 0.0;
+
+		// Try some fancy features
+		OptionalDouble h_obj =	state.notDeliveredTask
+								.stream()
+								.mapToDouble(task -> new Double(
+								state.currentCity.distanceTo(task.pickupCity) +
+								task.pickupCity.distanceTo(task.deliveryCity)))
+								.max();
+
+		if (h_obj.isPresent()) {
+
+			h = h_obj.getAsDouble();
+		}
+
+		// The following is normal implementation
+		/*
+		for (Task task : state.notDeliveredTask) {
+
+			double tmp_h = state.currentCity.distanceTo(task.pickupCity) +
+					task.pickupCity.distanceTo(task.deliveryCity);
+
+			h = Math.max(h, tmp_h);
+		}
+		*/
+
+		return h;
+	}
+
+
+	private void findAndUpdateNeighbours(State currentState,
+										 Map<String, State> stateMap,
+										 Map<String, State> C,
+										 PriorityQueue<State> pq) {
+
+	}
+
+	private Plan constructOptPlan(Stateviu\) {
+
+		return null;
+	}
+
+	private Plan AStar(Vehicle vehicle, TaskSet notDeliveredTask) {
+		// 1. Initialize stateMap, C, PQ
+		// 2. Recurrently pop state from PQ,
+		// update its neighbours
+		// 3. Repeat till find one terminal state
+		// 4. Construct optimal plan from the found terminal state
+
+		System.out.println("Executing A* algorithm");
+
+		// Step 1. Initializ
+		Map<String, State> stateMap = new HashMap<>();
+		Map<String, State> C = new HashMap<>();
+		Comparator<State> fcomparator = new Comparator<State>() {
+			@Override
+			public int compare(State o1, State o2) {
+3.5E
+				double f1 = heuristic(o1) + o1.cost;
+				double f2 = heuristic(o2) + o2.cost;
+
+				if (f1 < f2)
+					return -1;
+				else if (f1 == f2)
+					return 0;
+				else
+					return 1;
+			}
+		};
+		PriorityQueue<State> pq = new PriorityQueue<>(1, fcomparator);
+
+		// Put init state into stateMap, pq
+		State initState = new State(vehicle, notDeliveredTask);
+		stateMap.put(initState.getKey(), initState);
+		pq.add(initState);
+
+		// Step 2
+		while (!pq.isEmpty()) {
+                                                                                                                                                                                                                        
+			// Pop best element from PQ
+			State currentState = pq.poll();
+
+			// Check whether current state is terminal state
+			if (currentState.notDeliveredTask.isEmpty()) {
+				break;
+			}
+
+			// Find and update its' neighbours
+			findAndUpdateNeighbours(currentState, stateMap, C, pq);
+		}
+
+		// Step 4
+		Plan optPlan = constructOptPlan();
+
+		return optPlan;
+	}
 	@Override
 	public void planCancelled(TaskSet carriedTasks) {
 		
@@ -435,3 +543,4 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		}
 	}
 }
+
