@@ -474,7 +474,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 	}
 
-	private Plan constructOptPlan(Stateviu\) {
+	private Plan constructOptPlan() {
 
 		return null;
 	}
@@ -494,7 +494,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		Comparator<State> fcomparator = new Comparator<State>() {
 			@Override
 			public int compare(State o1, State o2) {
-3.5E
+
 				double f1 = heuristic(o1) + o1.cost;
 				double f2 = heuristic(o2) + o2.cost;
 
@@ -515,7 +515,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 		// Step 2
 		while (!pq.isEmpty()) {
-                                                                                                                                                                                                                        
+
 			// Pop best element from PQ
 			State currentState = pq.poll();
 
