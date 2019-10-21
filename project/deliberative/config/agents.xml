@@ -7,7 +7,7 @@
 	<agent name="deliberative-random">
 		<set class-path="out/production/deliberative/"/>
 		<set class-name="template.DeliberativeTemplate"/>
-		<set algorithm="BFS"/>
+		<set algorithm="AStar"/>
 	</agent>
 	
 </agents>

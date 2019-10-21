@@ -17,6 +17,7 @@ import java.io.PrintWriter;
 import java.util.*;
 import java.util.PriorityQueue;
 import java.util.Comparator;
+import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
  * An optimal planner for one vehicle.
@@ -45,7 +46,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		
 		// initialize the planner
 		int capacity = agent.vehicles().get(0).capacity();
-		String algorithmName = agent.readProperty("algorithm", String.class, "BFS");
+		String algorithmName = agent.readProperty("algorithm", String.class, "AStar");
 		
 		// Throws IllegalArgumentException if algorithm is unknown
 		algorithm = Algorithm.valueOf(algorithmName.toUpperCase());
@@ -58,18 +59,24 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		Plan plan;
 
 		// Compute the plan with the selected algorithm.
+		long init = System.currentTimeMillis();
 		switch (algorithm) {
 		case ASTAR:
 			// ...
-			plan = naivePlan(vehicle, tasks);
+			plan = AStar(vehicle, tasks);
+			System.out.println("We are doing Astar searching......");
 			break;
 		case BFS:
 			// ...
 			plan = BFSPlan(vehicle, tasks);
+			System.out.println("We are doing BFS searching");
 			break;
 		default:
 			throw new AssertionError("Should not happen.");
-		}		
+		}
+		long end = System.currentTimeMillis();
+
+		System.out.printf("The time used for planning is %dms", end - init);
 		return plan;
 	}
 	
@@ -368,10 +375,6 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		// Trace up from best terminal until reach the init state
 		while (currentState.parent != null) {
 
-			System.out.printf("Current state %s with cost %f ",
-							currentState.getKey(),
-							currentState.cost);
-
 			// Add current action
 			actions.add(currentState.actionFromParent);
 
@@ -383,8 +386,8 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		Collections.reverse(actions);
 		Plan optPlan = new Plan(initState.currentCity, actions);
 
-		System.out.println("Optimal plan is:");
-		System.out.println(optPlan.toString());
+		// System.out.println("Optimal plan is:");
+		//System.out.println(optPlan.toString());
 
 		return optPlan;
 	}
@@ -411,7 +414,6 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 			// Output count
 			count += 1;
-			System.out.printf("Round%d\n", count);
 
 			// Pop first state in queue
 			State currentState = remainingStates.get(0);
@@ -428,55 +430,249 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		return optPlan;
 	}
 
-	/**
-	 * Compute EstCost from current state to terminal state as
-	 * max(d(currentCity, task.pickupcity) + d(task.PickupCity, task.DeliverCity)
-	 * among all undelivered task
-	 *@param state
-	 * @return
-	 */
-	public double heuristic(State state) {
 
-		double h = 0.0;
+	class Heuristic {
 
-		// Try some fancy features
-		OptionalDouble h_obj =	state.notDeliveredTask
-								.stream()
-								.mapToDouble(task -> new Double(
-								state.currentCity.distanceTo(task.pickupCity) +
-								task.pickupCity.distanceTo(task.deliveryCity)))
-								.max();
+		private Map<String, Double> hMap;
 
-		if (h_obj.isPresent()) {
+		public Heuristic(){
 
-			h = h_obj.getAsDouble();
+			this.hMap = new HashMap();
 		}
 
-		// The following is normal implementation
-		/*
-		for (Task task : state.notDeliveredTask) {
+		/**
+		 * Compute EstCost from current state to terminal state as
+		 * max(d(currentCity, task.pickupcity) + d(task.PickupCity, task.DeliverCity)
+		 * among all undelivered task
+		 *
+		 * @param state
+		 * @return
+		 */
+		public double heuristic(State state, Vehicle vehicle) {
 
-			double tmp_h = state.currentCity.distanceTo(task.pickupCity) +
-					task.pickupCity.distanceTo(task.deliveryCity);
+			// Try to obtain heuristic result from history
+			Double result = this.hMap.get(state.getKey());
 
-			h = Math.max(h, tmp_h);
+			if (result != null)
+				return result;
+
+			double h = 0.0;
+
+			// Try some fancy features
+			/*
+			OptionalDouble h_obj =	state.notDeliveredTask
+									.stream()
+									.mapToDouble(task -> new Double(
+									state.currentCity.distanceTo(task.pickupCity) +
+									task.pickupCity.distanceTo(task.deliveryCity)))
+									.max();
+
+			if (h_obj.isPresent()) {
+
+				h = h_obj.getAsDouble();
+			}
+			*/
+
+			// The following is normal implementation
+
+			TaskSet notPickUpTasks = state.notDeliveredTask.clone();
+			notPickUpTasks.removeAll(state.deliveringTask);
+
+			for (Task task : state.deliveringTask) {
+
+				double tmp_h = state.currentCity.distanceTo(task.deliveryCity);
+
+				h = Math.max(h, tmp_h);
+			}
+
+			for (Task task : notPickUpTasks) {
+
+				double tmp_h = state.currentCity.distanceTo(task.pickupCity) +
+						task.pickupCity.distanceTo(task.deliveryCity);
+
+				h = Math.max(h, tmp_h);
+			}
+
+			// Store computed heuristic into map
+			this.hMap.put(state.getKey(), new Double(h * vehicle.costPerKm()));
+			return h;
 		}
-		*/
-
-		return h;
 	}
 
 
+	/**
+	 * A* update algorithm
+	 * Trivially put all neighbours of currentState into the priority queue
+	 * @param currentState
+	 * @param stateMap
+	 * @param pq
+	 */
 	private void findAndUpdateNeighbours(State currentState,
 										 Map<String, State> stateMap,
-										 Map<String, State> C,
 										 PriorityQueue<State> pq) {
 
+
+		// Get neighbour states by going to neighbouring city
+		// System.out.println("Checking neighbour states");
+		for (City neighbourCity : currentState.currentCity.neighbors()) {
+
+			// Construct key for neighbour state
+			String key = neighbourCity.name +
+					currentState.notDeliveredTask.toString() +
+					currentState.deliveringTask.toString();
+
+			// Get or Create neighbour state, Update if necessary
+			State neighbour = stateMap.get(key);
+			if (neighbour == null) {
+
+				// Create neighbour if it does not exist
+				neighbour = new State(currentState.vehicle,
+						neighbourCity,
+						currentState.notDeliveredTask,
+						currentState.deliveringTask,
+						currentState,
+						new Action.Move(neighbourCity),
+						currentState.cost +
+								currentState.vehicle.costPerKm() *
+										currentState.currentCity.distanceTo(neighbourCity));
+
+				// Put new neighbours into stateMap and remaining States
+				stateMap.put(key, neighbour);
+				pq.add(neighbour);
+			} else {
+
+				// Check whether going from current state
+				// can reduce the cost to existing neighbour state
+				boolean updated = UpdateNeighbour(currentState, neighbour,
+						new Action.Move(neighbour.currentCity));
+
+				// Put updated neighbour into remainingStates
+				if (updated && !pq.contains(neighbour)) {
+					pq.add(neighbour);
+				}
+			}
+		}
+
+		// Get neighbour states by picking up available task
+		int remaining_capacity = currentState.vehicle.capacity() -
+				currentState.deliveringTask.weightSum();
+
+		for (Task task : currentState.notDeliveredTask) {
+
+			if (!currentState.deliveringTask.contains(task) &&
+					task.pickupCity == currentState.currentCity &&
+					task.weight <= remaining_capacity) {
+
+				// Get or Create state
+				TaskSet newDeliveringTasks = currentState.deliveringTask.clone();
+				newDeliveringTasks.add(task);
+				String key = currentState.currentCity.name +
+						currentState.notDeliveredTask.toString() +
+						newDeliveringTasks.toString();
+
+				// Try to get neighbour from history
+				State neighbour = stateMap.get(key);
+
+				if (neighbour == null) {
+
+					// Create neighbour if it does not exist
+					neighbour = new State(currentState.vehicle,
+							currentState.currentCity,
+							currentState.notDeliveredTask,
+							newDeliveringTasks,
+							currentState,
+							new Action.Pickup(task),
+							currentState.cost);
+
+					// Push new neighbour into remainingStates and stateMap
+					stateMap.put(key, neighbour);
+					pq.add(neighbour);
+				} else {
+
+					// Check for updating neighbour's cost
+					boolean updated = UpdateNeighbour(currentState,
+							neighbour,
+							new Action.Pickup(task));
+
+					// Put neighbour into remainingStates if successfully update
+					if (updated && !pq.contains(neighbour)) {
+
+						pq.add(neighbour);
+					}
+				}
+			}
+		}
+
+		// Get neighbouring state by delivering task
+		for (Task task : currentState.deliveringTask) {
+
+			if (task.deliveryCity == currentState.currentCity) {
+
+				// Remove delivered task from delivering and not delivered
+				TaskSet newDeliveringTask = currentState.deliveringTask.clone();
+				TaskSet newNotDeliveredTask = currentState.notDeliveredTask.clone();
+
+				newDeliveringTask.remove(task);
+				newNotDeliveredTask.remove(task);
+
+				// Get or Create neighbour state
+				String key = currentState.currentCity.name +
+						newNotDeliveredTask.toString() +
+						newDeliveringTask.toString();
+
+				State neighbour = stateMap.get(key);
+
+				// Add new neighbour
+				if (neighbour == null) {
+
+					neighbour = new State(currentState.vehicle,
+							currentState.currentCity,
+							newNotDeliveredTask,
+							newDeliveringTask,
+							currentState,
+							new Action.Delivery(task),
+							currentState.cost);
+
+					// Put new neighbour into stateMap and remaining States
+					stateMap.put(key, neighbour);
+					pq.add(neighbour);
+				} else {
+
+					// Check for updating existing neighbour
+					boolean updated = UpdateNeighbour(currentState,
+							neighbour,
+							new Action.Delivery(task));
+
+					// Put updated neighbour into remaining States
+					if (updated && !pq.contains(neighbour))
+						pq.add(neighbour);
+				}
+			}
+		}
+
+		long end = System.currentTimeMillis();
 	}
 
-	private Plan constructOptPlan() {
 
-		return null;
+	private Plan constructOptPlan(State initState, State terminal) {
+		// 1. Initialize action holder
+		// 2. Fill actions into holder from terminal to root
+
+		List<Action> actions = new ArrayList();
+
+		State currentState = terminal;
+
+		while (currentState.parent != null) {
+
+			actions.add(currentState.actionFromParent);
+
+			currentState = currentState.parent;
+		}
+
+		Collections.reverse(actions);
+
+		Plan optPlan = new Plan(initState.currentCity, actions);
+		return optPlan;
 	}
 
 	private Plan AStar(Vehicle vehicle, TaskSet notDeliveredTask) {
@@ -488,15 +684,16 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 		System.out.println("Executing A* algorithm");
 
-		// Step 1. Initializ
+		// Step 1. Initialize
 		Map<String, State> stateMap = new HashMap<>();
 		Map<String, State> C = new HashMap<>();
+		Heuristic h = new Heuristic();
 		Comparator<State> fcomparator = new Comparator<State>() {
 			@Override
 			public int compare(State o1, State o2) {
 
-				double f1 = heuristic(o1) + o1.cost;
-				double f2 = heuristic(o2) + o2.cost;
+				double f1 = h.heuristic(o1, vehicle) + o1.cost;
+				double f2 = h.heuristic(o2, vehicle) + o2.cost;
 
 				if (f1 < f2)
 					return -1;
@@ -506,7 +703,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 					return 1;
 			}
 		};
-		PriorityQueue<State> pq = new PriorityQueue<>(1, fcomparator);
+		PriorityQueue<State> pq = new PriorityQueue<>(1000, fcomparator);
 
 		// Put init state into stateMap, pq
 		State initState = new State(vehicle, notDeliveredTask);
@@ -514,25 +711,43 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		pq.add(initState);
 
 		// Step 2
+		State terminal = null;
+		int count = 0;
 		while (!pq.isEmpty()) {
 
+			count += 1;
 			// Pop best element from PQ
 			State currentState = pq.poll();
 
 			// Check whether current state is terminal state
 			if (currentState.notDeliveredTask.isEmpty()) {
+				terminal = currentState;
 				break;
 			}
 
-			// Find and update its' neighbours
-			findAndUpdateNeighbours(currentState, stateMap, C, pq);
+			// Trigger update if currentState not in Closed or
+			// has lower cost than the copy in Closed
+
+			State oldCurrentState = C.get(currentState.getKey());
+			if (oldCurrentState == null || oldCurrentState.cost > currentState.cost) {
+
+				C.put(currentState.getKey(), currentState);
+
+				// Find and update its' neighbours
+			findAndUpdateNeighbours(currentState, stateMap, pq);
+			}
 		}
 
+		System.out.println("Planning finished");
+		System.out.printf("The best cost we found is %f\n", terminal.cost);
 		// Step 4
-		Plan optPlan = constructOptPlan();
+		Plan optPlan = constructOptPlan(initState, terminal);
 
+		System.out.printf("Opt plan is %s", optPlan.toString());
 		return optPlan;
 	}
+
+
 	@Override
 	public void planCancelled(TaskSet carriedTasks) {
 		
