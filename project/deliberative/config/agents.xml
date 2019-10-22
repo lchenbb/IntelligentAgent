@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <agents>
-	<!-- A list of agents and their behavior classes -->
+	<!-- A list of agnts and their behavior classes -->
 	
 	<!-- #### DELIBERATIVE AGENTS ### -->
-	<agent name="deliberative-random">
+	<agent name="deliberative-astar">
 		<set class-path="out/production/deliberative/"/>
 		<set class-name="template.DeliberativeTemplate"/>
 		<set algorithm="AStar"/>
 	</agent>
-	
+
+	<agent name="deliberative-bfs">
+		<set class-path="out/production/deliberative/"/>
+		<set class-name="template.DeliberativeTemplate"/>
+		<set algorithm="BFS"/>
+	</agent>
+
+
+	<agent name="deliberative-trivial">
+		<set class-path="out/production/deliberative/"/>
+		<set class-name="template.DeliberativeTemplate"/>
+		<set algorithm="TRIVIAL"/>
+	</agent>
 </agents>

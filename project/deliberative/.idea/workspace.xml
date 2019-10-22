@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a54fc4d-9457-4b20-88d0-24c28bfe1f7e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../lab0/rabbits/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab0/rabbits/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab0/rabbits/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab0/rabbits/CHEN-LI-in/src/RabbitsGrassSimulationAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab0/rabbits/CHEN-LI-in/src/RabbitsGrassSimulationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab0/rabbits/CHEN-LI-in/src/RabbitsGrassSimulationModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab0/rabbits/out/production/CHEN-LI-in/RabbitsGrassSimulationAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab0/rabbits/out/production/CHEN-LI-in/RabbitsGrassSimulationAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab0/rabbits/out/production/CHEN-LI-in/RabbitsGrassSimulationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab0/rabbits/out/production/CHEN-LI-in/RabbitsGrassSimulationModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/agents.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/agents.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/deliberative.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/deliberative.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate$Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate$Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate$Heuristic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate$State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deliberative/template/DeliberativeTemplate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/DeliberativeTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/DeliberativeTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/bin/production/reactive/TRIVIAL$A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/bin/production/reactive/TRIVIAL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$Pair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$State_Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$State_Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$State_Action_State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/bin/production/reactive/template/ReactiveTemplate$State_Action_State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/src/template/ReactiveDummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/src/template/ReactiveDummy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../reactive/src/template/ReactiveTrivial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/src/template/ReactiveTrivial.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/DeliberativeTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1080">
-              <caret line="476" column="35" selection-start-line="476" selection-start-column="35" selection-end-line="476" selection-end-column="35" />
+            <state relative-caret-position="467">
+              <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,10 +36,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/util/AbstractCollection.java">
+        <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/agent/AgentImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5258">
-              <caret line="266" column="6" selection-start-line="266" selection-start-column="6" selection-end-line="266" selection-end-column="6" />
+            <state relative-caret-position="310">
+              <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+              <folding>
+                <element signature="e#4007#4008#0" expanded="true" />
+                <element signature="e#4025#4026#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/behavior/DeliberativeBehavior.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-459">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/State.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="853">
+              <caret line="53" column="24" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/BFS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1100">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/template/AStar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="655">
+              <caret line="319" column="40" selection-start-line="319" selection-start-column="40" selection-end-line="319" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/plan/Plan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="62" column="26" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="946">
+              <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -62,26 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/agents.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/deliberative.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/topology/switzerland.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="550">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -92,14 +117,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/simulation/VehicleImpl.java">
+        <entry file="file://$PROJECT_DIR$/config/deliberative.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-              <folding>
-                <element signature="e#3469#3470#0" expanded="true" />
-                <element signature="e#3505#3506#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="682">
+              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -108,26 +129,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>taskset</find>
-      <find>contain</find>
-      <find>contains</find>
-      <find>append</find>
-      <find>print</find>
-      <find>checking</find>
-      <find>updateneighbour</find>
-      <find>weight</find>
-      <find>tmp</find>
-      <find>delivering</find>
+      <find>ava</find>
+      <find>10</find>
+      <find>PRINT</find>
+      <find>WE ARE DOING</find>
+      <find>BEStcost</find>
+      <find>heuristic</find>
       <find>cost</find>
-      <find>tostring</find>
+      <find>count</find>
+      <find>the length of</find>
+      <find>100</find>
+      <find>updateneighbour</find>
+      <find>COST</find>
+      <find>number of round</find>
+      <find>round</find>
+      <find>BFS</find>
+      <find>stopwatch</find>
+      <find>astar</find>
+      <find>vehicle</find>
+      <find>heursitic</find>
+      <find>heu</find>
+      <find>getKey</find>
+      <find>priorityqueue</find>
+      <find>state.getkey</find>
+      <find>null</find>
+      <find>notdelivered</find>
+      <find>print</find>
+      <find>getkey</find>
+      <find>optimal</find>
       <find>key</find>
-      <find>updated</find>
-      <find>len</find>
-      <find>current</find>
       <find>statemap</find>
-      <find>println</find>
-      <find>State</find>
-      <find>statecom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,8 +168,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config/agents.xml" />
-        <option value="$PROJECT_DIR$/config/deliberative.xml" />
         <option value="$PROJECT_DIR$/src/template/DeliberativeTemplate.java" />
+        <option value="$PROJECT_DIR$/src/template/State.java" />
+        <option value="$PROJECT_DIR$/src/template/BFS.java" />
+        <option value="$PROJECT_DIR$/config/deliberative.xml" />
+        <option value="$PROJECT_DIR$/src/template/AStar.java" />
       </list>
     </option>
   </component>
@@ -154,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,16 +238,41 @@
               <item name="deliberative" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="deliberative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="logist" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="deliberative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="logist" type="70bed36:NamedLibraryElementNode" />
+              <item name="logist.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deliberative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="logist" type="70bed36:NamedLibraryElementNode" />
+              <item name="logist.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="logist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deliberative" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="logist" type="70bed36:NamedLibraryElementNode" />
+              <item name="logist.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="logist" type="462c0819:PsiDirectoryNode" />
+              <item name="behavior" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571572654503" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571746732841" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../logist/lib/repast.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -252,10 +312,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26091763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13045882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -270,13 +330,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Style Checker" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2498618" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -284,7 +344,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25538972" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13045882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -299,13 +359,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Style Checker" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3291536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2498618" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -356,8 +416,8 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/task/TaskSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3652">
-          <caret line="171" column="12" selection-start-line="171" selection-start-column="12" selection-end-line="171" selection-end-column="12" />
+        <state relative-caret-position="310">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -374,41 +434,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DeliberativeTemplate.java">
+    <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/simulation/VehicleImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <caret line="476" column="35" selection-start-line="476" selection-start-column="35" selection-end-line="476" selection-end-column="35" />
+        <state relative-caret-position="616">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3469#3470#0" expanded="true" />
+            <element signature="e#3505#3506#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5258">
-          <caret line="266" column="6" selection-start-line="266" selection-start-column="6" selection-end-line="266" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/plan/Plan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/agents.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deliberative.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -419,16 +452,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="175" column="27" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
+          <folding>
+            <element signature="e#8346#8347#0" expanded="true" />
+            <element signature="e#8374#8375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/old.java" />
+    <entry file="file://$PROJECT_DIR$/src/template/DeleberativeTemplate.java" />
+    <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/topology/Topology.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5940">
+          <caret line="305" column="26" selection-start-line="305" selection-start-column="26" selection-end-line="305" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5566">
+          <caret line="280" column="19" selection-start-line="280" selection-start-column="19" selection-end-line="280" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/src.zip!/java/util/AbstractSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/topology/the_netherlands.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/plan/Plan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/agents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings_default.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/simulation/VehicleImpl.java">
+    <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/behavior/DeliberativeBehavior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        <state relative-caret-position="-459">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../logist/logist.jar!/logist/agent/AgentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
           <folding>
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3505#3506#0" expanded="true" />
+            <element signature="e#4007#4008#0" expanded="true" />
+            <element signature="e#4025#4026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/BFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1100">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DeliberativeTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deliberative.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/AStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="319" column="40" selection-start-line="319" selection-start-column="40" selection-end-line="319" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
