@@ -67,17 +67,11 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 			// ...
 			AStar astarPlanner = new AStar(vehicle, tasks);
 			plan = astarPlanner.plan();
-			System.out.println("We are doing Astar searching......");
 			break;
 		case BFS:
 			// ...
 			BFS bfsPlanner = new BFS(vehicle, tasks);
 			plan = bfsPlanner.plan();
-			System.out.println(agent.id() + "Initial city is " + vehicle.getCurrentCity() + "\n");
-			System.out.println("Current undelivered tasks are\n" + tasks.toString());
-			System.out.printf("%d's Current Delivering tasks are %s\n\n", agent.id(), vehicle.getCurrentTasks().toString());
-			System.out.println(agent.id() + "find optimal plan " + plan.toString() + "\n");
-			System.out.println("We are doing BFS searching\n");
 			break;
 		default:
 			plan = naivePlan(vehicle, tasks);

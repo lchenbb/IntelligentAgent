@@ -192,15 +192,16 @@ public class BFS {
                         newDeliveringTask,
                         currentState,
                         new Action.Delivery(task),
-                        currentState.cost + currentState.currentCity.distanceTo(deliveredCity),
-                        currentState.capacity);
+                        currentState.cost + currentState.currentCity.distanceTo(deliveredCity) *
+                                currentState.costPerKm,
+                        currentState.capacity,
+                        currentState.costPerKm);
 
                 // Put new state into stateMap and remainingList
+                stateMap.put(neighbour.getKey(), neighbour);
                 stateList.add(neighbour);
             } else {
 
-                System.out.println("Hit");
-                System.exit(-1);
                 // Put existing neighbour into remainingList iff its cost has been updated by currentState
                 boolean updated = UpdateNeighbour(currentState, neighbour, new Action.Delivery(task));
 
@@ -240,8 +241,10 @@ public class BFS {
                             newDeliveringTasks,
                             currentState,
                             new Action.Pickup(task),
-                            currentState.cost + currentState.currentCity.distanceTo(taskPickupCity),
-                            currentState.capacity);
+                            currentState.cost + currentState.currentCity.distanceTo(taskPickupCity) *
+                                    currentState.costPerKm,
+                            currentState.capacity,
+                            currentState.costPerKm);
 
                     // Push new neighbour into remainingStates and stateMap
                     stateMap.put(neighbour.getKey(), neighbour);
@@ -276,7 +279,7 @@ public class BFS {
         // Check whether going from current state can reduce
         // cost to neighbour state
         double costFromCurrent = current.cost +
-                current.currentCity.distanceTo(neighbour.currentCity);
+                current.currentCity.distanceTo(neighbour.currentCity) * current.costPerKm;
 
         if (costFromCurrent < neighbour.cost) {
 

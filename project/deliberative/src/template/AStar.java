@@ -91,6 +91,7 @@ public class AStar {
             count += 1;
             avgPQlen += pq.size();
 
+            /*
            if (count % 1000 == 0) {
                 currentTicker = System.currentTimeMillis();
                 System.out.printf("10 rounds take %dms\n", currentTicker - lastTicker);
@@ -98,6 +99,7 @@ public class AStar {
                 System.out.printf("length of pq %d\n", pq.size());
                 lastTicker = currentTicker;
             }
+            */
 
             // Pop best element from PQ
             State currentState = pq.poll();
@@ -181,8 +183,10 @@ public class AStar {
                         newDeliveringTask,
                         currentState,
                         new Action.Delivery(task),
-                        currentState.cost + currentState.currentCity.distanceTo(deliveredCity),
-                        currentState.capacity);
+                        currentState.cost + currentState.currentCity.distanceTo(deliveredCity)
+                                * currentState.costPerKm,
+                        currentState.capacity,
+                        currentState.costPerKm);
 
                 stateMap.put(key, neighbour);
                 stateList.add(neighbour);
@@ -224,8 +228,10 @@ public class AStar {
                             newDeliveringTasks,
                             currentState,
                             new Action.Pickup(task),
-                            currentState.cost + currentState.currentCity.distanceTo(taskPickupCity),
-                            currentState.capacity);
+                            currentState.cost + currentState.currentCity.distanceTo(taskPickupCity) *
+                                    currentState.costPerKm,
+                            currentState.capacity,
+                            currentState.costPerKm);
 
                     // Push new neighbour into remainingStates and stateMap
                     stateMap.put(neighbour.getKey(), neighbour);
@@ -331,15 +337,15 @@ public class AStar {
 
             for (Task task : state.deliveringTask) {
 
-                double tmp_h = state.currentCity.distanceTo(task.deliveryCity);
+                double tmp_h = state.currentCity.distanceTo(task.deliveryCity) * state.costPerKm;
 
                 h = Math.max(h, tmp_h);
             }
 
             for (Task task : notPickUpTasks) {
 
-                double tmp_h = state.currentCity.distanceTo(task.pickupCity) +
-                        task.pickupCity.distanceTo(task.deliveryCity);
+                double tmp_h = (state.currentCity.distanceTo(task.pickupCity) +
+                        task.pickupCity.distanceTo(task.deliveryCity)) * state.costPerKm;
 
                 h = Math.max(h, tmp_h);
             }
@@ -363,7 +369,7 @@ public class AStar {
         // Check whether going from current state can reduce
         // cost to neighbour state
         double costFromCurrent = current.cost +
-                current.currentCity.distanceTo(neighbour.currentCity);
+                current.currentCity.distanceTo(neighbour.currentCity) * current.costPerKm;
 
         if (costFromCurrent < neighbour.cost) {
 

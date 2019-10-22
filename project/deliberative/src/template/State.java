@@ -15,6 +15,7 @@ public class State {
     public Action actionFromParent;
     public double cost;
     public int capacity;
+    public int costPerKm;
     private String key;
 
     // Constructor for initial state
@@ -30,14 +31,14 @@ public class State {
         this.actionFromParent = null;
         this.cost = 0;
         this.capacity = vehicle.capacity();
-
+        this.costPerKm = vehicle.costPerKm();
         this.key = currentCity.name + notDeliveredTask.toString() + deliveringTask.toString();
     }
 
     // Constructor for intermediate state
     public State(City currentCity, TaskSet notDeliveredTask,
                  TaskSet deliveringTask, State parent, Action actionFromParent,
-                 double cost, int capacity) {
+                 double cost, int capacity, int costPerKm) {
 
         this.currentCity = currentCity;
         this.notDeliveredTask = notDeliveredTask;
@@ -46,7 +47,7 @@ public class State {
         this.actionFromParent = actionFromParent;
         this.cost = cost;
         this.capacity = capacity;
-
+        this.costPerKm = costPerKm;
         this.key = currentCity.name + notDeliveredTask.toString() + deliveringTask.toString();
     }
 
