@@ -196,10 +196,11 @@ public class BFS {
                         currentState.capacity);
 
                 // Put new state into stateMap and remainingList
-                stateMap.put(neighbour.getKey(), neighbour);
                 stateList.add(neighbour);
             } else {
 
+                System.out.println("Hit");
+                System.exit(-1);
                 // Put existing neighbour into remainingList iff its cost has been updated by currentState
                 boolean updated = UpdateNeighbour(currentState, neighbour, new Action.Delivery(task));
 

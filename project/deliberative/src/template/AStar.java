@@ -76,7 +76,7 @@ public class AStar {
 
         // Put init state into stateMap, pq
         State initState = new State(vehicle, notDeliveredTask);
-        // stateMap.put(initState.getKey(), initState);
+        stateMap.put(initState.getKey(), initState);
         pq.add(initState);
 
         // Step 2
@@ -95,6 +95,7 @@ public class AStar {
                 currentTicker = System.currentTimeMillis();
                 System.out.printf("10 rounds take %dms\n", currentTicker - lastTicker);
                 System.out.printf("%d round\n", count);
+                System.out.printf("length of pq %d\n", pq.size());
                 lastTicker = currentTicker;
             }
 
@@ -124,6 +125,7 @@ public class AStar {
 
             return new Plan(initState.currentCity);
         }
+
         // Log running statistics
         long end = System.currentTimeMillis();
         System.out.println("Finish looping takes " + (end - init) + "ms");
@@ -169,16 +171,30 @@ public class AStar {
             newNotDeliveredTask.remove(task);
 
             // Create neighbour state
-            State neighbour = new State(
-                    deliveredCity,
-                    newNotDeliveredTask,
-                    newDeliveringTask,
-                    currentState,
-                    new Action.Delivery(task),
-                    currentState.cost + currentState.currentCity.distanceTo(deliveredCity),
-                    currentState.capacity);
+            String key = deliveredCity.name + newNotDeliveredTask.toString() + newDeliveringTask.toString();
+            State neighbour = stateMap.get(key);
 
-            stateList.add(neighbour);
+            if (neighbour == null) {
+                neighbour = new State(
+                        deliveredCity,
+                        newNotDeliveredTask,
+                        newDeliveringTask,
+                        currentState,
+                        new Action.Delivery(task),
+                        currentState.cost + currentState.currentCity.distanceTo(deliveredCity),
+                        currentState.capacity);
+
+                stateMap.put(key, neighbour);
+                stateList.add(neighbour);
+            } else {
+
+                boolean updated = UpdateNeighbour(currentState, neighbour, new Action.Delivery(task));
+
+                if (updated && !pq.contains(neighbour)) {
+
+                    stateList.add(neighbour);
+                }
+            }
         }
 
         // Get neighbour states by picking up available task
@@ -197,18 +213,30 @@ public class AStar {
                 TaskSet newDeliveringTasks = currentState.deliveringTask.clone();
                 newDeliveringTasks.add(task);
 
-                // Create neighbour if it does not exist
-                State neighbour = new State(
-                        taskPickupCity,
-                        currentState.notDeliveredTask,
-                        newDeliveringTasks,
-                        currentState,
-                        new Action.Pickup(task),
-                        currentState.cost + currentState.currentCity.distanceTo(taskPickupCity),
-                        currentState.capacity);
+                String key = taskPickupCity.name + currentState.notDeliveredTask.toString() + newDeliveringTasks.toString();
+                State neighbour = stateMap.get(key);
 
-                // Push new neighbour into remainingStates and stateMap
-                stateList.add(neighbour);
+                // Create neighbour if it does not exist
+                if (neighbour == null) {
+                    neighbour = new State(
+                            taskPickupCity,
+                            currentState.notDeliveredTask,
+                            newDeliveringTasks,
+                            currentState,
+                            new Action.Pickup(task),
+                            currentState.cost + currentState.currentCity.distanceTo(taskPickupCity),
+                            currentState.capacity);
+
+                    // Push new neighbour into remainingStates and stateMap
+                    stateMap.put(neighbour.getKey(), neighbour);
+                    stateList.add(neighbour);
+                } else {
+
+                    boolean updated = UpdateNeighbour(currentState, neighbour, new Action.Pickup(task));
+
+                    if (updated && !pq.contains(neighbour))
+                        stateList.add(neighbour);
+                }
             }
         }
 
@@ -321,4 +349,32 @@ public class AStar {
             return h;
         }
     }
+
+
+    /**
+     * Update neighbour cost if currentState lead to lower cost alternative
+     * @param current
+     * @param neighbour
+     * @param action
+     * @return
+     */
+    private boolean UpdateNeighbour(State current, State neighbour, Action action) {
+
+        // Check whether going from current state can reduce
+        // cost to neighbour state
+        double costFromCurrent = current.cost +
+                current.currentCity.distanceTo(neighbour.currentCity);
+
+        if (costFromCurrent < neighbour.cost) {
+
+            // Update neighbour
+            neighbour.cost = costFromCurrent;
+            neighbour.parent = current;
+            neighbour.actionFromParent = action;
+            return true;
+        }
+
+        return false;
+    }
+
 }
