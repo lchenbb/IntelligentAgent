@@ -15,6 +15,8 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.io.PrintWriter;
 import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.PriorityQueue;
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicStampedReference;
@@ -105,51 +107,54 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 	private class State {
 
-		public Vehicle vehicle;
 		public City currentCity;
 		public TaskSet notDeliveredTask;
 		public TaskSet deliveringTask;
 		public State parent;
 		public Action actionFromParent;
 		public double cost;
+		public int capacity;
+		private String key;
 
 		// Constructor for initial state
 		public State(Vehicle vehicle, TaskSet notDeliveredTask) {
 
-			this.vehicle = vehicle;
 			this.deliveringTask = vehicle.getCurrentTasks();
-			System.out.println("Initially the delivering task is");
-			System.out.println(this.deliveringTask.toString());
+			//System.out.println("Initially the delivering task is");
+			// System.out.println(this.deliveringTask.toString());
 			this.notDeliveredTask = notDeliveredTask.clone();
 			this.currentCity = vehicle.getCurrentCity();
 			this.parent = null;
 			this.actionFromParent = null;
 			this.cost = 0;
+			this.capacity = vehicle.capacity();
+
+			this.key = currentCity.name + notDeliveredTask.toString() + deliveringTask.toString();
 		}
 
 		// Constructor for intermediate state
-		public State(Vehicle vehicle, City currentCity, TaskSet notDeliveredTask,
+		public State(City currentCity, TaskSet notDeliveredTask,
 					 TaskSet deliveringTask, State parent, Action actionFromParent,
-					 double cost) {
+					 double cost, int capacity) {
 
-			this.vehicle = vehicle;
 			this.currentCity = currentCity;
 			this.notDeliveredTask = notDeliveredTask;
 			this.deliveringTask = deliveringTask;
 			this.parent = parent;
 			this.actionFromParent = actionFromParent;
 			this.cost = cost;
+			this.capacity = capacity;
+
+			this.key = currentCity.name + notDeliveredTask.toString() + deliveringTask.toString();
 		}
 
 		// Get key of state
 		public String getKey() {
 
-			return this.currentCity.name +
-					this.notDeliveredTask.toString() +
-					this.deliveringTask.toString();
+			return this.key;
 		}
 
-		public void Update(State parent, Action actionFromParent, int cost) {
+		public void Update(State parent, Action actionFromParent, double cost) {
 
 			this.parent = parent;
 			this.actionFromParent = actionFromParent;
@@ -164,8 +169,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		// Check whether going from current state can reduce
 		// cost to neighbour state
 		double costFromCurrent = current.cost +
-									current.currentCity.distanceTo(neighbour.currentCity) *
-											current.vehicle.costPerKm();
+									current.currentCity.distanceTo(neighbour.currentCity);
 
 		if (costFromCurrent < neighbour.cost) {
 
@@ -179,156 +183,107 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		return false;
 	}
 
-	/**
-	 * Get neighbours of current state,
-	 * add new ones to stateMap,
-	 * update existing neighbours if current state provide better route,
-	 * update queue by adding new guys into it
-	 * @param currentState
-	 * @param stateMap
-	 * @return
-	 */
+
 	private void findAndUpdateNeighbours(State currentState,
-												Map<String, State> stateMap,
-												List<State> remainingStates) {
+										 Map<String, State> stateMap,
+										 List<State> remainingStates) {
 
-		// Get neighbour states by going to neighbouring city
-		// System.out.println("Checking neighbour states");
-		for (City neighbourCity : currentState.currentCity.neighbors()) {
+	    // Initialize holder for states to be added
+	    List<State> stateList = new ArrayList();
 
-			// Construct key for neighbour state
-			String key = neighbourCity.name +
-					currentState.notDeliveredTask.toString() +
-					currentState.deliveringTask.toString();
+	    // Get neighbours by delivering
+        for (Task task : currentState.deliveringTask) {
 
-			// Get or Create neighbour state, Update if necessary
-			State neighbour = stateMap.get(key);
-			if (neighbour == null) {
+            // Get delivery city of carrying task
+            City deliveredCity = task.deliveryCity;
 
-				// Create neighbour if it does not exist
-				neighbour = new State(currentState.vehicle,
-						neighbourCity,
-						currentState.notDeliveredTask,
-						currentState.deliveringTask,
-						currentState,
-						new Action.Move(neighbourCity),
-						currentState.cost +
-								currentState.vehicle.costPerKm() *
-										currentState.currentCity.distanceTo(neighbourCity));
+            TaskSet newDeliveringTask = currentState.deliveringTask.clone();
+            TaskSet newNotDeliveredTask = currentState.notDeliveredTask.clone();
 
-				// Put new neighbours into stateMap and remaining States
-				stateMap.put(key, neighbour);
-				remainingStates.add(neighbour);
-			} else {
+            newDeliveringTask.remove(task);
+            newNotDeliveredTask.remove(task);
 
-				// Check whether going from current state
-				// can reduce the cost to existing neighbour state
-				boolean updated = UpdateNeighbour(currentState, neighbour,
-						new Action.Move(neighbour.currentCity));
+            // Get or create neighbour
+            String key = deliveredCity.name + newNotDeliveredTask.toString() + newDeliveringTask.toString();
+            State neighbour = stateMap.get(key);
 
-				// Put updated neighbour into remainingStates
-				if (updated) {
-					remainingStates.add(neighbour);
-				}
-			}
-		}
+            if (neighbour == null) {
 
-		// Get neighbour states by picking up available task
-		int remaining_capacity = currentState.vehicle.capacity() -
-				currentState.deliveringTask.weightSum();
+                // Create state if it has not been in stateMap
+                neighbour = new State(
+                        deliveredCity,
+                        newNotDeliveredTask,
+                        newDeliveringTask,
+                        currentState,
+                        new Action.Delivery(task),
+                        currentState.cost + currentState.currentCity.distanceTo(deliveredCity),
+                        currentState.capacity);
 
-		for (Task task : currentState.notDeliveredTask) {
+                // Put new state into stateMap and remainingList
+                stateMap.put(neighbour.getKey(), neighbour);
+                stateList.add(neighbour);
+            } else {
 
-			if (!currentState.deliveringTask.contains(task) &&
-					task.pickupCity == currentState.currentCity &&
-					task.weight <= remaining_capacity) {
+                // Put existing neighbour into remainingList iff its cost has been updated by currentState
+                boolean updated = UpdateNeighbour(currentState, neighbour, new Action.Delivery(task));
 
-				// Get or Create state
-				TaskSet newDeliveringTasks = currentState.deliveringTask.clone();
-				newDeliveringTasks.add(task);
-				String key = currentState.currentCity.name +
-						currentState.notDeliveredTask.toString() +
-						newDeliveringTasks.toString();
+                if (updated) {
 
-				// Try to get neighbour from history
-				State neighbour = stateMap.get(key);
+                    stateList.add(neighbour);
+                }
+            }
+        }
 
-				if (neighbour == null) {
+        // Get neighbour states by picking up available task
+        int remaining_capacity = currentState.capacity -
+                currentState.deliveringTask.weightSum();
 
-					// Create neighbour if it does not exist
-					neighbour = new State(currentState.vehicle,
-							currentState.currentCity,
-							currentState.notDeliveredTask,
-							newDeliveringTasks,
-							currentState,
-							new Action.Pickup(task),
-							currentState.cost);
+        for (Task task : currentState.notDeliveredTask) {
 
-					// Push new neighbour into remainingStates and stateMap
-					stateMap.put(key, neighbour);
-					remainingStates.add(neighbour);
-				} else {
+            if (!currentState.deliveringTask.contains(task) &&
+                    task.weight <= remaining_capacity) {
 
-					// Check for updating neighbour's cost
-					boolean updated = UpdateNeighbour(currentState,
-							neighbour,
-							new Action.Pickup(task));
+                // Get task pick up
+                City taskPickupCity = task.pickupCity;
 
-					// Put neighbour into remainingStates if successfully update
-					if (updated ) {
+                // Get or Create state
+                TaskSet newDeliveringTasks = currentState.deliveringTask.clone();
+                newDeliveringTasks.add(task);
 
-						remainingStates.add(neighbour);
-					}
-				}
-			}
-		}
+                String key = taskPickupCity.name +
+                        currentState.notDeliveredTask.toString() +
+                        newDeliveringTasks.toString();
 
-		// Get neighbouring state by delivering task
-		for (Task task : currentState.deliveringTask) {
+                State neighbour = stateMap.get(key);
+                if (neighbour == null) {
+                    // Create neighbour if it does not exist
+                    neighbour = new State(
+                            taskPickupCity,
+                            currentState.notDeliveredTask,
+                            newDeliveringTasks,
+                            currentState,
+                            new Action.Pickup(task),
+                            currentState.cost + currentState.currentCity.distanceTo(taskPickupCity),
+                            currentState.capacity);
 
-			if (task.deliveryCity == currentState.currentCity) {
+                    // Push new neighbour into remainingStates and stateMap
+                    stateMap.put(neighbour.getKey(), neighbour);
+                    stateList.add(neighbour);
+                } else {
 
-				// Remove delivered task from delivering and not delivered
-				TaskSet newDeliveringTask = currentState.deliveringTask.clone();
-				TaskSet newNotDeliveredTask = currentState.notDeliveredTask.clone();
+                    // Put neighbour into remaining list iff it has been updated by currentState
+                    boolean updated = UpdateNeighbour(currentState, neighbour, new Action.Pickup(task));
 
-				newDeliveringTask.remove(task);
-				newNotDeliveredTask.remove(task);
+                    if (updated) {
 
-				// Get or Create neighbour state
-				String key = currentState.currentCity.name +
-						newNotDeliveredTask.toString() +
-						newDeliveringTask.toString();
+                        stateList.add(neighbour);
+                    }
+                }
+            }
+        }
 
-				State neighbour = stateMap.get(key);
-
-				// Add new neighbour
-				if (neighbour == null) {
-
-					neighbour = new State(currentState.vehicle,
-							currentState.currentCity,
-							newNotDeliveredTask,
-							newDeliveringTask,
-							currentState,
-							new Action.Delivery(task),
-							currentState.cost);
-
-					// Put new neighbour into stateMap and remaining States
-					stateMap.put(key, neighbour);
-					remainingStates.add(neighbour);
-				} else {
-
-					// Check for updating existing neighbour
-					boolean updated = UpdateNeighbour(currentState,
-							neighbour,
-							new Action.Delivery(task));
-
-					// Put updated neighbour into remaining States
-					if (updated)
-						remainingStates.add(neighbour);
-				}
-			}
-		}
+        // Add updated or new neighbours to remainingStates
+        remainingStates.addAll(stateList);
 	}
 
 
@@ -369,7 +324,6 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 		// Construct plan from init state to this terminal
 		List<Action> actions = new ArrayList<>();
-
 		State currentState = bestTerminal;
 
 		// Trace up from best terminal until reach the init state
@@ -378,6 +332,17 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 			// Add current action
 			actions.add(currentState.actionFromParent);
 
+            // Add list of moving actions to reach this state
+            List<City> reversedPath = currentState.parent.currentCity.pathTo(currentState.currentCity);
+            if (reversedPath.size() > 0) {
+
+                Collections.reverse(reversedPath);
+                for (City city : reversedPath) {
+
+                    actions.add(new Action.Move(city));
+                }
+            }
+
 			// Trace up
 			currentState = currentState.parent;
 		}
@@ -385,9 +350,6 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		// Construct optimal plan from retrieved action list
 		Collections.reverse(actions);
 		Plan optPlan = new Plan(initState.currentCity, actions);
-
-		// System.out.println("Optimal plan is:");
-		//System.out.println(optPlan.toString());
 
 		return optPlan;
 	}
@@ -414,7 +376,9 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 			// Output count
 			count += 1;
-
+			if (count % 1000 == 0) {
+			    System.out.printf("%dth round\n", count);
+            }
 			// Pop first state in queue
 			State currentState = remainingStates.get(0);
 			remainingStates.remove(0);
@@ -429,6 +393,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 		return optPlan;
 	}
+
 
 
 	class Heuristic {
@@ -448,7 +413,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		 * @param state
 		 * @return
 		 */
-		public double heuristic(State state, Vehicle vehicle) {
+		public double heuristic(State state) {
 
 			// Try to obtain heuristic result from history
 			Double result = this.hMap.get(state.getKey());
@@ -494,7 +459,7 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 			}
 
 			// Store computed heuristic into map
-			this.hMap.put(state.getKey(), new Double(h * vehicle.costPerKm()));
+			this.hMap.put(state.getKey(), new Double(h));
 			return h;
 		}
 	}
@@ -512,145 +477,66 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 										 PriorityQueue<State> pq) {
 
 
-		// Get neighbour states by going to neighbouring city
-		// System.out.println("Checking neighbour states");
-		for (City neighbourCity : currentState.currentCity.neighbors()) {
+		// Get neighbouring state by delivering task
+		List<State> stateList = new ArrayList<>();
 
-			// Construct key for neighbour state
-			String key = neighbourCity.name +
-					currentState.notDeliveredTask.toString() +
-					currentState.deliveringTask.toString();
+		for (Task task : currentState.deliveringTask) {
 
-			// Get or Create neighbour state, Update if necessary
-			State neighbour = stateMap.get(key);
-			if (neighbour == null) {
+			// Get delivery city of carrying task
+			City deliveredCity = task.deliveryCity;
 
-				// Create neighbour if it does not exist
-				neighbour = new State(currentState.vehicle,
-						neighbourCity,
-						currentState.notDeliveredTask,
-						currentState.deliveringTask,
-						currentState,
-						new Action.Move(neighbourCity),
-						currentState.cost +
-								currentState.vehicle.costPerKm() *
-										currentState.currentCity.distanceTo(neighbourCity));
+			TaskSet newDeliveringTask = currentState.deliveringTask.clone();
+			TaskSet newNotDeliveredTask = currentState.notDeliveredTask.clone();
 
-				// Put new neighbours into stateMap and remaining States
-				stateMap.put(key, neighbour);
-				pq.add(neighbour);
-			} else {
+			newDeliveringTask.remove(task);
+			newNotDeliveredTask.remove(task);
 
-				// Check whether going from current state
-				// can reduce the cost to existing neighbour state
-				boolean updated = UpdateNeighbour(currentState, neighbour,
-						new Action.Move(neighbour.currentCity));
+			// Create neighbour state
+			State neighbour = new State(
+					deliveredCity,
+					newNotDeliveredTask,
+					newDeliveringTask,
+					currentState,
+					new Action.Delivery(task),
+					currentState.cost + currentState.currentCity.distanceTo(deliveredCity),
+					currentState.capacity);
 
-				// Put updated neighbour into remainingStates
-				if (updated && !pq.contains(neighbour)) {
-					pq.add(neighbour);
-				}
-			}
+			stateList.add(neighbour);
 		}
 
 		// Get neighbour states by picking up available task
-		int remaining_capacity = currentState.vehicle.capacity() -
+		int remaining_capacity = currentState.capacity -
 				currentState.deliveringTask.weightSum();
 
 		for (Task task : currentState.notDeliveredTask) {
 
 			if (!currentState.deliveringTask.contains(task) &&
-					task.pickupCity == currentState.currentCity &&
 					task.weight <= remaining_capacity) {
+
+				// Get task pick up
+				City taskPickupCity = task.pickupCity;
 
 				// Get or Create state
 				TaskSet newDeliveringTasks = currentState.deliveringTask.clone();
 				newDeliveringTasks.add(task);
-				String key = currentState.currentCity.name +
-						currentState.notDeliveredTask.toString() +
-						newDeliveringTasks.toString();
 
-				// Try to get neighbour from history
-				State neighbour = stateMap.get(key);
+				// Create neighbour if it does not exist
+				State neighbour = new State(
+						taskPickupCity,
+						currentState.notDeliveredTask,
+						newDeliveringTasks,
+						currentState,
+						new Action.Pickup(task),
+						currentState.cost + currentState.currentCity.distanceTo(taskPickupCity),
+						currentState.capacity);
 
-				if (neighbour == null) {
-
-					// Create neighbour if it does not exist
-					neighbour = new State(currentState.vehicle,
-							currentState.currentCity,
-							currentState.notDeliveredTask,
-							newDeliveringTasks,
-							currentState,
-							new Action.Pickup(task),
-							currentState.cost);
-
-					// Push new neighbour into remainingStates and stateMap
-					stateMap.put(key, neighbour);
-					pq.add(neighbour);
-				} else {
-
-					// Check for updating neighbour's cost
-					boolean updated = UpdateNeighbour(currentState,
-							neighbour,
-							new Action.Pickup(task));
-
-					// Put neighbour into remainingStates if successfully update
-					if (updated && !pq.contains(neighbour)) {
-
-						pq.add(neighbour);
-					}
-				}
+				// Push new neighbour into remainingStates and stateMap
+				stateList.add(neighbour);
 			}
 		}
 
-		// Get neighbouring state by delivering task
-		for (Task task : currentState.deliveringTask) {
-
-			if (task.deliveryCity == currentState.currentCity) {
-
-				// Remove delivered task from delivering and not delivered
-				TaskSet newDeliveringTask = currentState.deliveringTask.clone();
-				TaskSet newNotDeliveredTask = currentState.notDeliveredTask.clone();
-
-				newDeliveringTask.remove(task);
-				newNotDeliveredTask.remove(task);
-
-				// Get or Create neighbour state
-				String key = currentState.currentCity.name +
-						newNotDeliveredTask.toString() +
-						newDeliveringTask.toString();
-
-				State neighbour = stateMap.get(key);
-
-				// Add new neighbour
-				if (neighbour == null) {
-
-					neighbour = new State(currentState.vehicle,
-							currentState.currentCity,
-							newNotDeliveredTask,
-							newDeliveringTask,
-							currentState,
-							new Action.Delivery(task),
-							currentState.cost);
-
-					// Put new neighbour into stateMap and remaining States
-					stateMap.put(key, neighbour);
-					pq.add(neighbour);
-				} else {
-
-					// Check for updating existing neighbour
-					boolean updated = UpdateNeighbour(currentState,
-							neighbour,
-							new Action.Delivery(task));
-
-					// Put updated neighbour into remaining States
-					if (updated && !pq.contains(neighbour))
-						pq.add(neighbour);
-				}
-			}
-		}
-
-		long end = System.currentTimeMillis();
+		// Add neighbours to priority queue
+		pq.addAll(stateList);
 	}
 
 
@@ -664,7 +550,19 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 
 		while (currentState.parent != null) {
 
+			// Add current action: pickup / delivery
 			actions.add(currentState.actionFromParent);
+
+			// Add list of moving action to reach this state
+			List<City> reversedPath = currentState.parent.currentCity.pathTo(currentState.currentCity);
+			if (reversedPath.size() > 0) {
+
+				Collections.reverse(reversedPath);
+				for (City city : reversedPath) {
+
+					actions.add(new Action.Move(city));
+				}
+			}
 
 			currentState = currentState.parent;
 		}
@@ -688,12 +586,13 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 		Map<String, State> stateMap = new HashMap<>();
 		Map<String, State> C = new HashMap<>();
 		Heuristic h = new Heuristic();
+
 		Comparator<State> fcomparator = new Comparator<State>() {
 			@Override
 			public int compare(State o1, State o2) {
 
-				double f1 = h.heuristic(o1, vehicle) + o1.cost;
-				double f2 = h.heuristic(o2, vehicle) + o2.cost;
+				double f1 = h.heuristic(o1) + o1.cost;
+				double f2 = h.heuristic(o2) + o2.cost;
 
 				if (f1 < f2)
 					return -1;
@@ -703,22 +602,34 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 					return 1;
 			}
 		};
+
 		PriorityQueue<State> pq = new PriorityQueue<>(1000, fcomparator);
 
 		// Put init state into stateMap, pq
 		State initState = new State(vehicle, notDeliveredTask);
-		stateMap.put(initState.getKey(), initState);
+		// stateMap.put(initState.getKey(), initState);
 		pq.add(initState);
 
 		// Step 2
 		State terminal = null;
 		int count = 0;
+		long lastTicker = System.currentTimeMillis();
+		long currentTicker;
+		int avgPQlen = 0;
+		long init = System.currentTimeMillis();
 		while (!pq.isEmpty()) {
 
 			count += 1;
+			avgPQlen += pq.size();
+			if (count % 1000 == 0) {
+				currentTicker = System.currentTimeMillis();
+				System.out.printf("10 rounds take %dms\n", currentTicker - lastTicker);
+				System.out.printf("%d round\n", count);
+				lastTicker = currentTicker;
+			}
+
 			// Pop best element from PQ
 			State currentState = pq.poll();
-
 			// Check whether current state is terminal state
 			if (currentState.notDeliveredTask.isEmpty()) {
 				terminal = currentState;
@@ -734,16 +645,22 @@ public class DeliberativeTemplate implements DeliberativeBehavior {
 				C.put(currentState.getKey(), currentState);
 
 				// Find and update its' neighbours
-			findAndUpdateNeighbours(currentState, stateMap, pq);
+				findAndUpdateNeighbours(currentState, stateMap, pq);
 			}
 		}
-
-		System.out.println("Planning finished");
+		long end = System.currentTimeMillis();
+		System.out.println("Finish looping takes " + (end - init) + "ms");
+		 System.out.println("Planning finished");
+		System.out.printf("The avg pq length is %d\n", avgPQlen / count);
+		System.out.printf("Number of round is %d\n", count);
 		System.out.printf("The best cost we found is %f\n", terminal.cost);
 		// Step 4
 		Plan optPlan = constructOptPlan(initState, terminal);
 
-		System.out.printf("Opt plan is %s", optPlan.toString());
+		System.out.println("total distance is " + optPlan.totalDistance());
+		System.out.println("Initial tasks are" + initState.notDeliveredTask.toString());
+		// System.out.printf("Opt plan is %s", optPlan.toString());
+		System.out.println(optPlan.toString());
 		return optPlan;
 	}
 
