@@ -14,7 +14,7 @@ import logist.topology.Topology;
 public class AuctionHonest implements AuctionBehavior {
 
 	private Agent agent;
-	private MyPlan myplan;
+	private TestPlan myplan;
 
 	private final long DELTA_BID = 10;
 
@@ -22,7 +22,7 @@ public class AuctionHonest implements AuctionBehavior {
 	public void setup(Topology topology, TaskDistribution distribution, Agent agent) {
 
 		this.agent = agent;
-		myplan = new MyPlan(agent.vehicles());
+		myplan = new TestPlan(agent.vehicles());
 	}
 
 	@Override

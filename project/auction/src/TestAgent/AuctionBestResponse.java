@@ -15,8 +15,8 @@ public class AuctionBestResponse implements AuctionBehavior {
 
 	private Agent agent;
 
-	private MyPlan myplan;
-	private MyPlan opponentplan;
+	private TestPlan myplan;
+	private TestPlan opponentplan;
 
 	private final long MIN_BID = 10;
 	private final long DELTA_BID = 10;
@@ -24,8 +24,8 @@ public class AuctionBestResponse implements AuctionBehavior {
 	@Override
 	public void setup(Topology topology, TaskDistribution distribution, Agent agent) {
 		this.agent = agent;
-		myplan = new MyPlan(agent.vehicles());
-		opponentplan = new MyPlan(agent.vehicles());
+		myplan = new TestPlan(agent.vehicles());
+		opponentplan = new TestPlan(agent.vehicles());
 	}
 
 	@Override

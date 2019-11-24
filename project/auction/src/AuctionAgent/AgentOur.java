@@ -1,3 +1,7 @@
+/*
+ * This project partially refers to project developed by Liang Zixuan and Wang Junxiong in
+ * https://github.com/OVSS/Intelligent-Agent/tree/master/5%20Auction%20Agent
+ */
 package AuctionAgent;
 
 //the list of imports
@@ -22,7 +26,7 @@ import logist.topology.Topology.City;
 import AuctionAgent.Action.Type;
 
 @SuppressWarnings("unused")
-public class AgentTeamWL implements AuctionBehavior {
+public class AgentOur implements AuctionBehavior {
 
 	private Topology topology;
 	private TaskDistribution distribution;
@@ -48,10 +52,10 @@ public class AgentTeamWL implements AuctionBehavior {
 	private double oppRatio = 0.9;
 	private double myMarginBidRatio = 0.85;
 
-	final static double oppRatioUpper = 0.95;
+	final static double oppRatioUpper = 0.9;
 	final static double oppRatioLower = 0.8;
 
-	final static double myRatioUpper = 0.9;
+	final static double myRatioUpper = 0.85;
 	final static double myRatioLower = 0.75;
 
 	private double bidOppMin = Double.MAX_VALUE;
@@ -107,18 +111,12 @@ public class AgentTeamWL implements AuctionBehavior {
 
 		this.myPlan = new PDPlan(myVehicles);
 		this.oppPlan = new PDPlan(oppVehicles);
-
-		propobality = new double[topology.size()][topology.size()];
-		initPro();
 	}
 
 
 	/**
-	 * This signal informs the agent about the outcome of an auction. winner
-	 * is the id of the agent that won the task. The actual bids of all agents is given
-	 * as an array bids indexed by agent id. A null offer indicates that the
-	 * agent did not participate in the auction.
-	 *
+	 * This function informs the agent about the outcome of previous auction
+	 * a winner id and all the bids on this object are provided.
 	 * @param previous
 	 * @param winner
 	 * @param bids
@@ -152,7 +150,8 @@ public class AgentTeamWL implements AuctionBehavior {
 			myPlan.updatePlan();
 
 			// Update margin bid ratio and opponent ratio
-			myMarginBidRatio = Math.min(myRatioLower,  0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio + 0.5));
+
+			myMarginBidRatio = Math.max(myRatioUpper, 0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio - 0.5));
 			oppRatio = Math.min(oppRatioLower, 0.8 * oppRatio + 0.2 * (oppRatio + 0.5));
 
 		} else {
@@ -163,7 +162,7 @@ public class AgentTeamWL implements AuctionBehavior {
 			oppCost = oppNewCost;
 			oppPlan.updatePlan();
 
-			myMarginBidRatio = Math.max(myRatioUpper, 0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio - 0.5));
+			myMarginBidRatio = Math.min(myRatioLower,  0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio + 0.5));
 			oppRatio = Math.max(oppRatioUpper, 0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio - 0.5));
 		}
 
@@ -189,12 +188,15 @@ public class AgentTeamWL implements AuctionBehavior {
 			}
 
 			oppVehicles.get(0).setInitCity(predictCity);
-			System.out.println("City: " + predictCity);
 		}
 
-		System.out.println(myBid + " VS " + oppBid);
 	}
 
+	/**
+	 * This function decides the bid of an auction
+	 * @param task
+	 * @return
+	 */
 	@Override
 	public Long askPrice(Task task) {
 
@@ -296,33 +298,6 @@ public class AgentTeamWL implements AuctionBehavior {
 		}
 
 		return plan;
-	}
-
-	private void initPro() {
-
-		int max = 0;
-		int min = Integer.MAX_VALUE;
-
-		int[][] cityEdge = new int[topology.size()][topology.size()];
-		for (City city1 : topology.cities()) {
-			for (City city2 : topology.cities()) {
-				cityEdge[city1.id][city2.id] = city1.neighbors().size() * city2.neighbors().size();
-				if (cityEdge[city1.id][city2.id] > max) {
-					max = cityEdge[city1.id][city2.id];
-				}
-				if (cityEdge[city1.id][city2.id] < min) {
-					min = cityEdge[city1.id][city2.id];
-				}
-			}
-		}
-
-		double ratio = (bidAboutPositionMax - bidAboutPositionMin) / (max - min);
-		for (City city1 : topology.cities()) {
-			for (City city2 : topology.cities()) {
-				propobality[city1.id][city2.id] = (cityEdge[city1.id][city2.id] - min) * ratio + bidAboutPositionMin;
-				System.out.println(propobality[city1.id][city2.id]);
-			}
-		}
 	}
 
 	private Plan makePlan(MyVehicle vehicle, LinkedList<Action> linkedList, TaskSet tasks) {

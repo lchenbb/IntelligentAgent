@@ -33,7 +33,7 @@ public class AuctionNaive implements AuctionBehavior {
 	private Vehicle vehicle;
 	private City currentCity;
 
-	private MyPlan myplan;
+	private TestPlan myplan;
 
 	@Override
 	public void setup(Topology topology, TaskDistribution distribution, Agent agent) {

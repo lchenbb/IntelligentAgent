@@ -8,35 +8,35 @@ import logist.task.Task;
 import logist.topology.Topology.City;
 import logist.plan.Plan;
 
-public class MyVehicle {
+public class TestVehicle {
 	private int capacity;
-	private City initCity;
+	private City startCity;
 	private double costPerKm;
 	
-	public ArrayList<MyAction> actions;
+	public ArrayList<TestAction> actions;
 	private HashMap<Integer, Task> tasks;
 	
-	public MyVehicle(City initCity, int capacity, double costPerKm){
-		this.initCity = initCity;
+	public TestVehicle(City homeCity, int capacity, double costPerKm){
+		this.startCity = homeCity;
 		this.capacity = capacity;
 		this.costPerKm = costPerKm;
 		
-		actions = new ArrayList<MyAction>();
+		actions = new ArrayList<TestAction>();
 		tasks = new HashMap<Integer, Task>();
 	}
 	
-	public double marginalCost(List<MyTask> mytasks){
+	public double marginalCost(List<Task> mytasks){
 		double cost0 = cost();
 		
 		int[] i_pickup = new int[mytasks.size()];
 		int[] i_deliver = new int[mytasks.size()];
 		
 		int i = 0;
-		for(MyTask mytask : mytasks){
-			MyAction pickup = new MyAction(true, mytask.pickupCity, mytask.weight,mytask.id);
+		for(Task mytask : mytasks){
+			TestAction pickup = new TestAction(mytask.pickupCity, mytask.weight,mytask.id, 0);
 			i_pickup[i] = addAction(pickup, 0);
 		
-			MyAction deliver = new MyAction(false, mytask.deliveryCity, mytask.weight, mytask.id);
+			TestAction deliver = new TestAction(mytask.deliveryCity, mytask.weight, mytask.id, 1);
 			i_deliver[i] = addAction(deliver, i_pickup[i] + 1);
 			i++;
 		}
@@ -54,10 +54,10 @@ public class MyVehicle {
 	public double marginalCost(Task task){
 		double cost0 = cost();
 		
-		MyAction pickup = new MyAction(true, task.pickupCity, task.weight, task.id);
+		TestAction pickup = new TestAction(task.pickupCity, task.weight, task.id, 0);
 		int i_pickup = addAction(pickup, 0);
 		
-		MyAction deliver = new MyAction(false, task.deliveryCity, task.weight, task.id);
+		TestAction deliver = new TestAction(task.deliveryCity, task.weight, task.id, 1);
 		int i_deliver = addAction(deliver, i_pickup + 1);
 		
 		double cost = cost();
@@ -69,16 +69,16 @@ public class MyVehicle {
 	}
 	
 	public void addTask(Task task){
-		MyAction pickup = new MyAction(true, task.pickupCity, task.weight, task.id);
+		TestAction pickup = new TestAction(task.pickupCity, task.weight, task.id, 0);
 		int i_pickup = addAction(pickup, 0);
 		
-		MyAction deliver = new MyAction(false, task.deliveryCity, task.weight, task.id);
+		TestAction deliver = new TestAction(task.pickupCity, task.weight, task.id, 1);
 		addAction(deliver, i_pickup + 1);
 		
 		tasks.put(task.id, task);
 	}
 	
-	private int addAction(MyAction action, int i_min0){
+	private int addAction(TestAction action, int i_min0){
 		int i_min = i_min0;
 		double c_min = Double.MAX_VALUE;
 		for(int i = i_min0; i <= actions.size(); i++){
@@ -96,8 +96,8 @@ public class MyVehicle {
 	
 	private boolean isConsistent(){
 		int c = 0;
-		for(MyAction a: actions){
-			c += a.getWeight();
+		for(TestAction a: actions){
+			c += a.weight;
 			if(c > capacity) return false;
 		}
 		return true;
@@ -105,26 +105,32 @@ public class MyVehicle {
 	
 	public double cost(){
 		double cost = 0;
-		City c = initCity;
-		for(MyAction a: actions){
-			cost += c.distanceTo(a.getCity()) * costPerKm;
-			c = a.getCity();
+		City c = startCity;
+		for(TestAction a: actions){
+			cost += c.distanceTo(a.city) * costPerKm;
+			c = a.city;
 		}
 		return cost;
 	}
 	
 	public Plan getPlan(){
-		City current = initCity;
+		City current = startCity;
 		Plan plan = new Plan(current);
 		
-		for(MyAction a: actions){
-			for (City city : current.pathTo(a.getCity()))
+		for(TestAction a: actions){
+			for (City city : current.pathTo(a.city))
 				plan.appendMove(city);
 			
-			if(a.isPickup()) plan.appendPickup(tasks.get(a.id));
-			else plan.appendDelivery(tasks.get(a.id));
+			if(a.actionType == 0) 
+			{plan.appendPickup(tasks.get(a.id));
 			
-			current = a.getCity();
+			}
+			else 
+				{plan.appendDelivery(tasks.get(a.id));
+				
+				}
+			
+			current = a.city;
 		}
 		
 		return plan;
