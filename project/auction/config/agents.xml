@@ -4,14 +4,17 @@
 	<!-- A list of agents and their behavior classes -->
 	
 	<!-- #### AUCTION AGENTS ### -->
+
 	<agent name="auction-our">
 		<set class-path="out/production/auction"/>
-		<set class-name="AuctionAgent.AgentTeamWL"/>
+		<set class-name="AuctionAgent.AgentOur"/>
 	</agent>
-	
+
+
+	<!--
 	<agent name="auction-test">
 		<set class-path="out/production/auction/"/>
 		<set class-name="TestAgent.AuctionBestResponse"/>
 	</agent>
-	
+	-->
 </agents>

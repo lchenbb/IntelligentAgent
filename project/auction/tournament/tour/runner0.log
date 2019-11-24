@@ -1,0 +1,2492 @@
+03:58:59.899 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction-auction2.xml -a tournament/tour/agents.xml ./config/auction2.xml auction auction2
+03:58:59.967 CONFIG | Reading ./config/auction2.xml
+03:59:00.023 CONFIG | Reading config/settings_auction.xml
+03:59:00.077 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:00.096 CONFIG | Reading tournament/tour/agents.xml
+03:59:00.168 CONFIG | The profit of agent 0 is 12875.500000The profit of agent 1 is 8025.000000Wrote tournament/tour/auction2-auction-auction2.xml
+03:59:00.182 INFO | LogistPlatform finished successfully!
+03:59:00.187 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction-auction3.xml -a tournament/tour/agents.xml ./config/auction2.xml auction auction3
+03:59:00.252 CONFIG | Reading ./config/auction2.xml
+03:59:00.305 CONFIG | Reading config/settings_auction.xml
+03:59:00.357 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:00.376 CONFIG | Reading tournament/tour/agents.xml
+03:59:00.449 CONFIG | The profit of agent 0 is 20916.500000The profit of agent 1 is 28.000000Wrote tournament/tour/auction2-auction-auction3.xml
+03:59:00.463 INFO | LogistPlatform finished successfully!
+03:59:00.464 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction-auction4.xml -a tournament/tour/agents.xml ./config/auction2.xml auction auction4
+03:59:00.528 CONFIG | Reading ./config/auction2.xml
+03:59:00.584 CONFIG | Reading config/settings_auction.xml
+03:59:00.638 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:00.660 CONFIG | Reading tournament/tour/agents.xml
+03:59:00.682 CONFIG | Reading config/settings_auction.xml
+03:59:00.716 CONFIG | Estimated Self marginal cost for current task is 954.000000
+03:59:00.716 CONFIG | Estimated Opponent marginal cost for current task is 1065.000000
+03:59:00.717 CONFIG | Current round is 1
+03:59:00.717 CONFIG | Estimated Self marginal cost for current task is 770.000000
+03:59:00.717 CONFIG | Estimated Opponent marginal cost for current task is 1936.500000
+03:59:00.718 CONFIG | Current round is 2
+03:59:00.719 CONFIG | Estimated Self marginal cost for current task is 773.500000
+03:59:00.719 CONFIG | Estimated Opponent marginal cost for current task is 1059.000000
+03:59:00.719 CONFIG | Current round is 3
+03:59:00.720 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:00.720 CONFIG | Estimated Opponent marginal cost for current task is 1418.500000
+03:59:00.721 CONFIG | Current round is 4
+03:59:00.721 CONFIG | Estimated Self marginal cost for current task is 115.500000
+03:59:00.722 CONFIG | Estimated Opponent marginal cost for current task is 660.000000
+03:59:00.722 CONFIG | Current round is 5
+03:59:00.723 CONFIG | Estimated Self marginal cost for current task is 869.000000
+03:59:00.723 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+03:59:00.724 CONFIG | Current round is 6
+03:59:00.724 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:00.725 CONFIG | Estimated Opponent marginal cost for current task is 376.000000
+03:59:00.725 CONFIG | Current round is 7
+03:59:00.726 CONFIG | Estimated Self marginal cost for current task is 524.000000
+03:59:00.726 CONFIG | Estimated Opponent marginal cost for current task is 968.500000
+03:59:00.727 CONFIG | Current round is 8
+03:59:00.729 CONFIG | Estimated Self marginal cost for current task is 112.500000
+03:59:00.730 CONFIG | Estimated Opponent marginal cost for current task is 188.500000
+03:59:00.730 CONFIG | Current round is 9
+03:59:00.731 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:00.732 CONFIG | Estimated Opponent marginal cost for current task is 627.000000
+03:59:00.733 CONFIG | Current round is 10
+03:59:00.733 CONFIG | Estimated Self marginal cost for current task is 345.000000
+03:59:00.733 CONFIG | Estimated Opponent marginal cost for current task is 459.500000
+03:59:00.734 CONFIG | Current round is 11
+03:59:00.735 CONFIG | Estimated Self marginal cost for current task is 441.000000
+03:59:00.735 CONFIG | Estimated Opponent marginal cost for current task is 792.000000
+03:59:00.736 CONFIG | Current round is 12
+03:59:00.736 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:00.737 CONFIG | Estimated Opponent marginal cost for current task is 439.500000
+03:59:00.737 CONFIG | Current round is 13
+03:59:00.739 CONFIG | Estimated Self marginal cost for current task is 773.500000
+03:59:00.739 CONFIG | Estimated Opponent marginal cost for current task is 871.500000
+03:59:00.740 CONFIG | Current round is 14
+03:59:00.741 CONFIG | Estimated Self marginal cost for current task is 544.000000
+03:59:00.741 CONFIG | Estimated Opponent marginal cost for current task is 351.000000
+03:59:00.742 CONFIG | Current round is 15
+03:59:00.743 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:00.743 CONFIG | Estimated Opponent marginal cost for current task is 774.500000
+03:59:00.744 CONFIG | Current round is 16
+03:59:00.746 CONFIG | Estimated Self marginal cost for current task is 639.500000
+03:59:00.747 CONFIG | Estimated Opponent marginal cost for current task is 367.500000
+03:59:00.748 CONFIG | Current round is 17
+03:59:00.749 CONFIG | Estimated Self marginal cost for current task is 688.500000
+03:59:00.749 CONFIG | Estimated Opponent marginal cost for current task is 840.500000
+03:59:00.750 CONFIG | Current round is 18
+03:59:00.751 CONFIG | Estimated Self marginal cost for current task is 169.500000
+03:59:00.751 CONFIG | Estimated Opponent marginal cost for current task is 335.000000
+03:59:00.752 CONFIG | Current round is 19
+03:59:00.753 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:00.753 CONFIG | Estimated Opponent marginal cost for current task is 403.000000
+03:59:00.754 CONFIG | Current round is 20
+03:59:00.755 CONFIG | Estimated Self marginal cost for current task is 543.000000
+03:59:00.755 CONFIG | Estimated Opponent marginal cost for current task is 323.500000
+03:59:00.756 CONFIG | Current round is 21
+03:59:00.758 CONFIG | Estimated Self marginal cost for current task is 385.500000
+03:59:00.759 CONFIG | Estimated Opponent marginal cost for current task is 441.000000
+03:59:00.759 CONFIG | Current round is 22
+03:59:00.761 CONFIG | Estimated Self marginal cost for current task is 1692.500000
+03:59:00.761 CONFIG | Estimated Opponent marginal cost for current task is 990.500000
+03:59:00.764 CONFIG | Current round is 23
+03:59:00.766 CONFIG | Estimated Self marginal cost for current task is 704.500000
+03:59:00.767 CONFIG | Estimated Opponent marginal cost for current task is 323.500000
+03:59:00.767 CONFIG | Current round is 24
+03:59:00.769 CONFIG | Estimated Self marginal cost for current task is 929.500000
+03:59:00.769 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+03:59:00.769 CONFIG | Current round is 25
+03:59:00.771 CONFIG | Estimated Self marginal cost for current task is 952.000000
+03:59:00.771 CONFIG | Estimated Opponent marginal cost for current task is 952.000000
+03:59:00.776 CONFIG | Current round is 26
+03:59:00.778 CONFIG | Estimated Self marginal cost for current task is 345.000000
+03:59:00.779 CONFIG | Estimated Opponent marginal cost for current task is 243.000000
+03:59:00.781 CONFIG | Current round is 27
+03:59:00.784 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:00.784 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+03:59:00.785 CONFIG | Current round is 28
+03:59:00.787 CONFIG | Estimated Self marginal cost for current task is 148.000000
+03:59:00.787 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+03:59:00.788 CONFIG | Current round is 29
+03:59:00.790 CONFIG | Estimated Self marginal cost for current task is 436.000000
+03:59:00.790 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+03:59:00.798 CONFIG | The profit of agent 0 is 3657.000000Current round is 30
+03:59:00.798 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 479 CHF, Breda -> Almere), (Task 1, 19 kg, 774 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 452 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 567 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 836 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 871 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 432 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 501 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 432 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 432 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 697 CHF, Den Haag -> Apeldoorn), (Task 15, 16 kg, 697 CHF, Rotterdam -> Apeldoorn), (Task 17, 26 kg, 756 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 360 CHF, Almere -> Rotterdam), (Task 20, 20 kg, 407 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 352 CHF, Breda -> Nijmegen), (Task 24, 15 kg, 836 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 320 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 327 CHF, Utrecht -> Breda)]
+03:59:00.798 CONFIG | 22
+03:59:08.074 CONFIG | 10011.5VS8577.5
+03:59:08.074 CONFIG | The profit of agent 1 is 4135.500000
+03:59:08.075 CONFIG | Vehicle 4 [type=PICKUP, currentTask=(Task 9, 26 kg, 501 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 17, 26 kg, 756 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 15, 16 kg, 697 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 9, 26 kg, 501 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 17, 26 kg, 756 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 13, 17 kg, 697 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 12, 22 kg, 432 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 15, 16 kg, 697 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 2, 26 kg, 452 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 13, 17 kg, 697 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 8, 21 kg, 432 CHF, Apeldoorn -> Almere), type=DELIVERY, currentTask=(Task 8, 21 kg, 432 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 432 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 12, 22 kg, 432 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 20, 20 kg, 407 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 2, 26 kg, 452 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 7, 28 kg, 871 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 21, 11 kg, 352 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 10, 12 kg, 432 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 26, 15 kg, 320 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 21, 11 kg, 352 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 7, 28 kg, 871 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 407 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 29, 29 kg, 327 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 26, 15 kg, 320 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 29, 29 kg, 327 CHF, Utrecht -> Breda)]
+03:59:08.075 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 1, 19 kg, 774 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 0, 27 kg, 479 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 3, 12 kg, 567 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 0, 27 kg, 479 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 18, 25 kg, 360 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 18, 25 kg, 360 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 836 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 774 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 5, 26 kg, 836 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 567 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 24, 15 kg, 836 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 836 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam)]
+03:59:08.080 CONFIG | Wrote tournament/tour/auction2-auction-auction4.xml
+03:59:08.098 INFO | LogistPlatform finished successfully!
+03:59:08.099 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction-auction5.xml -a tournament/tour/agents.xml ./config/auction2.xml auction auction5
+03:59:08.162 CONFIG | Reading ./config/auction2.xml
+03:59:08.214 CONFIG | Reading config/settings_auction.xml
+03:59:08.269 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:08.288 CONFIG | Reading tournament/tour/agents.xml
+03:59:08.304 CONFIG | Reading config/settings_auction.xml
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.310 CONFIG | 1.0066666666666668
+03:59:08.310 CONFIG | 0.9355555555555556
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.310 CONFIG | 0.9711111111111111
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9711111111111111
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.310 CONFIG | 1.0066666666666668
+03:59:08.310 CONFIG | 0.9355555555555556
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.310 CONFIG | 0.9711111111111111
+03:59:08.310 CONFIG | 0.9533333333333334
+03:59:08.310 CONFIG | 0.9711111111111111
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.310 CONFIG | 0.9
+03:59:08.310 CONFIG | 0.9444444444444445
+03:59:08.310 CONFIG | 0.908888888888889
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.310 CONFIG | 0.9
+03:59:08.310 CONFIG | 0.9266666666666667
+03:59:08.310 CONFIG | 0.9177777777777778
+03:59:08.311 CONFIG | 0.9266666666666667
+03:59:08.311 CONFIG | 1.0066666666666668
+03:59:08.311 CONFIG | 1.0066666666666668
+03:59:08.311 CONFIG | 0.9444444444444445
+03:59:08.311 CONFIG | 1.1
+03:59:08.311 CONFIG | 0.9755555555555556
+03:59:08.311 CONFIG | 1.0066666666666668
+03:59:08.311 CONFIG | 0.9444444444444445
+03:59:08.311 CONFIG | 1.037777777777778
+03:59:08.311 CONFIG | 1.0066666666666668
+03:59:08.311 CONFIG | 1.037777777777778
+03:59:08.311 CONFIG | 0.9355555555555556
+03:59:08.311 CONFIG | 0.9355555555555556
+03:59:08.311 CONFIG | 0.908888888888889
+03:59:08.311 CONFIG | 0.9755555555555556
+03:59:08.311 CONFIG | 0.9222222222222223
+03:59:08.311 CONFIG | 0.9355555555555556
+03:59:08.311 CONFIG | 0.908888888888889
+03:59:08.311 CONFIG | 0.9488888888888889
+03:59:08.311 CONFIG | 0.9355555555555556
+03:59:08.311 CONFIG | 0.9488888888888889
+03:59:08.311 CONFIG | 0.9533333333333334
+03:59:08.311 CONFIG | 0.9533333333333334
+03:59:08.311 CONFIG | 0.9177777777777778
+03:59:08.311 CONFIG | 1.0066666666666668
+03:59:08.311 CONFIG | 0.9355555555555556
+03:59:08.311 CONFIG | 0.9533333333333334
+03:59:08.311 CONFIG | 0.9177777777777778
+03:59:08.311 CONFIG | 0.9711111111111111
+03:59:08.311 CONFIG | 0.9533333333333334
+03:59:08.311 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9177777777777778
+03:59:08.312 CONFIG | 0.9177777777777778
+03:59:08.312 CONFIG | 0.9
+03:59:08.312 CONFIG | 0.9444444444444445
+03:59:08.312 CONFIG | 0.908888888888889
+03:59:08.312 CONFIG | 0.9177777777777778
+03:59:08.312 CONFIG | 0.9
+03:59:08.312 CONFIG | 0.9266666666666667
+03:59:08.312 CONFIG | 0.9177777777777778
+03:59:08.312 CONFIG | 0.9266666666666667
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9266666666666667
+03:59:08.312 CONFIG | 1.037777777777778
+03:59:08.312 CONFIG | 0.9488888888888889
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9266666666666667
+03:59:08.312 CONFIG | 0.9933333333333334
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9933333333333334
+03:59:08.312 CONFIG | 0.9533333333333334
+03:59:08.312 CONFIG | 0.9533333333333334
+03:59:08.312 CONFIG | 0.9177777777777778
+03:59:08.312 CONFIG | 1.0066666666666668
+03:59:08.312 CONFIG | 0.9355555555555556
+03:59:08.312 CONFIG | 0.9533333333333334
+03:59:08.312 CONFIG | 0.9177777777777778
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9533333333333334
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9266666666666667
+03:59:08.312 CONFIG | 1.037777777777778
+03:59:08.312 CONFIG | 0.9488888888888889
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9266666666666667
+03:59:08.312 CONFIG | 0.9933333333333334
+03:59:08.312 CONFIG | 0.9711111111111111
+03:59:08.312 CONFIG | 0.9933333333333334
+03:59:08.329 CONFIG | predict cost:951.5
+03:59:08.330 CONFIG | 1
+03:59:08.330 CONFIG | City: Eindhoven
+03:59:08.330 CONFIG | 404.0 VS 905.0
+03:59:08.330 CONFIG | predict cost:1741.0
+03:59:08.331 CONFIG | 2
+03:59:08.331 CONFIG | 696.0 VS 1591.0
+03:59:08.332 CONFIG | predict cost:1174.0
+03:59:08.332 CONFIG | 3
+03:59:08.332 CONFIG | 469.0 VS 1476.0
+03:59:08.333 CONFIG | predict cost:1203.0
+03:59:08.335 CONFIG | 4
+03:59:08.336 CONFIG | 481.0 VS 1224.0
+03:59:08.336 CONFIG | predict cost:444.5
+03:59:08.337 CONFIG | 5
+03:59:08.337 CONFIG | 904.0 VS 466.0
+03:59:08.338 CONFIG | predict cost:1341.5
+03:59:08.338 CONFIG | 6
+03:59:08.339 CONFIG | 1207.0 VS 1351.0
+03:59:08.339 CONFIG | predict cost:0.0
+03:59:08.340 CONFIG | 7
+03:59:08.340 CONFIG | 465.0 VS 433.0
+03:59:08.340 CONFIG | predict cost:1013.0
+03:59:08.341 CONFIG | 8
+03:59:08.341 CONFIG | 911.0 VS 1135.0
+03:59:08.343 CONFIG | predict cost:667.0
+03:59:08.344 CONFIG | 9
+03:59:08.344 CONFIG | 533.0 VS 745.0
+03:59:08.345 CONFIG | predict cost:845.0
+03:59:08.345 CONFIG | 10
+03:59:08.345 CONFIG | 676.0 VS 1118.0
+03:59:08.346 CONFIG | predict cost:687.5
+03:59:08.347 CONFIG | 11
+03:59:08.347 CONFIG | 550.0 VS 614.0
+03:59:08.347 CONFIG | predict cost:792.0
+03:59:08.348 CONFIG | 12
+03:59:08.348 CONFIG | 633.0 VS 802.0
+03:59:08.349 CONFIG | predict cost:696.0
+03:59:08.351 CONFIG | 13
+03:59:08.351 CONFIG | 556.0 VS 849.0
+03:59:08.353 CONFIG | predict cost:987.5
+03:59:08.353 CONFIG | 14
+03:59:08.353 CONFIG | 790.0 VS 1222.0
+03:59:08.354 CONFIG | predict cost:351.0
+03:59:08.355 CONFIG | 15
+03:59:08.355 CONFIG | 432.0 VS 361.0
+03:59:08.356 CONFIG | predict cost:987.5
+03:59:08.357 CONFIG | 16
+03:59:08.357 CONFIG | 888.0 VS 968.0
+03:59:08.358 CONFIG | predict cost:595.5
+03:59:08.358 CONFIG | 17
+03:59:08.358 CONFIG | 479.0 VS 377.0
+03:59:08.360 CONFIG | predict cost:619.5
+03:59:08.361 CONFIG | 18
+03:59:08.361 CONFIG | 585.0 VS 1118.0
+03:59:08.362 CONFIG | predict cost:100.5
+03:59:08.362 CONFIG | 19
+03:59:08.362 CONFIG | 360.0 VS 446.0
+03:59:08.364 CONFIG | predict cost:403.0
+03:59:08.364 CONFIG | 20
+03:59:08.364 CONFIG | 360.0 VS 321.0
+03:59:08.366 CONFIG | predict cost:323.5
+03:59:08.368 CONFIG | 21
+03:59:08.369 CONFIG | 461.0 VS 442.0
+03:59:08.370 CONFIG | predict cost:416.5
+03:59:08.370 CONFIG | 22
+03:59:08.370 CONFIG | 374.0 VS 802.0
+03:59:08.371 CONFIG | predict cost:990.5
+03:59:08.372 CONFIG | 23
+03:59:08.372 CONFIG | 792.0 VS 1351.0
+03:59:08.373 CONFIG | predict cost:0.0
+03:59:08.373 CONFIG | 24
+03:59:08.374 CONFIG | 528.0 VS 442.0
+03:59:08.375 CONFIG | predict cost:1540.000000000001
+03:59:08.375 CONFIG | 25
+03:59:08.375 CONFIG | 1386.0 VS 1926.0
+03:59:08.377 CONFIG | predict cost:1625.5
+03:59:08.377 CONFIG | 26
+03:59:08.377 CONFIG | 1300.0 VS 1704.0
+03:59:08.378 CONFIG | predict cost:243.0
+03:59:08.379 CONFIG | 27
+03:59:08.379 CONFIG | 320.0 VS 564.0
+03:59:08.381 CONFIG | predict cost:1540.000000000001
+03:59:08.381 CONFIG | 28
+03:59:08.381 CONFIG | 1232.0 VS 1926.0
+03:59:08.383 CONFIG | predict cost:148.0
+03:59:08.384 CONFIG | 29
+03:59:08.384 CONFIG | 324.0 VS 282.0
+03:59:08.386 CONFIG | predict cost:516.0
+03:59:08.402 CONFIG | The profit of agent 0 is 2748.00000030
+03:59:08.402 CONFIG | 464.0 VS 468.0
+03:59:08.402 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 404 CHF, Breda -> Almere), (Task 1, 19 kg, 696 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 469 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 481 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 911 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 550 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 556 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 790 CHF, Den Haag -> Apeldoorn), (Task 15, 16 kg, 888 CHF, Rotterdam -> Apeldoorn), (Task 17, 26 kg, 585 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 360 CHF, Almere -> Rotterdam), (Task 21, 11 kg, 374 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 792 CHF, Eindhoven -> Groningen), (Task 24, 15 kg, 1386 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 1300 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 320 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 464 CHF, Utrecht -> Breda)]
+03:59:08.403 CONFIG | 22
+03:59:15.568 CONFIG | 10332.0VS8807.0
+03:59:15.569 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 1, 19 kg, 696 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 12, 22 kg, 556 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 0, 27 kg, 404 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 12, 22 kg, 556 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 550 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 0, 27 kg, 404 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 29, 29 kg, 464 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 26, 15 kg, 320 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 10, 12 kg, 550 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 29, 29 kg, 464 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 26, 15 kg, 320 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 7, 28 kg, 911 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 25, 19 kg, 1300 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 7, 28 kg, 911 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 3, 12 kg, 481 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 696 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 1300 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 481 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 1386 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 17, 26 kg, 585 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 1386 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 17, 26 kg, 585 CHF, Apeldoorn -> Den Haag)]
+03:59:15.569 CONFIG | Vehicle 4 [type=PICKUP, currentTask=(Task 2, 26 kg, 469 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=DELIVERY, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 18, 25 kg, 360 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 2, 26 kg, 469 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 13, 17 kg, 790 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 15, 16 kg, 888 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 18, 25 kg, 360 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 21, 11 kg, 374 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 22, 27 kg, 792 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 21, 11 kg, 374 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 13, 17 kg, 790 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 15, 16 kg, 888 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 22, 27 kg, 792 CHF, Eindhoven -> Groningen)]
+03:59:15.573 CONFIG | Wrote tournament/tour/auction2-auction-auction5.xml
+03:59:15.602 INFO | LogistPlatform finished successfully!
+03:59:15.603 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction2-auction.xml -a tournament/tour/agents.xml ./config/auction2.xml auction2 auction
+03:59:15.672 CONFIG | Reading ./config/auction2.xml
+03:59:15.728 CONFIG | Reading config/settings_auction.xml
+03:59:15.793 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:15.817 CONFIG | Reading tournament/tour/agents.xml
+03:59:15.902 CONFIG | The profit of agent 0 is 8887.500000The profit of agent 1 is 8243.000000Wrote tournament/tour/auction2-auction2-auction.xml
+03:59:15.918 INFO | LogistPlatform finished successfully!
+03:59:15.919 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction2-auction3.xml -a tournament/tour/agents.xml ./config/auction2.xml auction2 auction3
+03:59:15.987 CONFIG | Reading ./config/auction2.xml
+03:59:16.042 CONFIG | Reading config/settings_auction.xml
+03:59:16.096 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:16.117 CONFIG | Reading tournament/tour/agents.xml
+03:59:16.189 CONFIG | The profit of agent 0 is 11341.500000The profit of agent 1 is 28.000000Wrote tournament/tour/auction2-auction2-auction3.xml
+03:59:16.203 INFO | LogistPlatform finished successfully!
+03:59:16.204 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction2-auction4.xml -a tournament/tour/agents.xml ./config/auction2.xml auction2 auction4
+03:59:16.271 CONFIG | Reading ./config/auction2.xml
+03:59:16.331 CONFIG | Reading config/settings_auction.xml
+03:59:16.388 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:16.407 CONFIG | Reading tournament/tour/agents.xml
+03:59:16.423 CONFIG | Reading config/settings_auction.xml
+03:59:16.458 CONFIG | Estimated Self marginal cost for current task is 954.000000
+03:59:16.458 CONFIG | Estimated Opponent marginal cost for current task is 584.000000
+03:59:16.459 CONFIG | Current round is 1
+03:59:16.459 CONFIG | Estimated Self marginal cost for current task is 770.000000
+03:59:16.459 CONFIG | Estimated Opponent marginal cost for current task is 1625.500000
+03:59:16.460 CONFIG | Current round is 2
+03:59:16.460 CONFIG | Estimated Self marginal cost for current task is 773.500000
+03:59:16.460 CONFIG | Estimated Opponent marginal cost for current task is 1410.000000
+03:59:16.461 CONFIG | Current round is 3
+03:59:16.461 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:16.462 CONFIG | Estimated Opponent marginal cost for current task is 1354.000000
+03:59:16.462 CONFIG | Current round is 4
+03:59:16.463 CONFIG | Estimated Self marginal cost for current task is 115.500000
+03:59:16.463 CONFIG | Estimated Opponent marginal cost for current task is 595.500000
+03:59:16.464 CONFIG | Current round is 5
+03:59:16.464 CONFIG | Estimated Self marginal cost for current task is 869.000000
+03:59:16.465 CONFIG | Estimated Opponent marginal cost for current task is 1341.500000
+03:59:16.466 CONFIG | Current round is 6
+03:59:16.466 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:16.467 CONFIG | Estimated Opponent marginal cost for current task is 376.000000
+03:59:16.467 CONFIG | Current round is 7
+03:59:16.468 CONFIG | Estimated Self marginal cost for current task is 524.000000
+03:59:16.468 CONFIG | Estimated Opponent marginal cost for current task is 873.000000
+03:59:16.468 CONFIG | Current round is 8
+03:59:16.469 CONFIG | Estimated Self marginal cost for current task is 112.500000
+03:59:16.470 CONFIG | Estimated Opponent marginal cost for current task is 519.000000
+03:59:16.470 CONFIG | Current round is 9
+03:59:16.472 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:16.472 CONFIG | Estimated Opponent marginal cost for current task is 957.500000
+03:59:16.473 CONFIG | Current round is 10
+03:59:16.475 CONFIG | Estimated Self marginal cost for current task is 345.000000
+03:59:16.475 CONFIG | Estimated Opponent marginal cost for current task is 459.500000
+03:59:16.475 CONFIG | Current round is 11
+03:59:16.476 CONFIG | Estimated Self marginal cost for current task is 441.000000
+03:59:16.476 CONFIG | Estimated Opponent marginal cost for current task is 432.000000
+03:59:16.477 CONFIG | Current round is 12
+03:59:16.478 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:16.478 CONFIG | Estimated Opponent marginal cost for current task is 187.000000
+03:59:16.479 CONFIG | Current round is 13
+03:59:16.480 CONFIG | Estimated Self marginal cost for current task is 773.500000
+03:59:16.480 CONFIG | Estimated Opponent marginal cost for current task is 776.000000
+03:59:16.481 CONFIG | Current round is 14
+03:59:16.482 CONFIG | Estimated Self marginal cost for current task is 544.000000
+03:59:16.482 CONFIG | Estimated Opponent marginal cost for current task is 351.000000
+03:59:16.483 CONFIG | Current round is 15
+03:59:16.485 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:16.485 CONFIG | Estimated Opponent marginal cost for current task is 522.000000
+03:59:16.485 CONFIG | Current round is 16
+03:59:16.487 CONFIG | Estimated Self marginal cost for current task is 639.500000
+03:59:16.487 CONFIG | Estimated Opponent marginal cost for current task is 367.500000
+03:59:16.487 CONFIG | Current round is 17
+03:59:16.489 CONFIG | Estimated Self marginal cost for current task is 688.500000
+03:59:16.489 CONFIG | Estimated Opponent marginal cost for current task is 928.000000
+03:59:16.489 CONFIG | Current round is 18
+03:59:16.491 CONFIG | Estimated Self marginal cost for current task is 169.500000
+03:59:16.491 CONFIG | Estimated Opponent marginal cost for current task is 335.000000
+03:59:16.492 CONFIG | Current round is 19
+03:59:16.493 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:16.493 CONFIG | Estimated Opponent marginal cost for current task is 403.000000
+03:59:16.494 CONFIG | Current round is 20
+03:59:16.496 CONFIG | Estimated Self marginal cost for current task is 543.000000
+03:59:16.496 CONFIG | Estimated Opponent marginal cost for current task is 323.500000
+03:59:16.496 CONFIG | Current round is 21
+03:59:16.498 CONFIG | Estimated Self marginal cost for current task is 385.500000
+03:59:16.498 CONFIG | Estimated Opponent marginal cost for current task is 441.000000
+03:59:16.498 CONFIG | Current round is 22
+03:59:16.500 CONFIG | Estimated Self marginal cost for current task is 1692.500000
+03:59:16.500 CONFIG | Estimated Opponent marginal cost for current task is 990.500000
+03:59:16.501 CONFIG | Current round is 23
+03:59:16.503 CONFIG | Estimated Self marginal cost for current task is 704.500000
+03:59:16.503 CONFIG | Estimated Opponent marginal cost for current task is 323.500000
+03:59:16.504 CONFIG | Current round is 24
+03:59:16.506 CONFIG | Estimated Self marginal cost for current task is 929.500000
+03:59:16.506 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+03:59:16.506 CONFIG | Current round is 25
+03:59:16.508 CONFIG | Estimated Self marginal cost for current task is 952.000000
+03:59:16.509 CONFIG | Estimated Opponent marginal cost for current task is 952.000000
+03:59:16.509 CONFIG | Current round is 26
+03:59:16.511 CONFIG | Estimated Self marginal cost for current task is 345.000000
+03:59:16.511 CONFIG | Estimated Opponent marginal cost for current task is 243.000000
+03:59:16.512 CONFIG | Current round is 27
+03:59:16.514 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:16.515 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+03:59:16.515 CONFIG | Current round is 28
+03:59:16.517 CONFIG | Estimated Self marginal cost for current task is 148.000000
+03:59:16.517 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+03:59:16.518 CONFIG | Current round is 29
+03:59:16.520 CONFIG | Estimated Self marginal cost for current task is 436.000000
+03:59:16.520 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+03:59:16.526 CONFIG | The profit of agent 0 is 3100.000000Current round is 30
+03:59:16.527 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 405 CHF, Breda -> Almere), (Task 1, 19 kg, 650 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 564 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 541 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 785 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 367 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 374 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 157 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 657 CHF, Den Haag -> Apeldoorn), (Task 15, 16 kg, 469 CHF, Rotterdam -> Apeldoorn), (Task 17, 26 kg, 835 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 268 CHF, Almere -> Rotterdam), (Task 20, 20 kg, 407 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 352 CHF, Breda -> Nijmegen), (Task 24, 15 kg, 836 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 293 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 28, 23 kg, 157 CHF, Utrecht -> Almere), (Task 29, 29 kg, 370 CHF, Utrecht -> Breda)]
+03:59:16.527 CONFIG | 23
+03:59:25.598 CONFIG | 10159.5VS9249.5
+03:59:25.598 CONFIG | The profit of agent 1 is 3177.500000
+03:59:25.599 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 12, 22 kg, 157 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 0, 27 kg, 405 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 12, 22 kg, 157 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 0, 27 kg, 405 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 367 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 29, 29 kg, 370 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 10, 12 kg, 367 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 26, 15 kg, 293 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 29, 29 kg, 370 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 21, 11 kg, 352 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 11, 11 kg, 374 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 26, 15 kg, 293 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 7, 28 kg, 785 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 352 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 7, 28 kg, 785 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 374 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 3, 12 kg, 541 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 541 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 836 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 17, 26 kg, 835 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 836 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 17, 26 kg, 835 CHF, Apeldoorn -> Den Haag)]
+03:59:25.599 CONFIG | Vehicle 4 [type=PICKUP, currentTask=(Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 2, 26 kg, 564 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 18, 25 kg, 268 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 13, 17 kg, 657 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 2, 26 kg, 564 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 650 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 15, 16 kg, 469 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 18, 25 kg, 268 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 28, 23 kg, 157 CHF, Utrecht -> Almere), type=DELIVERY, currentTask=(Task 28, 23 kg, 157 CHF, Utrecht -> Almere), type=PICKUP, currentTask=(Task 20, 20 kg, 407 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 407 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 15, 16 kg, 469 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 13, 17 kg, 657 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 1, 19 kg, 650 CHF, Den Haag -> Groningen)]
+03:59:25.604 CONFIG | Wrote tournament/tour/auction2-auction2-auction4.xml
+03:59:25.623 INFO | LogistPlatform finished successfully!
+03:59:25.625 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction2-auction5.xml -a tournament/tour/agents.xml ./config/auction2.xml auction2 auction5
+03:59:25.692 CONFIG | Reading ./config/auction2.xml
+03:59:25.748 CONFIG | Reading config/settings_auction.xml
+03:59:25.805 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:25.823 CONFIG | Reading tournament/tour/agents.xml
+03:59:25.841 CONFIG | Reading config/settings_auction.xml
+03:59:25.846 CONFIG | 0.9533333333333334
+03:59:25.846 CONFIG | 0.9533333333333334
+03:59:25.846 CONFIG | 0.9177777777777778
+03:59:25.846 CONFIG | 1.0066666666666668
+03:59:25.846 CONFIG | 0.9355555555555556
+03:59:25.846 CONFIG | 0.9533333333333334
+03:59:25.846 CONFIG | 0.9177777777777778
+03:59:25.846 CONFIG | 0.9711111111111111
+03:59:25.846 CONFIG | 0.9533333333333334
+03:59:25.846 CONFIG | 0.9711111111111111
+03:59:25.846 CONFIG | 0.9533333333333334
+03:59:25.846 CONFIG | 0.9533333333333334
+03:59:25.846 CONFIG | 0.9177777777777778
+03:59:25.846 CONFIG | 1.0066666666666668
+03:59:25.846 CONFIG | 0.9355555555555556
+03:59:25.846 CONFIG | 0.9533333333333334
+03:59:25.846 CONFIG | 0.9177777777777778
+03:59:25.847 CONFIG | 0.9711111111111111
+03:59:25.847 CONFIG | 0.9533333333333334
+03:59:25.847 CONFIG | 0.9711111111111111
+03:59:25.847 CONFIG | 0.9177777777777778
+03:59:25.847 CONFIG | 0.9177777777777778
+03:59:25.847 CONFIG | 0.9
+03:59:25.847 CONFIG | 0.9444444444444445
+03:59:25.847 CONFIG | 0.908888888888889
+03:59:25.847 CONFIG | 0.9177777777777778
+03:59:25.847 CONFIG | 0.9
+03:59:25.847 CONFIG | 0.9266666666666667
+03:59:25.847 CONFIG | 0.9177777777777778
+03:59:25.847 CONFIG | 0.9266666666666667
+03:59:25.847 CONFIG | 1.0066666666666668
+03:59:25.847 CONFIG | 1.0066666666666668
+03:59:25.847 CONFIG | 0.9444444444444445
+03:59:25.847 CONFIG | 1.1
+03:59:25.847 CONFIG | 0.9755555555555556
+03:59:25.847 CONFIG | 1.0066666666666668
+03:59:25.847 CONFIG | 0.9444444444444445
+03:59:25.847 CONFIG | 1.037777777777778
+03:59:25.847 CONFIG | 1.0066666666666668
+03:59:25.847 CONFIG | 1.037777777777778
+03:59:25.847 CONFIG | 0.9355555555555556
+03:59:25.847 CONFIG | 0.9355555555555556
+03:59:25.847 CONFIG | 0.908888888888889
+03:59:25.847 CONFIG | 0.9755555555555556
+03:59:25.847 CONFIG | 0.9222222222222223
+03:59:25.847 CONFIG | 0.9355555555555556
+03:59:25.848 CONFIG | 0.908888888888889
+03:59:25.848 CONFIG | 0.9488888888888889
+03:59:25.848 CONFIG | 0.9355555555555556
+03:59:25.848 CONFIG | 0.9488888888888889
+03:59:25.848 CONFIG | 0.9533333333333334
+03:59:25.848 CONFIG | 0.9533333333333334
+03:59:25.848 CONFIG | 0.9177777777777778
+03:59:25.848 CONFIG | 1.0066666666666668
+03:59:25.848 CONFIG | 0.9355555555555556
+03:59:25.848 CONFIG | 0.9533333333333334
+03:59:25.848 CONFIG | 0.9177777777777778
+03:59:25.848 CONFIG | 0.9711111111111111
+03:59:25.848 CONFIG | 0.9533333333333334
+03:59:25.848 CONFIG | 0.9711111111111111
+03:59:25.848 CONFIG | 0.9177777777777778
+03:59:25.848 CONFIG | 0.9177777777777778
+03:59:25.848 CONFIG | 0.9
+03:59:25.848 CONFIG | 0.9444444444444445
+03:59:25.848 CONFIG | 0.908888888888889
+03:59:25.848 CONFIG | 0.9177777777777778
+03:59:25.848 CONFIG | 0.9
+03:59:25.848 CONFIG | 0.9266666666666667
+03:59:25.848 CONFIG | 0.9177777777777778
+03:59:25.848 CONFIG | 0.9266666666666667
+03:59:25.848 CONFIG | 0.9711111111111111
+03:59:25.848 CONFIG | 0.9711111111111111
+03:59:25.848 CONFIG | 0.9266666666666667
+03:59:25.848 CONFIG | 1.037777777777778
+03:59:25.848 CONFIG | 0.9488888888888889
+03:59:25.848 CONFIG | 0.9711111111111111
+03:59:25.848 CONFIG | 0.9266666666666667
+03:59:25.848 CONFIG | 0.9933333333333334
+03:59:25.848 CONFIG | 0.9711111111111111
+03:59:25.849 CONFIG | 0.9933333333333334
+03:59:25.849 CONFIG | 0.9533333333333334
+03:59:25.849 CONFIG | 0.9533333333333334
+03:59:25.849 CONFIG | 0.9177777777777778
+03:59:25.849 CONFIG | 1.0066666666666668
+03:59:25.849 CONFIG | 0.9355555555555556
+03:59:25.849 CONFIG | 0.9533333333333334
+03:59:25.849 CONFIG | 0.9177777777777778
+03:59:25.849 CONFIG | 0.9711111111111111
+03:59:25.849 CONFIG | 0.9533333333333334
+03:59:25.849 CONFIG | 0.9711111111111111
+03:59:25.849 CONFIG | 0.9711111111111111
+03:59:25.849 CONFIG | 0.9711111111111111
+03:59:25.849 CONFIG | 0.9266666666666667
+03:59:25.849 CONFIG | 1.037777777777778
+03:59:25.849 CONFIG | 0.9488888888888889
+03:59:25.849 CONFIG | 0.9711111111111111
+03:59:25.849 CONFIG | 0.9266666666666667
+03:59:25.849 CONFIG | 0.9933333333333334
+03:59:25.849 CONFIG | 0.9711111111111111
+03:59:25.849 CONFIG | 0.9933333333333334
+03:59:25.866 CONFIG | predict cost:951.5
+03:59:25.867 CONFIG | 1
+03:59:25.867 CONFIG | City: Eindhoven
+03:59:25.867 CONFIG | 404.0 VS 905.0
+03:59:25.867 CONFIG | predict cost:1694.0
+03:59:25.868 CONFIG | 2
+03:59:25.868 CONFIG | 677.0 VS 1591.0
+03:59:25.869 CONFIG | predict cost:1108.5
+03:59:25.869 CONFIG | 3
+03:59:25.869 CONFIG | 452.0 VS 1234.0
+03:59:25.870 CONFIG | predict cost:986.5
+03:59:25.871 CONFIG | 4
+03:59:25.871 CONFIG | 452.0 VS 1224.0
+03:59:25.871 CONFIG | predict cost:228.0
+03:59:25.872 CONFIG | 5
+03:59:25.872 CONFIG | 904.0 VS 466.0
+03:59:25.872 CONFIG | predict cost:1341.5
+03:59:25.873 CONFIG | 6
+03:59:25.873 CONFIG | 1207.0 VS 1351.0
+03:59:25.873 CONFIG | predict cost:375.9999999999999
+03:59:25.874 CONFIG | 7
+03:59:25.874 CONFIG | 465.0 VS 158.0
+03:59:25.874 CONFIG | predict cost:968.5000000000001
+03:59:25.875 CONFIG | 8
+03:59:25.875 CONFIG | 871.0 VS 1135.0
+03:59:25.876 CONFIG | predict cost:519.0000000000001
+03:59:25.877 CONFIG | 9
+03:59:25.877 CONFIG | 415.0 VS 745.0
+03:59:25.877 CONFIG | predict cost:957.5000000000001
+03:59:25.878 CONFIG | 10
+03:59:25.878 CONFIG | 766.0 VS 1118.0
+03:59:25.879 CONFIG | predict cost:459.5000000000001
+03:59:25.880 CONFIG | 11
+03:59:25.880 CONFIG | 367.0 VS 469.0
+03:59:25.880 CONFIG | predict cost:792.0000000000001
+03:59:25.882 CONFIG | 12
+03:59:25.882 CONFIG | 633.0 VS 802.0
+03:59:25.883 CONFIG | predict cost:623.0000000000001
+03:59:25.884 CONFIG | 13
+03:59:25.884 CONFIG | 498.0 VS 849.0
+03:59:25.885 CONFIG | predict cost:871.4999999999999
+03:59:25.885 CONFIG | 14
+03:59:25.885 CONFIG | 697.0 VS 1222.0
+03:59:25.886 CONFIG | predict cost:351.0
+03:59:25.886 CONFIG | 15
+03:59:25.886 CONFIG | 408.0 VS 361.0
+03:59:25.887 CONFIG | predict cost:871.4999999999999
+03:59:25.887 CONFIG | 16
+03:59:25.887 CONFIG | 784.0 VS 968.0
+03:59:25.888 CONFIG | predict cost:367.5000000000001
+03:59:25.888 CONFIG | 17
+03:59:25.888 CONFIG | 479.0 VS 377.0
+03:59:25.889 CONFIG | predict cost:928.0
+03:59:25.889 CONFIG | 18
+03:59:25.889 CONFIG | 835.0 VS 1118.0
+03:59:25.890 CONFIG | predict cost:335.0
+03:59:25.890 CONFIG | 19
+03:59:25.891 CONFIG | 268.0 VS 321.0
+03:59:25.892 CONFIG | predict cost:403.0
+03:59:25.893 CONFIG | 20
+03:59:25.893 CONFIG | 322.0 VS 321.0
+03:59:25.894 CONFIG | predict cost:323.5
+03:59:25.894 CONFIG | 21
+03:59:25.894 CONFIG | 461.0 VS 442.0
+03:59:25.895 CONFIG | predict cost:416.5
+03:59:25.896 CONFIG | 22
+03:59:25.896 CONFIG | 374.0 VS 802.0
+03:59:25.897 CONFIG | predict cost:990.5
+03:59:25.899 CONFIG | 23
+03:59:25.899 CONFIG | 792.0 VS 1351.0
+03:59:25.900 CONFIG | predict cost:456.0
+03:59:25.902 CONFIG | 24
+03:59:25.902 CONFIG | 528.0 VS 442.0
+03:59:25.903 CONFIG | predict cost:1540.000000000001
+03:59:25.903 CONFIG | 25
+03:59:25.903 CONFIG | 1386.0 VS 1926.0
+03:59:25.905 CONFIG | predict cost:1625.5
+03:59:25.905 CONFIG | 26
+03:59:25.905 CONFIG | 1300.0 VS 1704.0
+03:59:25.906 CONFIG | predict cost:243.0
+03:59:25.907 CONFIG | 27
+03:59:25.907 CONFIG | 258.0 VS 564.0
+03:59:25.908 CONFIG | predict cost:1540.000000000001
+03:59:25.909 CONFIG | 28
+03:59:25.909 CONFIG | 1232.0 VS 1926.0
+03:59:25.911 CONFIG | predict cost:0.0
+03:59:25.911 CONFIG | 29
+03:59:25.911 CONFIG | 324.0 VS 226.0
+03:59:25.913 CONFIG | predict cost:516.0
+03:59:25.929 CONFIG | The profit of agent 0 is 2794.00000030
+03:59:25.929 CONFIG | 464.0 VS 377.0
+03:59:25.929 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 404 CHF, Breda -> Almere), (Task 1, 19 kg, 677 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 452 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 452 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 871 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 367 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 498 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 697 CHF, Den Haag -> Apeldoorn), (Task 15, 16 kg, 784 CHF, Rotterdam -> Apeldoorn), (Task 17, 26 kg, 835 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 268 CHF, Almere -> Rotterdam), (Task 21, 11 kg, 374 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 792 CHF, Eindhoven -> Groningen), (Task 24, 15 kg, 1386 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 1300 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 258 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam)]
+03:59:25.929 CONFIG | 21
+03:59:32.583 CONFIG | 10332.0VS9590.5
+03:59:32.584 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 1, 19 kg, 677 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 12, 22 kg, 498 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 0, 27 kg, 404 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 3, 12 kg, 452 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 12, 22 kg, 498 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 367 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 0, 27 kg, 404 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 7, 28 kg, 871 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 10, 12 kg, 367 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 633 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 7, 28 kg, 871 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 26, 15 kg, 258 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 26, 15 kg, 258 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 25, 19 kg, 1300 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 677 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 1300 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 1386 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 5, 26 kg, 1207 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 3, 12 kg, 452 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 17, 26 kg, 835 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 1386 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 17, 26 kg, 835 CHF, Apeldoorn -> Den Haag)]
+03:59:32.584 CONFIG | Vehicle 4 [type=PICKUP, currentTask=(Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 2, 26 kg, 452 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 18, 25 kg, 268 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 13, 17 kg, 697 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 2, 26 kg, 452 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 18, 25 kg, 268 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 15, 16 kg, 784 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 21, 11 kg, 374 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 22, 27 kg, 792 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 21, 11 kg, 374 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 15, 16 kg, 784 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 13, 17 kg, 697 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 22, 27 kg, 792 CHF, Eindhoven -> Groningen)]
+03:59:32.592 CONFIG | Wrote tournament/tour/auction2-auction2-auction5.xml
+03:59:32.620 INFO | LogistPlatform finished successfully!
+03:59:32.620 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction3-auction.xml -a tournament/tour/agents.xml ./config/auction2.xml auction3 auction
+03:59:32.687 CONFIG | Reading ./config/auction2.xml
+03:59:32.746 CONFIG | Reading config/settings_auction.xml
+03:59:32.802 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:32.822 CONFIG | Reading tournament/tour/agents.xml
+03:59:32.899 CONFIG | The profit of agent 0 is 1083.500000The profit of agent 1 is 18398.000000Wrote tournament/tour/auction2-auction3-auction.xml
+03:59:32.937 INFO | LogistPlatform finished successfully!
+03:59:32.938 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction3-auction2.xml -a tournament/tour/agents.xml ./config/auction2.xml auction3 auction2
+03:59:33.011 CONFIG | Reading ./config/auction2.xml
+03:59:33.076 CONFIG | Reading config/settings_auction.xml
+03:59:33.135 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:33.155 CONFIG | Reading tournament/tour/agents.xml
+03:59:33.233 CONFIG | The profit of agent 0 is 100.500000The profit of agent 1 is 11884.000000Wrote tournament/tour/auction2-auction3-auction2.xml
+03:59:33.247 INFO | LogistPlatform finished successfully!
+03:59:33.248 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction3-auction4.xml -a tournament/tour/agents.xml ./config/auction2.xml auction3 auction4
+03:59:33.312 CONFIG | Reading ./config/auction2.xml
+03:59:33.371 CONFIG | Reading config/settings_auction.xml
+03:59:33.426 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:33.446 CONFIG | Reading tournament/tour/agents.xml
+03:59:33.463 CONFIG | Reading config/settings_auction.xml
+03:59:33.495 CONFIG | Estimated Self marginal cost for current task is 954.000000
+03:59:33.495 CONFIG | Estimated Opponent marginal cost for current task is 827.000000
+03:59:33.496 CONFIG | Current round is 1
+03:59:33.497 CONFIG | Estimated Self marginal cost for current task is 770.000000
+03:59:33.497 CONFIG | Estimated Opponent marginal cost for current task is 1581.500000
+03:59:33.499 CONFIG | Current round is 2
+03:59:33.499 CONFIG | Estimated Self marginal cost for current task is 773.500000
+03:59:33.500 CONFIG | Estimated Opponent marginal cost for current task is 1224.500000
+03:59:33.500 CONFIG | Current round is 3
+03:59:33.501 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.501 CONFIG | Estimated Opponent marginal cost for current task is 1214.500000
+03:59:33.502 CONFIG | Current round is 4
+03:59:33.503 CONFIG | Estimated Self marginal cost for current task is 115.500000
+03:59:33.503 CONFIG | Estimated Opponent marginal cost for current task is 456.000000
+03:59:33.503 CONFIG | Current round is 5
+03:59:33.504 CONFIG | Estimated Self marginal cost for current task is 869.000000
+03:59:33.504 CONFIG | Estimated Opponent marginal cost for current task is 1650.500000
+03:59:33.504 CONFIG | Current round is 6
+03:59:33.505 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.506 CONFIG | Estimated Opponent marginal cost for current task is 148.000000
+03:59:33.506 CONFIG | Current round is 7
+03:59:33.507 CONFIG | Estimated Self marginal cost for current task is 524.000000
+03:59:33.508 CONFIG | Estimated Opponent marginal cost for current task is 1013.000000
+03:59:33.508 CONFIG | Current round is 8
+03:59:33.510 CONFIG | Estimated Self marginal cost for current task is 112.500000
+03:59:33.510 CONFIG | Estimated Opponent marginal cost for current task is 667.000000
+03:59:33.510 CONFIG | Current round is 9
+03:59:33.511 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.512 CONFIG | Estimated Opponent marginal cost for current task is 845.000000
+03:59:33.512 CONFIG | Current round is 10
+03:59:33.514 CONFIG | Estimated Self marginal cost for current task is 345.000000
+03:59:33.514 CONFIG | Estimated Opponent marginal cost for current task is 687.500000
+03:59:33.516 CONFIG | Current round is 11
+03:59:33.517 CONFIG | Estimated Self marginal cost for current task is 441.000000
+03:59:33.517 CONFIG | Estimated Opponent marginal cost for current task is 1076.500000
+03:59:33.517 CONFIG | Current round is 12
+03:59:33.518 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.518 CONFIG | Estimated Opponent marginal cost for current task is 696.000000
+03:59:33.519 CONFIG | Current round is 13
+03:59:33.520 CONFIG | Estimated Self marginal cost for current task is 773.500000
+03:59:33.520 CONFIG | Estimated Opponent marginal cost for current task is 987.500000
+03:59:33.521 CONFIG | Current round is 14
+03:59:33.523 CONFIG | Estimated Self marginal cost for current task is 544.000000
+03:59:33.523 CONFIG | Estimated Opponent marginal cost for current task is 1038.500000
+03:59:33.523 CONFIG | Current round is 15
+03:59:33.525 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.525 CONFIG | Estimated Opponent marginal cost for current task is 987.500000
+03:59:33.525 CONFIG | Current round is 16
+03:59:33.527 CONFIG | Estimated Self marginal cost for current task is 639.500000
+03:59:33.527 CONFIG | Estimated Opponent marginal cost for current task is 595.500000
+03:59:33.528 CONFIG | Current round is 17
+03:59:33.530 CONFIG | Estimated Self marginal cost for current task is 688.500000
+03:59:33.530 CONFIG | Estimated Opponent marginal cost for current task is 845.000000
+03:59:33.531 CONFIG | Current round is 18
+03:59:33.533 CONFIG | Estimated Self marginal cost for current task is 774.000000
+03:59:33.534 CONFIG | Estimated Opponent marginal cost for current task is 453.000000
+03:59:33.536 CONFIG | Current round is 19
+03:59:33.536 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.536 CONFIG | Estimated Opponent marginal cost for current task is 998.500000
+03:59:33.538 CONFIG | Current round is 20
+03:59:33.541 CONFIG | Estimated Self marginal cost for current task is 752.000000
+03:59:33.541 CONFIG | Estimated Opponent marginal cost for current task is 660.000000
+03:59:33.541 CONFIG | Current round is 21
+03:59:33.544 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.544 CONFIG | Estimated Opponent marginal cost for current task is 1076.500000
+03:59:33.545 CONFIG | Current round is 22
+03:59:33.547 CONFIG | Estimated Self marginal cost for current task is 1407.000000
+03:59:33.547 CONFIG | Estimated Opponent marginal cost for current task is 1848.500000
+03:59:33.548 CONFIG | Current round is 23
+03:59:33.550 CONFIG | Estimated Self marginal cost for current task is 910.000000
+03:59:33.550 CONFIG | Estimated Opponent marginal cost for current task is 660.000000
+03:59:33.551 CONFIG | Current round is 24
+03:59:33.553 CONFIG | Estimated Self marginal cost for current task is 929.500000
+03:59:33.553 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+03:59:33.553 CONFIG | Current round is 25
+03:59:33.556 CONFIG | Estimated Self marginal cost for current task is 818.000000
+03:59:33.556 CONFIG | Estimated Opponent marginal cost for current task is 1466.000000
+03:59:33.556 CONFIG | Current round is 26
+03:59:33.559 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.559 CONFIG | Estimated Opponent marginal cost for current task is 1238.500000
+03:59:33.559 CONFIG | Current round is 27
+03:59:33.562 CONFIG | Estimated Self marginal cost for current task is 0.000000
+03:59:33.562 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+03:59:33.563 CONFIG | Current round is 28
+03:59:33.565 CONFIG | Estimated Self marginal cost for current task is 234.500000
+03:59:33.565 CONFIG | Estimated Opponent marginal cost for current task is 148.000000
+03:59:33.565 CONFIG | Current round is 29
+03:59:33.567 CONFIG | Estimated Self marginal cost for current task is 436.000000
+03:59:33.567 CONFIG | Estimated Opponent marginal cost for current task is 595.500000
+03:59:33.572 CONFIG | The profit of agent 0 is 137.500000Current round is 30
+03:59:33.572 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 405 CHF, Breda -> Almere), (Task 1, 19 kg, 632 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 589 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 589 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 1485 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 911 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 549 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 861 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 556 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 790 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 830 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 790 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 543 CHF, Amsterdam -> Breda), (Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 657 CHF, Almere -> Rotterdam), (Task 19, 15 kg, 798 CHF, Eindhoven -> Breda), (Task 20, 20 kg, 639 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 861 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 1478 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 773 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 1172 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 990 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 535 CHF, Utrecht -> Breda)]
+03:59:33.572 CONFIG | 27
+03:59:49.048 CONFIG | 13461.000000000002VS11836.0
+03:59:49.048 CONFIG | The profit of agent 1 is 9015.000000
+03:59:49.049 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 13, 17 kg, 790 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 7, 28 kg, 911 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 15, 16 kg, 790 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 3, 12 kg, 589 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 13, 17 kg, 790 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=DELIVERY, currentTask=(Task 15, 16 kg, 790 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 7, 28 kg, 911 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 1485 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 549 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 18, 25 kg, 657 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 3, 12 kg, 589 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 5, 26 kg, 1485 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 18, 25 kg, 657 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 12, 22 kg, 556 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 20, 20 kg, 639 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 12, 22 kg, 556 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 11, 11 kg, 861 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 11, 11 kg, 861 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 639 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 10, 12 kg, 549 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 19, 15 kg, 798 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 19, 15 kg, 798 CHF, Eindhoven -> Breda), type=PICKUP, currentTask=(Task 0, 27 kg, 405 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 0, 27 kg, 405 CHF, Breda -> Almere)]
+03:59:49.049 CONFIG | Vehicle 4 [type=PICKUP, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 2, 26 kg, 589 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 632 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 2, 26 kg, 589 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 25, 19 kg, 1172 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 22, 27 kg, 1478 CHF, Eindhoven -> Groningen), type=PICKUP, currentTask=(Task 26, 15 kg, 990 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 22, 27 kg, 1478 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 632 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 25, 19 kg, 1172 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 16, 23 kg, 543 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 23, 20 kg, 773 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 26, 15 kg, 990 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 21, 11 kg, 861 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 16, 23 kg, 543 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 14, 28 kg, 830 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 861 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 23, 20 kg, 773 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 14, 28 kg, 830 CHF, Eindhoven -> Nijmegen)]
+03:59:49.054 CONFIG | Wrote tournament/tour/auction2-auction3-auction4.xml
+03:59:49.086 INFO | LogistPlatform finished successfully!
+03:59:49.087 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction3-auction5.xml -a tournament/tour/agents.xml ./config/auction2.xml auction3 auction5
+03:59:49.152 CONFIG | Reading ./config/auction2.xml
+03:59:49.211 CONFIG | Reading config/settings_auction.xml
+03:59:49.267 CONFIG | Reading config/topology/the_netherlands.xml
+03:59:49.288 CONFIG | Reading tournament/tour/agents.xml
+03:59:49.305 CONFIG | Reading config/settings_auction.xml
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9177777777777778
+03:59:49.311 CONFIG | 1.0066666666666668
+03:59:49.311 CONFIG | 0.9355555555555556
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9177777777777778
+03:59:49.311 CONFIG | 0.9711111111111111
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9711111111111111
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9177777777777778
+03:59:49.311 CONFIG | 1.0066666666666668
+03:59:49.311 CONFIG | 0.9355555555555556
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9177777777777778
+03:59:49.311 CONFIG | 0.9711111111111111
+03:59:49.311 CONFIG | 0.9533333333333334
+03:59:49.311 CONFIG | 0.9711111111111111
+03:59:49.311 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 0.9
+03:59:49.312 CONFIG | 0.9444444444444445
+03:59:49.312 CONFIG | 0.908888888888889
+03:59:49.312 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 0.9
+03:59:49.312 CONFIG | 0.9266666666666667
+03:59:49.312 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 0.9266666666666667
+03:59:49.312 CONFIG | 1.0066666666666668
+03:59:49.312 CONFIG | 1.0066666666666668
+03:59:49.312 CONFIG | 0.9444444444444445
+03:59:49.312 CONFIG | 1.1
+03:59:49.312 CONFIG | 0.9755555555555556
+03:59:49.312 CONFIG | 1.0066666666666668
+03:59:49.312 CONFIG | 0.9444444444444445
+03:59:49.312 CONFIG | 1.037777777777778
+03:59:49.312 CONFIG | 1.0066666666666668
+03:59:49.312 CONFIG | 1.037777777777778
+03:59:49.312 CONFIG | 0.9355555555555556
+03:59:49.312 CONFIG | 0.9355555555555556
+03:59:49.312 CONFIG | 0.908888888888889
+03:59:49.312 CONFIG | 0.9755555555555556
+03:59:49.312 CONFIG | 0.9222222222222223
+03:59:49.312 CONFIG | 0.9355555555555556
+03:59:49.312 CONFIG | 0.908888888888889
+03:59:49.312 CONFIG | 0.9488888888888889
+03:59:49.312 CONFIG | 0.9355555555555556
+03:59:49.312 CONFIG | 0.9488888888888889
+03:59:49.312 CONFIG | 0.9533333333333334
+03:59:49.312 CONFIG | 0.9533333333333334
+03:59:49.312 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 1.0066666666666668
+03:59:49.312 CONFIG | 0.9355555555555556
+03:59:49.312 CONFIG | 0.9533333333333334
+03:59:49.312 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 0.9711111111111111
+03:59:49.312 CONFIG | 0.9533333333333334
+03:59:49.312 CONFIG | 0.9711111111111111
+03:59:49.312 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 0.9177777777777778
+03:59:49.312 CONFIG | 0.9
+03:59:49.313 CONFIG | 0.9444444444444445
+03:59:49.313 CONFIG | 0.908888888888889
+03:59:49.313 CONFIG | 0.9177777777777778
+03:59:49.313 CONFIG | 0.9
+03:59:49.313 CONFIG | 0.9266666666666667
+03:59:49.313 CONFIG | 0.9177777777777778
+03:59:49.313 CONFIG | 0.9266666666666667
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9266666666666667
+03:59:49.313 CONFIG | 1.037777777777778
+03:59:49.313 CONFIG | 0.9488888888888889
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9266666666666667
+03:59:49.313 CONFIG | 0.9933333333333334
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9933333333333334
+03:59:49.313 CONFIG | 0.9533333333333334
+03:59:49.313 CONFIG | 0.9533333333333334
+03:59:49.313 CONFIG | 0.9177777777777778
+03:59:49.313 CONFIG | 1.0066666666666668
+03:59:49.313 CONFIG | 0.9355555555555556
+03:59:49.313 CONFIG | 0.9533333333333334
+03:59:49.313 CONFIG | 0.9177777777777778
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9533333333333334
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9266666666666667
+03:59:49.313 CONFIG | 1.037777777777778
+03:59:49.313 CONFIG | 0.9488888888888889
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9266666666666667
+03:59:49.313 CONFIG | 0.9933333333333334
+03:59:49.313 CONFIG | 0.9711111111111111
+03:59:49.313 CONFIG | 0.9933333333333334
+03:59:49.329 CONFIG | predict cost:827.0
+03:59:49.330 CONFIG | 1
+03:59:49.330 CONFIG | City: Amsterdam
+03:59:49.330 CONFIG | 381.0 VS 1180.0
+03:59:49.330 CONFIG | predict cost:1382.5
+03:59:49.331 CONFIG | 2
+03:59:49.331 CONFIG | 589.0 VS 1601.0
+03:59:49.332 CONFIG | predict cost:1224.5
+03:59:49.332 CONFIG | 3
+03:59:49.332 CONFIG | 589.0 VS 1303.0
+03:59:49.333 CONFIG | predict cost:1214.5
+03:59:49.334 CONFIG | 4
+03:59:49.334 CONFIG | 589.0 VS 1315.0
+03:59:49.334 CONFIG | predict cost:456.0
+03:59:49.335 CONFIG | 5
+03:59:49.335 CONFIG | 1179.0 VS 510.0
+03:59:49.335 CONFIG | predict cost:1550.5
+03:59:49.336 CONFIG | 6
+03:59:49.336 CONFIG | 1395.0 VS 1788.0
+03:59:49.336 CONFIG | predict cost:147.9999999999999
+03:59:49.336 CONFIG | 7
+03:59:49.336 CONFIG | 509.0 VS 419.0
+03:59:49.337 CONFIG | predict cost:814.0000000000001
+03:59:49.337 CONFIG | 8
+03:59:49.338 CONFIG | 732.0 VS 1513.0
+03:59:49.338 CONFIG | predict cost:667.0000000000001
+03:59:49.339 CONFIG | 9
+03:59:49.339 CONFIG | 533.0 VS 994.0
+03:59:49.339 CONFIG | predict cost:845.0000000000001
+03:59:49.340 CONFIG | 10
+03:59:49.340 CONFIG | 676.0 VS 1578.0
+03:59:49.342 CONFIG | predict cost:687.4999999999999
+03:59:49.343 CONFIG | 11
+03:59:49.343 CONFIG | 549.0 VS 1015.0
+03:59:49.344 CONFIG | predict cost:724.0000000000001
+03:59:49.345 CONFIG | 12
+03:59:49.345 CONFIG | 579.0 VS 909.0
+03:59:49.346 CONFIG | predict cost:528.0000000000001
+03:59:49.346 CONFIG | 13
+03:59:49.346 CONFIG | 422.0 VS 913.0
+03:59:49.347 CONFIG | predict cost:900.5000000000001
+03:59:49.347 CONFIG | 14
+03:59:49.347 CONFIG | 720.0 VS 1230.0
+03:59:49.348 CONFIG | predict cost:905.0000000000001
+03:59:49.349 CONFIG | 15
+03:59:49.349 CONFIG | 724.0 VS 1121.0
+03:59:49.350 CONFIG | predict cost:646.5000000000001
+03:59:49.350 CONFIG | 16
+03:59:49.351 CONFIG | 517.0 VS 1651.0
+03:59:49.351 CONFIG | predict cost:595.5000000000001
+03:59:49.352 CONFIG | 17
+03:59:49.352 CONFIG | 479.0 VS 892.0
+03:59:49.353 CONFIG | predict cost:845.0000000000001
+03:59:49.353 CONFIG | 18
+03:59:49.353 CONFIG | 676.0 VS 1698.0
+03:59:49.354 CONFIG | predict cost:453.0000000000001
+03:59:49.354 CONFIG | 19
+03:59:49.354 CONFIG | 580.0 VS 1020.0
+03:59:49.355 CONFIG | predict cost:865.0000000000001
+03:59:49.356 CONFIG | 20
+03:59:49.356 CONFIG | 692.0 VS 1339.0
+03:59:49.358 CONFIG | predict cost:660.0000000000001
+03:59:49.359 CONFIG | 21
+03:59:49.359 CONFIG | 564.0 VS 1768.0
+03:59:49.362 CONFIG | predict cost:724.0000000000001
+03:59:49.362 CONFIG | 22
+03:59:49.362 CONFIG | 579.0 VS 1283.0
+03:59:49.364 CONFIG | predict cost:1848.5
+03:59:49.364 CONFIG | 23
+03:59:49.364 CONFIG | 1478.0 VS 3279.0
+03:59:49.366 CONFIG | predict cost:660.0000000000001
+03:59:49.366 CONFIG | 24
+03:59:49.366 CONFIG | 682.0 VS 1637.0
+03:59:49.368 CONFIG | predict cost:1540.0
+03:59:49.368 CONFIG | 25
+03:59:49.368 CONFIG | 1232.0 VS 3795.0
+03:59:49.370 CONFIG | predict cost:1382.5
+03:59:49.370 CONFIG | 26
+03:59:49.370 CONFIG | 1106.0 VS 3470.0
+03:59:49.372 CONFIG | predict cost:1108.0
+03:59:49.373 CONFIG | 27
+03:59:49.373 CONFIG | 886.0 VS 1707.0
+03:59:49.377 CONFIG | predict cost:1540.0
+03:59:49.377 CONFIG | 28
+03:59:49.378 CONFIG | 1232.0 VS 4242.0
+03:59:49.379 CONFIG | predict cost:148.0
+03:59:49.380 CONFIG | 29
+03:59:49.380 CONFIG | 418.0 VS 257.0
+03:59:49.382 CONFIG | predict cost:595.5000000000001
+03:59:49.397 CONFIG | The profit of agent 0 is 137.50000030
+03:59:49.398 CONFIG | 535.0 VS 654.0
+03:59:49.398 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 381 CHF, Breda -> Almere), (Task 1, 19 kg, 589 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 589 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 589 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 1395 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 732 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 549 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 579 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 422 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 720 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 724 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 517 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 479 CHF, Amsterdam -> Breda), (Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 580 CHF, Almere -> Rotterdam), (Task 19, 15 kg, 692 CHF, Eindhoven -> Breda), (Task 20, 20 kg, 564 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 579 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 1478 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 682 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 1106 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 886 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 535 CHF, Utrecht -> Breda)]
+03:59:49.398 CONFIG | 27
+04:00:06.287 CONFIG | 13461.000000000002VS11764.5
+04:00:06.287 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 1, 19 kg, 589 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 12, 22 kg, 422 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 0, 27 kg, 381 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 3, 12 kg, 589 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 12, 22 kg, 422 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 549 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 0, 27 kg, 381 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 7, 28 kg, 732 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 10, 12 kg, 549 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 19, 15 kg, 692 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 19, 15 kg, 692 CHF, Eindhoven -> Breda), type=PICKUP, currentTask=(Task 11, 11 kg, 579 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 579 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 7, 28 kg, 732 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 1395 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 589 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 5, 26 kg, 1395 CHF, Nijmegen -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 1, 19 kg, 589 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 18, 25 kg, 580 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 20, 20 kg, 564 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 18, 25 kg, 580 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 20, 20 kg, 564 CHF, Amsterdam -> Nijmegen)]
+04:00:06.288 CONFIG | Vehicle 4 [type=PICKUP, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 2, 26 kg, 589 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=DELIVERY, currentTask=(Task 2, 26 kg, 589 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 23, 20 kg, 682 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 16, 23 kg, 479 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 21, 11 kg, 579 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 16, 23 kg, 479 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 14, 28 kg, 724 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 26, 15 kg, 886 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 14, 28 kg, 724 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 579 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 23, 20 kg, 682 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 22, 27 kg, 1478 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 26, 15 kg, 886 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 15, 16 kg, 517 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 13, 17 kg, 720 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 25, 19 kg, 1106 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 13, 17 kg, 720 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 15, 16 kg, 517 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 22, 27 kg, 1478 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 1106 CHF, Den Haag -> Groningen)]
+04:00:06.293 CONFIG | Wrote tournament/tour/auction2-auction3-auction5.xml
+04:00:06.316 INFO | LogistPlatform finished successfully!
+04:00:06.316 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction4-auction.xml -a tournament/tour/agents.xml ./config/auction2.xml auction4 auction
+04:00:06.384 CONFIG | Reading ./config/auction2.xml
+04:00:06.438 CONFIG | Reading config/settings_auction.xml
+04:00:06.494 CONFIG | Reading config/topology/the_netherlands.xml
+04:00:06.514 CONFIG | Reading tournament/tour/agents.xml
+04:00:06.529 CONFIG | Reading config/settings_auction.xml
+04:00:06.560 CONFIG | Estimated Self marginal cost for current task is 895.000000
+04:00:06.560 CONFIG | Estimated Opponent marginal cost for current task is 584.000000
+04:00:06.561 CONFIG | Current round is 1
+04:00:06.562 CONFIG | Estimated Self marginal cost for current task is 1041.500000
+04:00:06.562 CONFIG | Estimated Opponent marginal cost for current task is 1255.500000
+04:00:06.563 CONFIG | Current round is 2
+04:00:06.564 CONFIG | Estimated Self marginal cost for current task is 1028.000000
+04:00:06.564 CONFIG | Estimated Opponent marginal cost for current task is 1547.000000
+04:00:06.565 CONFIG | Current round is 3
+04:00:06.565 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:06.565 CONFIG | Estimated Opponent marginal cost for current task is 1425.000000
+04:00:06.566 CONFIG | Current round is 4
+04:00:06.567 CONFIG | Estimated Self marginal cost for current task is 456.000000
+04:00:06.567 CONFIG | Estimated Opponent marginal cost for current task is 666.500000
+04:00:06.567 CONFIG | Current round is 5
+04:00:06.568 CONFIG | Estimated Self marginal cost for current task is 869.000000
+04:00:06.568 CONFIG | Estimated Opponent marginal cost for current task is 1610.000000
+04:00:06.568 CONFIG | Current round is 6
+04:00:06.569 CONFIG | Estimated Self marginal cost for current task is 282.000000
+04:00:06.569 CONFIG | Estimated Opponent marginal cost for current task is 433.000000
+04:00:06.570 CONFIG | Current round is 7
+04:00:06.571 CONFIG | Estimated Self marginal cost for current task is 1013.000000
+04:00:06.571 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:06.572 CONFIG | Current round is 8
+04:00:06.573 CONFIG | Estimated Self marginal cost for current task is 282.000000
+04:00:06.573 CONFIG | Estimated Opponent marginal cost for current task is 37.500000
+04:00:06.574 CONFIG | Current round is 9
+04:00:06.575 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:00:06.576 CONFIG | Estimated Opponent marginal cost for current task is 536.500000
+04:00:06.577 CONFIG | Current round is 10
+04:00:06.578 CONFIG | Estimated Self marginal cost for current task is 835.500000
+04:00:06.578 CONFIG | Estimated Opponent marginal cost for current task is 825.500000
+04:00:06.579 CONFIG | Current round is 11
+04:00:06.580 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:00:06.580 CONFIG | Estimated Opponent marginal cost for current task is 164.000000
+04:00:06.581 CONFIG | Current round is 12
+04:00:06.582 CONFIG | Estimated Self marginal cost for current task is 169.500000
+04:00:06.582 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:06.583 CONFIG | Current round is 13
+04:00:06.584 CONFIG | Estimated Self marginal cost for current task is 576.000000
+04:00:06.584 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:06.585 CONFIG | Current round is 14
+04:00:06.586 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:06.586 CONFIG | Estimated Opponent marginal cost for current task is 345.000000
+04:00:06.587 CONFIG | Current round is 15
+04:00:06.588 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:06.589 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:06.589 CONFIG | Current round is 16
+04:00:06.591 CONFIG | Estimated Self marginal cost for current task is 219.000000
+04:00:06.591 CONFIG | Estimated Opponent marginal cost for current task is 715.500000
+04:00:06.592 CONFIG | Current round is 17
+04:00:06.594 CONFIG | Estimated Self marginal cost for current task is 877.000000
+04:00:06.595 CONFIG | Estimated Opponent marginal cost for current task is 536.500000
+04:00:06.595 CONFIG | Current round is 18
+04:00:06.597 CONFIG | Estimated Self marginal cost for current task is 187.000000
+04:00:06.597 CONFIG | Estimated Opponent marginal cost for current task is 886.500000
+04:00:06.598 CONFIG | Current round is 19
+04:00:06.600 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:06.600 CONFIG | Estimated Opponent marginal cost for current task is 702.000000
+04:00:06.600 CONFIG | Current round is 20
+04:00:06.602 CONFIG | Estimated Self marginal cost for current task is 351.000000
+04:00:06.602 CONFIG | Estimated Opponent marginal cost for current task is 323.500000
+04:00:06.603 CONFIG | Current round is 21
+04:00:06.605 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:06.605 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:06.606 CONFIG | Current round is 22
+04:00:06.608 CONFIG | Estimated Self marginal cost for current task is 990.500000
+04:00:06.608 CONFIG | Estimated Opponent marginal cost for current task is 1042.500000
+04:00:06.610 CONFIG | Current round is 23
+04:00:06.612 CONFIG | Estimated Self marginal cost for current task is 545.500000
+04:00:06.613 CONFIG | Estimated Opponent marginal cost for current task is 323.500000
+04:00:06.613 CONFIG | Current round is 24
+04:00:06.615 CONFIG | Estimated Self marginal cost for current task is 929.500000
+04:00:06.615 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+04:00:06.616 CONFIG | Current round is 25
+04:00:06.617 CONFIG | Estimated Self marginal cost for current task is 952.000000
+04:00:06.618 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:06.618 CONFIG | Current round is 26
+04:00:06.620 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:06.620 CONFIG | Estimated Opponent marginal cost for current task is 622.000000
+04:00:06.621 CONFIG | Current round is 27
+04:00:06.623 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:06.623 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+04:00:06.624 CONFIG | Current round is 28
+04:00:06.627 CONFIG | Estimated Self marginal cost for current task is 169.500000
+04:00:06.628 CONFIG | Estimated Opponent marginal cost for current task is 169.500000
+04:00:06.629 CONFIG | Current round is 29
+04:00:06.631 CONFIG | Estimated Self marginal cost for current task is 436.000000
+04:00:06.631 CONFIG | Estimated Opponent marginal cost for current task is 600.000000
+04:00:06.632 CONFIG | Current round is 30
+04:00:06.632 CONFIG | Agent 0 has tasks [(Task 0, 27 kg, 380 CHF, Breda -> Almere), (Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), (Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 710 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 374 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 215 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 276 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 215 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 572 CHF, Amsterdam -> Breda), (Task 20, 20 kg, 291 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 215 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 841 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 463 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 497 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 540 CHF, Utrecht -> Breda)]
+04:00:06.632 CONFIG | 21
+04:00:13.321 CONFIG | 9851.0VS8927.0
+04:00:13.321 CONFIG | The profit of agent 0 is 1665.000000
+04:00:13.321 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 16, 23 kg, 572 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 22, 27 kg, 841 CHF, Eindhoven -> Groningen), type=PICKUP, currentTask=(Task 26, 15 kg, 497 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 16, 23 kg, 572 CHF, Amsterdam -> Breda), type=DELIVERY, currentTask=(Task 26, 15 kg, 497 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 22, 27 kg, 841 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 10, 12 kg, 710 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 23, 20 kg, 463 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 21, 11 kg, 215 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 10, 12 kg, 710 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 14, 28 kg, 276 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 23, 20 kg, 463 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 14, 28 kg, 276 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 215 CHF, Breda -> Nijmegen)]
+04:00:13.321 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 11, 11 kg, 374 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 15, 16 kg, 215 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 20, 20 kg, 291 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 374 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 291 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 15, 16 kg, 215 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 29, 29 kg, 540 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 12, 22 kg, 215 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 29, 29 kg, 540 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 0, 27 kg, 380 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 12, 22 kg, 215 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 0, 27 kg, 380 CHF, Breda -> Almere)]
+04:00:13.331 CONFIG | The profit of agent 1 is 3645.500000Wrote tournament/tour/auction2-auction4-auction.xml
+04:00:13.350 INFO | LogistPlatform finished successfully!
+04:00:13.351 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction4-auction2.xml -a tournament/tour/agents.xml ./config/auction2.xml auction4 auction2
+04:00:13.410 CONFIG | Reading ./config/auction2.xml
+04:00:13.466 CONFIG | Reading config/settings_auction.xml
+04:00:13.522 CONFIG | Reading config/topology/the_netherlands.xml
+04:00:13.540 CONFIG | Reading tournament/tour/agents.xml
+04:00:13.555 CONFIG | Reading config/settings_auction.xml
+04:00:13.587 CONFIG | Estimated Self marginal cost for current task is 895.000000
+04:00:13.588 CONFIG | Estimated Opponent marginal cost for current task is 954.000000
+04:00:13.591 CONFIG | Current round is 1
+04:00:13.591 CONFIG | Estimated Self marginal cost for current task is 1041.500000
+04:00:13.591 CONFIG | Estimated Opponent marginal cost for current task is 1255.500000
+04:00:13.592 CONFIG | Current round is 2
+04:00:13.593 CONFIG | Estimated Self marginal cost for current task is 1028.000000
+04:00:13.593 CONFIG | Estimated Opponent marginal cost for current task is 1547.000000
+04:00:13.594 CONFIG | Current round is 3
+04:00:13.595 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:13.595 CONFIG | Estimated Opponent marginal cost for current task is 1425.000000
+04:00:13.595 CONFIG | Current round is 4
+04:00:13.596 CONFIG | Estimated Self marginal cost for current task is 456.000000
+04:00:13.596 CONFIG | Estimated Opponent marginal cost for current task is 666.500000
+04:00:13.596 CONFIG | Current round is 5
+04:00:13.597 CONFIG | Estimated Self marginal cost for current task is 869.000000
+04:00:13.597 CONFIG | Estimated Opponent marginal cost for current task is 1610.000000
+04:00:13.597 CONFIG | Current round is 6
+04:00:13.598 CONFIG | Estimated Self marginal cost for current task is 282.000000
+04:00:13.598 CONFIG | Estimated Opponent marginal cost for current task is 433.000000
+04:00:13.599 CONFIG | Current round is 7
+04:00:13.600 CONFIG | Estimated Self marginal cost for current task is 1013.000000
+04:00:13.600 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:13.601 CONFIG | Current round is 8
+04:00:13.602 CONFIG | Estimated Self marginal cost for current task is 282.000000
+04:00:13.602 CONFIG | Estimated Opponent marginal cost for current task is 37.500000
+04:00:13.602 CONFIG | Current round is 9
+04:00:13.603 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:00:13.603 CONFIG | Estimated Opponent marginal cost for current task is 536.500000
+04:00:13.604 CONFIG | Current round is 10
+04:00:13.606 CONFIG | Estimated Self marginal cost for current task is 835.500000
+04:00:13.606 CONFIG | Estimated Opponent marginal cost for current task is 825.500000
+04:00:13.608 CONFIG | Current round is 11
+04:00:13.609 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:00:13.609 CONFIG | Estimated Opponent marginal cost for current task is 219.000000
+04:00:13.610 CONFIG | Current round is 12
+04:00:13.611 CONFIG | Estimated Self marginal cost for current task is 169.500000
+04:00:13.611 CONFIG | Estimated Opponent marginal cost for current task is 169.500000
+04:00:13.612 CONFIG | Current round is 13
+04:00:13.613 CONFIG | Estimated Self marginal cost for current task is 576.000000
+04:00:13.613 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:13.614 CONFIG | Current round is 14
+04:00:13.616 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:13.616 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:13.616 CONFIG | Current round is 15
+04:00:13.618 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:13.619 CONFIG | Estimated Opponent marginal cost for current task is 169.500000
+04:00:13.619 CONFIG | Current round is 16
+04:00:13.621 CONFIG | Estimated Self marginal cost for current task is 551.500000
+04:00:13.621 CONFIG | Estimated Opponent marginal cost for current task is 219.000000
+04:00:13.622 CONFIG | Current round is 17
+04:00:13.625 CONFIG | Estimated Self marginal cost for current task is 877.000000
+04:00:13.625 CONFIG | Estimated Opponent marginal cost for current task is 536.500000
+04:00:13.625 CONFIG | Current round is 18
+04:00:13.628 CONFIG | Estimated Self marginal cost for current task is 687.500000
+04:00:13.628 CONFIG | Estimated Opponent marginal cost for current task is 406.000000
+04:00:13.628 CONFIG | Current round is 19
+04:00:13.631 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:13.631 CONFIG | Estimated Opponent marginal cost for current task is 441.000000
+04:00:13.631 CONFIG | Current round is 20
+04:00:13.633 CONFIG | Estimated Self marginal cost for current task is 560.000000
+04:00:13.633 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:13.633 CONFIG | Current round is 21
+04:00:13.636 CONFIG | Estimated Self marginal cost for current task is 164.000000
+04:00:13.636 CONFIG | Estimated Opponent marginal cost for current task is 219.000000
+04:00:13.636 CONFIG | Current round is 22
+04:00:13.638 CONFIG | Estimated Self marginal cost for current task is 1171.500000
+04:00:13.638 CONFIG | Estimated Opponent marginal cost for current task is 1042.500000
+04:00:13.639 CONFIG | Current round is 23
+04:00:13.642 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:13.642 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:13.643 CONFIG | Current round is 24
+04:00:13.645 CONFIG | Estimated Self marginal cost for current task is 929.500000
+04:00:13.645 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+04:00:13.645 CONFIG | Current round is 25
+04:00:13.647 CONFIG | Estimated Self marginal cost for current task is 952.000000
+04:00:13.648 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:13.648 CONFIG | Current round is 26
+04:00:13.651 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:13.651 CONFIG | Estimated Opponent marginal cost for current task is 763.000000
+04:00:13.652 CONFIG | Current round is 27
+04:00:13.654 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:13.655 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+04:00:13.656 CONFIG | Current round is 28
+04:00:13.659 CONFIG | Estimated Self marginal cost for current task is 169.500000
+04:00:13.659 CONFIG | Estimated Opponent marginal cost for current task is 169.500000
+04:00:13.660 CONFIG | Current round is 29
+04:00:13.662 CONFIG | Estimated Self marginal cost for current task is 436.000000
+04:00:13.663 CONFIG | Estimated Opponent marginal cost for current task is 219.000000
+04:00:13.664 CONFIG | Current round is 30
+04:00:13.664 CONFIG | Agent 0 has tasks [(Task 0, 27 kg, 429 CHF, Breda -> Almere), (Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), (Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), (Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 144 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 9 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 135 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 468 CHF, Amsterdam -> Breda), (Task 18, 25 kg, 515 CHF, Almere -> Rotterdam), (Task 19, 15 kg, 352 CHF, Eindhoven -> Breda), (Task 20, 20 kg, 476 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 175 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 995 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 9 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 610 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 327 CHF, Utrecht -> Breda)]
+04:00:13.664 CONFIG | 22
+04:00:28.260 CONFIG | 10044.0VS9509.0
+04:00:28.261 CONFIG | The profit of agent 0 is 468.000000
+04:00:28.261 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 26, 15 kg, 610 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 19, 15 kg, 352 CHF, Eindhoven -> Breda), type=PICKUP, currentTask=(Task 14, 28 kg, 9 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 19, 15 kg, 352 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 26, 15 kg, 610 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 15, 16 kg, 135 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 14, 28 kg, 9 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 15, 16 kg, 135 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 12, 22 kg, 144 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 0, 27 kg, 429 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 0, 27 kg, 429 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 12, 22 kg, 144 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 16, 23 kg, 468 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 20, 20 kg, 476 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 16, 23 kg, 468 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 22, 27 kg, 995 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 20, 20 kg, 476 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 22, 27 kg, 995 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 790 CHF, Groningen -> Amsterdam)]
+04:00:28.261 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 23, 20 kg, 9 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 18, 25 kg, 515 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 29, 29 kg, 327 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 29, 29 kg, 327 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 21, 11 kg, 175 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 18, 25 kg, 515 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 23, 20 kg, 9 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 175 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen)]
+04:00:28.269 CONFIG | The profit of agent 1 is 3359.000000Wrote tournament/tour/auction2-auction4-auction2.xml
+04:00:28.299 INFO | LogistPlatform finished successfully!
+04:00:28.300 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction4-auction3.xml -a tournament/tour/agents.xml ./config/auction2.xml auction4 auction3
+04:00:28.368 CONFIG | Reading ./config/auction2.xml
+04:00:28.439 CONFIG | Reading config/settings_auction.xml
+04:00:28.512 CONFIG | Reading config/topology/the_netherlands.xml
+04:00:28.533 CONFIG | Reading tournament/tour/agents.xml
+04:00:28.552 CONFIG | Reading config/settings_auction.xml
+04:00:28.586 CONFIG | Estimated Self marginal cost for current task is 895.000000
+04:00:28.586 CONFIG | Estimated Opponent marginal cost for current task is 954.000000
+04:00:28.587 CONFIG | Current round is 1
+04:00:28.588 CONFIG | Estimated Self marginal cost for current task is 1041.500000
+04:00:28.588 CONFIG | Estimated Opponent marginal cost for current task is 1255.500000
+04:00:28.589 CONFIG | Current round is 2
+04:00:28.590 CONFIG | Estimated Self marginal cost for current task is 1028.000000
+04:00:28.590 CONFIG | Estimated Opponent marginal cost for current task is 1547.000000
+04:00:28.590 CONFIG | Current round is 3
+04:00:28.592 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.592 CONFIG | Estimated Opponent marginal cost for current task is 1425.000000
+04:00:28.592 CONFIG | Current round is 4
+04:00:28.593 CONFIG | Estimated Self marginal cost for current task is 456.000000
+04:00:28.593 CONFIG | Estimated Opponent marginal cost for current task is 666.500000
+04:00:28.594 CONFIG | Current round is 5
+04:00:28.594 CONFIG | Estimated Self marginal cost for current task is 869.000000
+04:00:28.594 CONFIG | Estimated Opponent marginal cost for current task is 1610.000000
+04:00:28.595 CONFIG | Current round is 6
+04:00:28.596 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.596 CONFIG | Estimated Opponent marginal cost for current task is 263.500000
+04:00:28.598 CONFIG | Current round is 7
+04:00:28.599 CONFIG | Estimated Self marginal cost for current task is 524.000000
+04:00:28.599 CONFIG | Estimated Opponent marginal cost for current task is 660.000000
+04:00:28.600 CONFIG | Current round is 8
+04:00:28.601 CONFIG | Estimated Self marginal cost for current task is 282.000000
+04:00:28.601 CONFIG | Estimated Opponent marginal cost for current task is 667.000000
+04:00:28.602 CONFIG | Current round is 9
+04:00:28.603 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:00:28.603 CONFIG | Estimated Opponent marginal cost for current task is 845.000000
+04:00:28.604 CONFIG | Current round is 10
+04:00:28.606 CONFIG | Estimated Self marginal cost for current task is 345.000000
+04:00:28.606 CONFIG | Estimated Opponent marginal cost for current task is 687.500000
+04:00:28.606 CONFIG | Current round is 11
+04:00:28.615 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:00:28.615 CONFIG | Estimated Opponent marginal cost for current task is 851.000000
+04:00:28.615 CONFIG | Current round is 12
+04:00:28.615 CONFIG | Estimated Self marginal cost for current task is 867.500000
+04:00:28.615 CONFIG | Estimated Opponent marginal cost for current task is 169.500000
+04:00:28.615 CONFIG | Current round is 13
+04:00:28.615 CONFIG | Estimated Self marginal cost for current task is 576.000000
+04:00:28.615 CONFIG | Estimated Opponent marginal cost for current task is 451.000000
+04:00:28.615 CONFIG | Current round is 14
+04:00:28.616 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.616 CONFIG | Estimated Opponent marginal cost for current task is 1032.000000
+04:00:28.617 CONFIG | Current round is 15
+04:00:28.619 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.619 CONFIG | Estimated Opponent marginal cost for current task is 620.500000
+04:00:28.620 CONFIG | Current round is 16
+04:00:28.622 CONFIG | Estimated Self marginal cost for current task is 551.500000
+04:00:28.622 CONFIG | Estimated Opponent marginal cost for current task is 595.500000
+04:00:28.625 CONFIG | Current round is 17
+04:00:28.627 CONFIG | Estimated Self marginal cost for current task is 688.500000
+04:00:28.627 CONFIG | Estimated Opponent marginal cost for current task is 845.000000
+04:00:28.627 CONFIG | Current round is 18
+04:00:28.629 CONFIG | Estimated Self marginal cost for current task is 687.500000
+04:00:28.630 CONFIG | Estimated Opponent marginal cost for current task is 453.000000
+04:00:28.631 CONFIG | Current round is 19
+04:00:28.634 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.634 CONFIG | Estimated Opponent marginal cost for current task is 992.000000
+04:00:28.634 CONFIG | Current round is 20
+04:00:28.638 CONFIG | Estimated Self marginal cost for current task is 560.000000
+04:00:28.638 CONFIG | Estimated Opponent marginal cost for current task is 660.000000
+04:00:28.640 CONFIG | Current round is 21
+04:00:28.643 CONFIG | Estimated Self marginal cost for current task is 164.000000
+04:00:28.643 CONFIG | Estimated Opponent marginal cost for current task is 851.000000
+04:00:28.644 CONFIG | Current round is 22
+04:00:28.646 CONFIG | Estimated Self marginal cost for current task is 1171.500000
+04:00:28.647 CONFIG | Estimated Opponent marginal cost for current task is 1801.000000
+04:00:28.647 CONFIG | Current round is 23
+04:00:28.650 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.650 CONFIG | Estimated Opponent marginal cost for current task is 660.000000
+04:00:28.651 CONFIG | Current round is 24
+04:00:28.653 CONFIG | Estimated Self marginal cost for current task is 929.500000
+04:00:28.654 CONFIG | Estimated Opponent marginal cost for current task is 1540.000000
+04:00:28.655 CONFIG | Current round is 25
+04:00:28.659 CONFIG | Estimated Self marginal cost for current task is 952.000000
+04:00:28.659 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+04:00:28.659 CONFIG | Current round is 26
+04:00:28.664 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.664 CONFIG | Estimated Opponent marginal cost for current task is 1235.000000
+04:00:28.664 CONFIG | Current round is 27
+04:00:28.667 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:28.668 CONFIG | Estimated Opponent marginal cost for current task is 1540.000000
+04:00:28.668 CONFIG | Current round is 28
+04:00:28.672 CONFIG | Estimated Self marginal cost for current task is 169.500000
+04:00:28.672 CONFIG | Estimated Opponent marginal cost for current task is 148.000000
+04:00:28.672 CONFIG | Current round is 29
+04:00:28.679 CONFIG | Estimated Self marginal cost for current task is 436.000000
+04:00:28.679 CONFIG | Estimated Opponent marginal cost for current task is 595.500000
+04:00:28.681 CONFIG | Current round is 30
+04:00:28.682 CONFIG | Agent 0 has tasks [(Task 0, 27 kg, 429 CHF, Breda -> Almere), (Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 1449 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 594 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 550 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 680 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 737 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 825 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 496 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 476 CHF, Amsterdam -> Breda), (Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 584 CHF, Almere -> Rotterdam), (Task 19, 15 kg, 793 CHF, Eindhoven -> Breda), (Task 20, 20 kg, 528 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 680 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 1440 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 528 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 988 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 535 CHF, Utrecht -> Breda)]
+04:00:28.682 CONFIG | 27
+04:00:50.576 CONFIG | 13450.500000000002VS11392.0
+04:00:50.576 CONFIG | The profit of agent 0 is 8257.000000
+04:00:50.577 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 19, 15 kg, 793 CHF, Eindhoven -> Breda), type=PICKUP, currentTask=(Task 14, 28 kg, 825 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 0, 27 kg, 429 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 19, 15 kg, 793 CHF, Eindhoven -> Breda), type=PICKUP, currentTask=(Task 11, 11 kg, 680 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 10, 12 kg, 550 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 0, 27 kg, 429 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 10, 12 kg, 550 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 14, 28 kg, 825 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 680 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 8, 21 kg, 533 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 9, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 2, 26 kg, 618 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 12, 22 kg, 737 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 13, 17 kg, 489 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 12, 22 kg, 737 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 16, 23 kg, 476 CHF, Amsterdam -> Breda), type=DELIVERY, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 16, 23 kg, 476 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 15, 16 kg, 496 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 17, 26 kg, 676 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 7, 28 kg, 594 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 20, 20 kg, 528 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 15, 16 kg, 496 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 7, 28 kg, 594 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 528 CHF, Amsterdam -> Nijmegen)]
+04:00:50.577 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 23, 20 kg, 528 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 18, 25 kg, 584 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 23, 20 kg, 528 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 26, 15 kg, 988 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 18, 25 kg, 584 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 26, 15 kg, 988 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 21, 11 kg, 680 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 22, 27 kg, 1440 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 21, 11 kg, 680 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 1449 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 809 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 22, 27 kg, 1440 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 5, 26 kg, 1449 CHF, Nijmegen -> Groningen)]
+04:00:50.587 CONFIG | The profit of agent 1 is 223.000000Wrote tournament/tour/auction2-auction4-auction3.xml
+04:00:50.620 INFO | LogistPlatform finished successfully!
+04:00:50.621 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction4-auction5.xml -a tournament/tour/agents.xml ./config/auction2.xml auction4 auction5
+04:00:50.690 CONFIG | Reading ./config/auction2.xml
+04:00:50.769 CONFIG | Reading config/settings_auction.xml
+04:00:50.830 CONFIG | Reading config/topology/the_netherlands.xml
+04:00:50.848 CONFIG | Reading tournament/tour/agents.xml
+04:00:50.864 CONFIG | Reading config/settings_auction.xml
+04:00:50.869 CONFIG | Reading config/settings_auction.xml
+04:00:50.874 CONFIG | 0.9533333333333334
+04:00:50.874 CONFIG | 0.9533333333333334
+04:00:50.874 CONFIG | 0.9177777777777778
+04:00:50.874 CONFIG | 1.0066666666666668
+04:00:50.874 CONFIG | 0.9355555555555556
+04:00:50.874 CONFIG | 0.9533333333333334
+04:00:50.874 CONFIG | 0.9177777777777778
+04:00:50.874 CONFIG | 0.9711111111111111
+04:00:50.874 CONFIG | 0.9533333333333334
+04:00:50.874 CONFIG | 0.9711111111111111
+04:00:50.874 CONFIG | 0.9533333333333334
+04:00:50.874 CONFIG | 0.9533333333333334
+04:00:50.874 CONFIG | 0.9177777777777778
+04:00:50.874 CONFIG | 1.0066666666666668
+04:00:50.874 CONFIG | 0.9355555555555556
+04:00:50.874 CONFIG | 0.9533333333333334
+04:00:50.874 CONFIG | 0.9177777777777778
+04:00:50.874 CONFIG | 0.9711111111111111
+04:00:50.875 CONFIG | 0.9533333333333334
+04:00:50.875 CONFIG | 0.9711111111111111
+04:00:50.875 CONFIG | 0.9177777777777778
+04:00:50.875 CONFIG | 0.9177777777777778
+04:00:50.875 CONFIG | 0.9
+04:00:50.875 CONFIG | 0.9444444444444445
+04:00:50.875 CONFIG | 0.908888888888889
+04:00:50.875 CONFIG | 0.9177777777777778
+04:00:50.875 CONFIG | 0.9
+04:00:50.875 CONFIG | 0.9266666666666667
+04:00:50.875 CONFIG | 0.9177777777777778
+04:00:50.875 CONFIG | 0.9266666666666667
+04:00:50.875 CONFIG | 1.0066666666666668
+04:00:50.875 CONFIG | 1.0066666666666668
+04:00:50.875 CONFIG | 0.9444444444444445
+04:00:50.875 CONFIG | 1.1
+04:00:50.875 CONFIG | 0.9755555555555556
+04:00:50.875 CONFIG | 1.0066666666666668
+04:00:50.875 CONFIG | 0.9444444444444445
+04:00:50.875 CONFIG | 1.037777777777778
+04:00:50.875 CONFIG | 1.0066666666666668
+04:00:50.875 CONFIG | 1.037777777777778
+04:00:50.875 CONFIG | 0.9355555555555556
+04:00:50.875 CONFIG | 0.9355555555555556
+04:00:50.875 CONFIG | 0.908888888888889
+04:00:50.875 CONFIG | 0.9755555555555556
+04:00:50.875 CONFIG | 0.9222222222222223
+04:00:50.875 CONFIG | 0.9355555555555556
+04:00:50.876 CONFIG | 0.908888888888889
+04:00:50.876 CONFIG | 0.9488888888888889
+04:00:50.876 CONFIG | 0.9355555555555556
+04:00:50.876 CONFIG | 0.9488888888888889
+04:00:50.876 CONFIG | 0.9533333333333334
+04:00:50.876 CONFIG | 0.9533333333333334
+04:00:50.876 CONFIG | 0.9177777777777778
+04:00:50.876 CONFIG | 1.0066666666666668
+04:00:50.876 CONFIG | 0.9355555555555556
+04:00:50.876 CONFIG | 0.9533333333333334
+04:00:50.876 CONFIG | 0.9177777777777778
+04:00:50.876 CONFIG | 0.9711111111111111
+04:00:50.876 CONFIG | 0.9533333333333334
+04:00:50.876 CONFIG | 0.9711111111111111
+04:00:50.876 CONFIG | 0.9177777777777778
+04:00:50.876 CONFIG | 0.9177777777777778
+04:00:50.876 CONFIG | 0.9
+04:00:50.876 CONFIG | 0.9444444444444445
+04:00:50.876 CONFIG | 0.908888888888889
+04:00:50.876 CONFIG | 0.9177777777777778
+04:00:50.876 CONFIG | 0.9
+04:00:50.876 CONFIG | 0.9266666666666667
+04:00:50.876 CONFIG | 0.9177777777777778
+04:00:50.876 CONFIG | 0.9266666666666667
+04:00:50.876 CONFIG | 0.9711111111111111
+04:00:50.876 CONFIG | 0.9711111111111111
+04:00:50.876 CONFIG | 0.9266666666666667
+04:00:50.876 CONFIG | 1.037777777777778
+04:00:50.876 CONFIG | 0.9488888888888889
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9266666666666667
+04:00:50.877 CONFIG | 0.9933333333333334
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9933333333333334
+04:00:50.877 CONFIG | 0.9533333333333334
+04:00:50.877 CONFIG | 0.9533333333333334
+04:00:50.877 CONFIG | 0.9177777777777778
+04:00:50.877 CONFIG | 1.0066666666666668
+04:00:50.877 CONFIG | 0.9355555555555556
+04:00:50.877 CONFIG | 0.9533333333333334
+04:00:50.877 CONFIG | 0.9177777777777778
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9533333333333334
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9266666666666667
+04:00:50.877 CONFIG | 1.037777777777778
+04:00:50.877 CONFIG | 0.9488888888888889
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9266666666666667
+04:00:50.877 CONFIG | 0.9933333333333334
+04:00:50.877 CONFIG | 0.9711111111111111
+04:00:50.877 CONFIG | 0.9933333333333334
+04:00:50.906 CONFIG | Estimated Self marginal cost for current task is 895.000000
+04:00:50.906 CONFIG | Estimated Opponent marginal cost for current task is 1065.000000
+04:00:50.908 CONFIG | predict cost:895.0
+04:00:50.911 CONFIG | Current round is 1
+04:00:50.911 CONFIG | Estimated Self marginal cost for current task is 1581.500000
+04:00:50.911 CONFIG | Estimated Opponent marginal cost for current task is 1041.500000
+04:00:50.911 CONFIG | 1
+04:00:50.911 CONFIG | City: Breda
+04:00:50.911 CONFIG | 381.0 VS 479.0
+04:00:50.912 CONFIG | predict cost:1625.5
+04:00:50.912 CONFIG | Current round is 2
+04:00:50.913 CONFIG | Estimated Self marginal cost for current task is 898.500000
+04:00:50.913 CONFIG | Estimated Opponent marginal cost for current task is 778.500000
+04:00:50.913 CONFIG | 2
+04:00:50.913 CONFIG | 650.0 VS 593.0
+04:00:50.913 CONFIG | predict cost:1106.0
+04:00:50.914 CONFIG | Current round is 3
+04:00:50.914 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:50.914 CONFIG | Estimated Opponent marginal cost for current task is 770.000000
+04:00:50.914 CONFIG | 3
+04:00:50.914 CONFIG | 497.0 VS 381.0
+04:00:50.914 CONFIG | predict cost:0.0
+04:00:50.915 CONFIG | Current round is 4
+04:00:50.915 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:00:50.915 CONFIG | Estimated Opponent marginal cost for current task is 159.500000
+04:00:50.915 CONFIG | 4
+04:00:50.915 CONFIG | 327.0 VS 308.0
+04:00:50.916 CONFIG | predict cost:0.0
+04:00:50.916 CONFIG | Current round is 5
+04:00:50.916 CONFIG | Estimated Self marginal cost for current task is 382.500000
+04:00:50.917 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+04:00:50.917 CONFIG | 5
+04:00:50.917 CONFIG | 307.0 VS 326.0
+04:00:50.917 CONFIG | predict cost:199.0
+04:00:50.918 CONFIG | Current round is 6
+04:00:50.918 CONFIG | Estimated Self marginal cost for current task is 109.000000
+04:00:50.918 CONFIG | Estimated Opponent marginal cost for current task is 228.000000
+04:00:50.919 CONFIG | 6
+04:00:50.919 CONFIG | 957.0 VS 836.0
+04:00:50.919 CONFIG | predict cost:433.0
+04:00:50.919 CONFIG | Current round is 7
+04:00:50.920 CONFIG | Estimated Self marginal cost for current task is 652.000000
+04:00:50.920 CONFIG | Estimated Opponent marginal cost for current task is 1013.000000
+04:00:50.921 CONFIG | 7
+04:00:50.921 CONFIG | 389.0 VS 306.0
+04:00:50.921 CONFIG | predict cost:271.5
+04:00:50.922 CONFIG | Current round is 8
+04:00:50.923 CONFIG | Estimated Self marginal cost for current task is 688.500000
+04:00:50.923 CONFIG | Estimated Opponent marginal cost for current task is 507.000000
+04:00:50.923 CONFIG | 8
+04:00:50.923 CONFIG | 463.0 VS 810.0
+04:00:50.924 CONFIG | predict cost:519.0
+04:00:50.924 CONFIG | Current round is 9
+04:00:50.926 CONFIG | Estimated Self marginal cost for current task is 1175.000000
+04:00:50.926 CONFIG | Estimated Opponent marginal cost for current task is 441.000000
+04:00:50.928 CONFIG | 9
+04:00:50.928 CONFIG | 415.0 VS 516.0
+04:00:50.929 CONFIG | predict cost:1175.0
+04:00:50.930 CONFIG | Current round is 10
+04:00:50.931 CONFIG | Estimated Self marginal cost for current task is 825.500000
+04:00:50.931 CONFIG | Estimated Opponent marginal cost for current task is 345.000000
+04:00:50.931 CONFIG | 10
+04:00:50.931 CONFIG | 940.0 VS 881.0
+04:00:50.932 CONFIG | predict cost:345.0
+04:00:50.932 CONFIG | Current round is 11
+04:00:50.933 CONFIG | Estimated Self marginal cost for current task is 164.000000
+04:00:50.933 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:50.933 CONFIG | 11
+04:00:50.933 CONFIG | 584.0 VS 701.0
+04:00:50.934 CONFIG | predict cost:0.0
+04:00:50.934 CONFIG | Current round is 12
+04:00:50.935 CONFIG | Estimated Self marginal cost for current task is 169.500000
+04:00:50.935 CONFIG | Estimated Opponent marginal cost for current task is 620.000000
+04:00:50.935 CONFIG | 12
+04:00:50.936 CONFIG | 305.0 VS 306.0
+04:00:50.936 CONFIG | predict cost:169.5
+04:00:50.937 CONFIG | Current round is 13
+04:00:50.938 CONFIG | Estimated Self marginal cost for current task is 372.000000
+04:00:50.938 CONFIG | Estimated Opponent marginal cost for current task is 285.500000
+04:00:50.938 CONFIG | 13
+04:00:50.938 CONFIG | 651.0 VS 558.0
+04:00:50.939 CONFIG | predict cost:271.5
+04:00:50.940 CONFIG | Current round is 14
+04:00:50.941 CONFIG | Estimated Self marginal cost for current task is 351.000000
+04:00:50.941 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:50.941 CONFIG | 14
+04:00:50.941 CONFIG | 812.0 VS 316.0
+04:00:50.942 CONFIG | predict cost:345.0
+04:00:50.942 CONFIG | Current round is 15
+04:00:50.944 CONFIG | Estimated Self marginal cost for current task is 774.000000
+04:00:50.945 CONFIG | Estimated Opponent marginal cost for current task is 285.500000
+04:00:50.945 CONFIG | 15
+04:00:50.945 CONFIG | 310.0 VS 304.0
+04:00:50.946 CONFIG | predict cost:0.0
+04:00:50.946 CONFIG | Current round is 16
+04:00:50.947 CONFIG | Estimated Self marginal cost for current task is 299.000000
+04:00:50.947 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:50.948 CONFIG | 16
+04:00:50.948 CONFIG | 782.0 VS 657.0
+04:00:50.949 CONFIG | predict cost:551.5
+04:00:50.949 CONFIG | Current round is 17
+04:00:50.951 CONFIG | Estimated Self marginal cost for current task is 773.000000
+04:00:50.952 CONFIG | Estimated Opponent marginal cost for current task is 441.000000
+04:00:50.952 CONFIG | 17
+04:00:50.952 CONFIG | 496.0 VS 304.0
+04:00:50.953 CONFIG | predict cost:1106.0
+04:00:50.953 CONFIG | Current round is 18
+04:00:50.955 CONFIG | Estimated Self marginal cost for current task is 699.500000
+04:00:50.955 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:50.955 CONFIG | 18
+04:00:50.955 CONFIG | 995.0 VS 657.0
+04:00:50.957 CONFIG | predict cost:282.0000000000009
+04:00:50.957 CONFIG | Current round is 19
+04:00:50.959 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:00:50.959 CONFIG | Estimated Opponent marginal cost for current task is 245.000000
+04:00:50.959 CONFIG | 19
+04:00:50.959 CONFIG | 303.0 VS 594.0
+04:00:50.961 CONFIG | predict cost:245.0
+04:00:50.962 CONFIG | Current round is 20
+04:00:50.963 CONFIG | Estimated Self marginal cost for current task is 533.500000
+04:00:50.964 CONFIG | Estimated Opponent marginal cost for current task is 805.500000
+04:00:50.964 CONFIG | 20
+04:00:50.964 CONFIG | 303.0 VS 330.0
+04:00:50.967 CONFIG | predict cost:382.5
+04:00:50.967 CONFIG | Current round is 21
+04:00:50.968 CONFIG | Estimated Self marginal cost for current task is 199.000000
+04:00:50.968 CONFIG | Estimated Opponent marginal cost for current task is 441.000000
+04:00:50.968 CONFIG | 21
+04:00:50.968 CONFIG | 306.0 VS 724.0
+04:00:50.970 CONFIG | predict cost:0.0
+04:00:50.971 CONFIG | Current round is 22
+04:00:50.972 CONFIG | Estimated Self marginal cost for current task is 990.500000
+04:00:50.972 CONFIG | Estimated Opponent marginal cost for current task is 1652.500000
+04:00:50.972 CONFIG | 22
+04:00:50.972 CONFIG | 303.0 VS 396.0
+04:00:50.973 CONFIG | predict cost:1341.5
+04:00:50.974 CONFIG | Current round is 23
+04:00:50.975 CONFIG | Estimated Self marginal cost for current task is 533.500000
+04:00:50.975 CONFIG | Estimated Opponent marginal cost for current task is 545.500000
+04:00:50.975 CONFIG | 23
+04:00:50.975 CONFIG | 1073.0 VS 1487.0
+04:00:50.977 CONFIG | predict cost:382.5
+04:00:50.977 CONFIG | Current round is 24
+04:00:50.979 CONFIG | Estimated Self marginal cost for current task is 929.500000
+04:00:50.979 CONFIG | Estimated Opponent marginal cost for current task is 929.500000
+04:00:50.979 CONFIG | 24
+04:00:50.979 CONFIG | 306.0 VS 490.0
+04:00:50.981 CONFIG | predict cost:929.5000000000009
+04:00:50.981 CONFIG | Current round is 25
+04:00:50.983 CONFIG | Estimated Self marginal cost for current task is 971.000000
+04:00:50.983 CONFIG | Estimated Opponent marginal cost for current task is 595.000000
+04:00:50.983 CONFIG | 25
+04:00:50.983 CONFIG | 743.0 VS 836.0
+04:00:50.985 CONFIG | predict cost:971.0
+04:00:50.986 CONFIG | Current round is 26
+04:00:50.988 CONFIG | Estimated Self marginal cost for current task is 560.000000
+04:00:50.988 CONFIG | Estimated Opponent marginal cost for current task is 187.000000
+04:00:50.988 CONFIG | 26
+04:00:50.988 CONFIG | 776.0 VS 728.0
+04:00:50.991 CONFIG | predict cost:245.0
+04:00:50.991 CONFIG | Current round is 27
+04:00:50.994 CONFIG | Estimated Self marginal cost for current task is 929.500000
+04:00:50.994 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:00:50.994 CONFIG | 27
+04:00:50.994 CONFIG | 303.0 VS 476.0
+04:00:50.996 CONFIG | predict cost:929.5
+04:00:50.997 CONFIG | Current round is 28
+04:00:50.999 CONFIG | Estimated Self marginal cost for current task is 282.000000
+04:00:50.999 CONFIG | Estimated Opponent marginal cost for current task is 104.500000
+04:00:50.999 CONFIG | 28
+04:00:50.999 CONFIG | 743.0 VS 697.0
+04:00:51.005 CONFIG | predict cost:0.0
+04:00:51.006 CONFIG | Current round is 29
+04:00:51.007 CONFIG | Estimated Self marginal cost for current task is 595.500000
+04:00:51.008 CONFIG | Estimated Opponent marginal cost for current task is 158.000000
+04:00:51.008 CONFIG | 29
+04:00:51.008 CONFIG | 303.0 VS 302.0
+04:00:51.010 CONFIG | predict cost:299.0
+04:00:51.011 CONFIG | Current round is 30
+04:00:51.011 CONFIG | Agent 0 has tasks [(Task 1, 19 kg, 593 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 381 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 308 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 836 CHF, Nijmegen -> Groningen), (Task 6, 26 kg, 306 CHF, Almere -> Utrecht), (Task 9, 26 kg, 881 CHF, Apeldoorn -> Den Haag), (Task 12, 22 kg, 558 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 316 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 304 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 657 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 304 CHF, Amsterdam -> Breda), (Task 17, 26 kg, 657 CHF, Apeldoorn -> Den Haag), (Task 25, 19 kg, 728 CHF, Den Haag -> Groningen), (Task 27, 15 kg, 697 CHF, Groningen -> Amsterdam), (Task 28, 23 kg, 302 CHF, Utrecht -> Almere)]
+04:00:51.011 CONFIG | 15
+04:00:53.806 CONFIG | 9663.0VS6516.5
+04:00:53.806 CONFIG | The profit of agent 0 is 1311.500000
+04:00:53.806 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 28, 23 kg, 302 CHF, Utrecht -> Almere), type=PICKUP, currentTask=(Task 15, 16 kg, 657 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 12, 22 kg, 558 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 13, 17 kg, 316 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 28, 23 kg, 302 CHF, Utrecht -> Almere), type=DELIVERY, currentTask=(Task 12, 22 kg, 558 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 15, 16 kg, 657 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 13, 17 kg, 316 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 9, 26 kg, 881 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 2, 26 kg, 381 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 9, 26 kg, 881 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 2, 26 kg, 381 CHF, Apeldoorn -> Den Haag)]
+04:00:53.807 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 14, 28 kg, 304 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 836 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 14, 28 kg, 304 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 17, 26 kg, 657 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 3, 12 kg, 308 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 17, 26 kg, 657 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 593 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 25, 19 kg, 728 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 308 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 5, 26 kg, 836 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 728 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 697 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 1, 19 kg, 593 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 6, 26 kg, 306 CHF, Almere -> Utrecht), type=DELIVERY, currentTask=(Task 27, 15 kg, 697 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 16, 23 kg, 304 CHF, Amsterdam -> Breda), type=DELIVERY, currentTask=(Task 6, 26 kg, 306 CHF, Almere -> Utrecht), type=DELIVERY, currentTask=(Task 16, 23 kg, 304 CHF, Amsterdam -> Breda)]
+04:00:53.812 CONFIG | 30
+04:00:53.813 CONFIG | 370.0 VS 506.0
+04:00:53.813 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 381 CHF, Breda -> Almere), (Task 4, 24 kg, 307 CHF, Utrecht -> Amsterdam), (Task 7, 28 kg, 463 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), (Task 10, 12 kg, 584 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 305 CHF, Breda -> Nijmegen), (Task 18, 25 kg, 303 CHF, Almere -> Rotterdam), (Task 19, 15 kg, 303 CHF, Eindhoven -> Breda), (Task 20, 20 kg, 306 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 303 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 1073 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 306 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 26, 15 kg, 303 CHF, Eindhoven -> Rotterdam), (Task 29, 29 kg, 370 CHF, Utrecht -> Breda)]
+04:00:53.813 CONFIG | 15
+04:00:57.755 CONFIG | 6429.000000000001VS6278.000000000001
+04:00:57.755 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 7, 28 kg, 463 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 29, 29 kg, 370 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 29, 29 kg, 370 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 21, 11 kg, 303 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 11, 11 kg, 305 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 0, 27 kg, 381 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 21, 11 kg, 303 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 305 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 7, 28 kg, 463 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=DELIVERY, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 584 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 0, 27 kg, 381 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 18, 25 kg, 303 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 23, 20 kg, 306 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 20, 20 kg, 306 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 18, 25 kg, 303 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 23, 20 kg, 306 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 306 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 26, 15 kg, 303 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 22, 27 kg, 1073 CHF, Eindhoven -> Groningen), type=PICKUP, currentTask=(Task 19, 15 kg, 303 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 10, 12 kg, 584 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 19, 15 kg, 303 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 26, 15 kg, 303 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 4, 24 kg, 307 CHF, Utrecht -> Amsterdam), type=PICKUP, currentTask=(Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 22, 27 kg, 1073 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 4, 24 kg, 307 CHF, Utrecht -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam)]
+04:00:57.755 CONFIG | Vehicle 4 []
+04:00:57.763 CONFIG | Wrote tournament/tour/auction2-auction4-auction5.xml
+04:00:57.801 INFO | LogistPlatform finished successfully!
+04:00:57.802 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction5-auction.xml -a tournament/tour/agents.xml ./config/auction2.xml auction5 auction
+04:00:57.907 CONFIG | Reading ./config/auction2.xml
+04:00:57.991 CONFIG | Reading config/settings_auction.xml
+04:00:58.061 CONFIG | Reading config/topology/the_netherlands.xml
+04:00:58.087 CONFIG | Reading tournament/tour/agents.xml
+04:00:58.106 CONFIG | Reading config/settings_auction.xml
+04:00:58.115 CONFIG | 0.9533333333333334
+04:00:58.115 CONFIG | 0.9533333333333334
+04:00:58.115 CONFIG | 0.9177777777777778
+04:00:58.115 CONFIG | 1.0066666666666668
+04:00:58.115 CONFIG | 0.9355555555555556
+04:00:58.115 CONFIG | 0.9533333333333334
+04:00:58.115 CONFIG | 0.9177777777777778
+04:00:58.115 CONFIG | 0.9711111111111111
+04:00:58.115 CONFIG | 0.9533333333333334
+04:00:58.115 CONFIG | 0.9711111111111111
+04:00:58.115 CONFIG | 0.9533333333333334
+04:00:58.115 CONFIG | 0.9533333333333334
+04:00:58.115 CONFIG | 0.9177777777777778
+04:00:58.115 CONFIG | 1.0066666666666668
+04:00:58.115 CONFIG | 0.9355555555555556
+04:00:58.115 CONFIG | 0.9533333333333334
+04:00:58.115 CONFIG | 0.9177777777777778
+04:00:58.115 CONFIG | 0.9711111111111111
+04:00:58.116 CONFIG | 0.9533333333333334
+04:00:58.116 CONFIG | 0.9711111111111111
+04:00:58.116 CONFIG | 0.9177777777777778
+04:00:58.116 CONFIG | 0.9177777777777778
+04:00:58.116 CONFIG | 0.9
+04:00:58.116 CONFIG | 0.9444444444444445
+04:00:58.116 CONFIG | 0.908888888888889
+04:00:58.116 CONFIG | 0.9177777777777778
+04:00:58.116 CONFIG | 0.9
+04:00:58.116 CONFIG | 0.9266666666666667
+04:00:58.116 CONFIG | 0.9177777777777778
+04:00:58.116 CONFIG | 0.9266666666666667
+04:00:58.116 CONFIG | 1.0066666666666668
+04:00:58.116 CONFIG | 1.0066666666666668
+04:00:58.116 CONFIG | 0.9444444444444445
+04:00:58.116 CONFIG | 1.1
+04:00:58.116 CONFIG | 0.9755555555555556
+04:00:58.116 CONFIG | 1.0066666666666668
+04:00:58.116 CONFIG | 0.9444444444444445
+04:00:58.116 CONFIG | 1.037777777777778
+04:00:58.117 CONFIG | 1.0066666666666668
+04:00:58.117 CONFIG | 1.037777777777778
+04:00:58.117 CONFIG | 0.9355555555555556
+04:00:58.117 CONFIG | 0.9355555555555556
+04:00:58.117 CONFIG | 0.908888888888889
+04:00:58.117 CONFIG | 0.9755555555555556
+04:00:58.117 CONFIG | 0.9222222222222223
+04:00:58.117 CONFIG | 0.9355555555555556
+04:00:58.117 CONFIG | 0.908888888888889
+04:00:58.117 CONFIG | 0.9488888888888889
+04:00:58.117 CONFIG | 0.9355555555555556
+04:00:58.117 CONFIG | 0.9488888888888889
+04:00:58.117 CONFIG | 0.9533333333333334
+04:00:58.117 CONFIG | 0.9533333333333334
+04:00:58.117 CONFIG | 0.9177777777777778
+04:00:58.117 CONFIG | 1.0066666666666668
+04:00:58.117 CONFIG | 0.9355555555555556
+04:00:58.117 CONFIG | 0.9533333333333334
+04:00:58.117 CONFIG | 0.9177777777777778
+04:00:58.117 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9533333333333334
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9177777777777778
+04:00:58.118 CONFIG | 0.9177777777777778
+04:00:58.118 CONFIG | 0.9
+04:00:58.118 CONFIG | 0.9444444444444445
+04:00:58.118 CONFIG | 0.908888888888889
+04:00:58.118 CONFIG | 0.9177777777777778
+04:00:58.118 CONFIG | 0.9
+04:00:58.118 CONFIG | 0.9266666666666667
+04:00:58.118 CONFIG | 0.9177777777777778
+04:00:58.118 CONFIG | 0.9266666666666667
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9266666666666667
+04:00:58.118 CONFIG | 1.037777777777778
+04:00:58.118 CONFIG | 0.9488888888888889
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9266666666666667
+04:00:58.118 CONFIG | 0.9933333333333334
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9933333333333334
+04:00:58.118 CONFIG | 0.9533333333333334
+04:00:58.118 CONFIG | 0.9533333333333334
+04:00:58.118 CONFIG | 0.9177777777777778
+04:00:58.118 CONFIG | 1.0066666666666668
+04:00:58.118 CONFIG | 0.9355555555555556
+04:00:58.118 CONFIG | 0.9533333333333334
+04:00:58.118 CONFIG | 0.9177777777777778
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9533333333333334
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.118 CONFIG | 0.9711111111111111
+04:00:58.119 CONFIG | 0.9711111111111111
+04:00:58.119 CONFIG | 0.9266666666666667
+04:00:58.119 CONFIG | 1.037777777777778
+04:00:58.119 CONFIG | 0.9488888888888889
+04:00:58.119 CONFIG | 0.9711111111111111
+04:00:58.119 CONFIG | 0.9266666666666667
+04:00:58.119 CONFIG | 0.9933333333333334
+04:00:58.119 CONFIG | 0.9711111111111111
+04:00:58.119 CONFIG | 0.9933333333333334
+04:00:58.140 CONFIG | predict cost:584.0
+04:00:58.142 CONFIG | 1
+04:00:58.142 CONFIG | City: Den Haag
+04:00:58.142 CONFIG | 358.0 VS 964.0
+04:00:58.143 CONFIG | predict cost:1255.5
+04:00:58.144 CONFIG | 2
+04:00:58.144 CONFIG | 502.0 VS 1354.0
+04:00:58.145 CONFIG | predict cost:1108.5
+04:00:58.146 CONFIG | 3
+04:00:58.146 CONFIG | 481.0 VS 783.0
+04:00:58.147 CONFIG | predict cost:986.5
+04:00:58.147 CONFIG | 4
+04:00:58.147 CONFIG | 394.0 VS 1331.0
+04:00:58.148 CONFIG | predict cost:228.0
+04:00:58.149 CONFIG | 5
+04:00:58.149 CONFIG | 782.0 VS 573.0
+04:00:58.149 CONFIG | predict cost:1650.5
+04:00:58.150 CONFIG | 6
+04:00:58.150 CONFIG | 1485.0 VS 1379.0
+04:00:58.151 CONFIG | predict cost:147.99999999999977
+04:00:58.151 CONFIG | 7
+04:00:58.152 CONFIG | 572.0 VS 443.0
+04:00:58.152 CONFIG | predict cost:536.5000000000002
+04:00:58.154 CONFIG | 8
+04:00:58.154 CONFIG | 861.0 VS 697.0
+04:00:58.154 CONFIG | predict cost:465.5
+04:00:58.155 CONFIG | 9
+04:00:58.155 CONFIG | 442.0 VS 216.0
+04:00:58.156 CONFIG | predict cost:519.0
+04:00:58.157 CONFIG | 10
+04:00:58.157 CONFIG | 467.0 VS 495.0
+04:00:58.159 CONFIG | predict cost:378.5
+04:00:58.161 CONFIG | 11
+04:00:58.161 CONFIG | 626.0 VS 892.0
+04:00:58.163 CONFIG | predict cost:299.0
+04:00:58.164 CONFIG | 12
+04:00:58.164 CONFIG | 330.0 VS 861.0
+04:00:58.165 CONFIG | predict cost:0.0
+04:00:58.166 CONFIG | 13
+04:00:58.166 CONFIG | 215.0 VS 584.0
+04:00:58.167 CONFIG | predict cost:0.0
+04:00:58.167 CONFIG | 14
+04:00:58.167 CONFIG | 432.0 VS 783.0
+04:00:58.168 CONFIG | predict cost:378.5
+04:00:58.169 CONFIG | 15
+04:00:58.169 CONFIG | 302.0 VS 712.0
+04:00:58.171 CONFIG | predict cost:0.0
+04:00:58.172 CONFIG | 16
+04:00:58.172 CONFIG | 215.0 VS 783.0
+04:00:58.173 CONFIG | predict cost:299.0
+04:00:58.174 CONFIG | 17
+04:00:58.174 CONFIG | 239.0 VS 765.0
+04:00:58.175 CONFIG | predict cost:519.0
+04:00:58.176 CONFIG | 18
+04:00:58.176 CONFIG | 657.0 VS 495.0
+04:00:58.178 CONFIG | predict cost:319.00000000000045
+04:00:58.180 CONFIG | 19
+04:00:58.180 CONFIG | 287.0 VS 538.0
+04:00:58.182 CONFIG | predict cost:819.5
+04:00:58.183 CONFIG | 20
+04:00:58.183 CONFIG | 655.0 VS 607.0
+04:00:58.184 CONFIG | predict cost:0.0
+04:00:58.185 CONFIG | 21
+04:00:58.185 CONFIG | 298.0 VS 829.0
+04:00:58.186 CONFIG | predict cost:0.0
+04:00:58.187 CONFIG | 22
+04:00:58.187 CONFIG | 215.0 VS 774.0
+04:00:58.189 CONFIG | predict cost:0.0
+04:00:58.190 CONFIG | 23
+04:00:58.191 CONFIG | 742.0 VS 1341.0
+04:00:58.192 CONFIG | predict cost:0.0
+04:00:58.193 CONFIG | 24
+04:00:58.193 CONFIG | 747.0 VS 829.0
+04:00:58.195 CONFIG | predict cost:929.5
+04:00:58.196 CONFIG | 25
+04:00:58.197 CONFIG | 743.0 VS 1709.0
+04:00:58.199 CONFIG | predict cost:0.0
+04:00:58.199 CONFIG | 26
+04:00:58.199 CONFIG | 714.0 VS 1265.0
+04:00:58.201 CONFIG | predict cost:322.0
+04:00:58.202 CONFIG | 27
+04:00:58.202 CONFIG | 257.0 VS 554.0
+04:00:58.206 CONFIG | predict cost:929.5
+04:00:58.207 CONFIG | 28
+04:00:58.207 CONFIG | 743.0 VS 1709.0
+04:00:58.210 CONFIG | predict cost:0.0
+04:00:58.212 CONFIG | 29
+04:00:58.212 CONFIG | 215.0 VS 10.0
+04:00:58.215 CONFIG | predict cost:0.0
+04:00:58.216 CONFIG | 30
+04:00:58.216 CONFIG | 370.0 VS 594.0
+04:00:58.216 CONFIG | Agent 0 has tasks [(Task 0, 27 kg, 358 CHF, Breda -> Almere), (Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 481 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 394 CHF, Utrecht -> Groningen), (Task 9, 26 kg, 467 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 626 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 215 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 432 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 302 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 215 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 239 CHF, Amsterdam -> Breda), (Task 18, 25 kg, 287 CHF, Almere -> Rotterdam), (Task 20, 20 kg, 298 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 215 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 742 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 747 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 714 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 257 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 370 CHF, Utrecht -> Breda)]
+04:00:58.217 CONFIG | 22
+04:01:09.156 CONFIG | 10489.0VS9241.0
+04:01:09.156 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 26, 15 kg, 257 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 0, 27 kg, 358 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 21, 11 kg, 215 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 26, 15 kg, 257 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 12, 22 kg, 215 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 13, 17 kg, 432 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 0, 27 kg, 358 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 626 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 12, 22 kg, 215 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 29, 29 kg, 370 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 29, 29 kg, 370 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 10, 12 kg, 626 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 14, 28 kg, 302 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 215 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 14, 28 kg, 302 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 13, 17 kg, 432 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 2, 26 kg, 481 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 9, 26 kg, 467 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 16, 23 kg, 239 CHF, Amsterdam -> Breda), type=DELIVERY, currentTask=(Task 2, 26 kg, 481 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 9, 26 kg, 467 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 15, 16 kg, 215 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 16, 23 kg, 239 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 22, 27 kg, 742 CHF, Eindhoven -> Groningen), type=PICKUP, currentTask=(Task 3, 12 kg, 394 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 15, 16 kg, 215 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 3, 12 kg, 394 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 22, 27 kg, 742 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 27, 15 kg, 743 CHF, Groningen -> Amsterdam)]
+04:01:09.156 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 20, 20 kg, 298 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 23, 20 kg, 747 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 18, 25 kg, 287 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 18, 25 kg, 287 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 25, 19 kg, 714 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 298 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 23, 20 kg, 747 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 25, 19 kg, 714 CHF, Den Haag -> Groningen)]
+04:01:09.182 CONFIG | The profit of agent 1 is 3107.500000Wrote tournament/tour/auction2-auction5-auction.xml
+04:01:09.203 INFO | LogistPlatform finished successfully!
+04:01:09.204 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction5-auction2.xml -a tournament/tour/agents.xml ./config/auction2.xml auction5 auction2
+04:01:09.279 CONFIG | Reading ./config/auction2.xml
+04:01:09.353 CONFIG | Reading config/settings_auction.xml
+04:01:09.448 CONFIG | Reading config/topology/the_netherlands.xml
+04:01:09.477 CONFIG | Reading tournament/tour/agents.xml
+04:01:09.499 CONFIG | Reading config/settings_auction.xml
+04:01:09.505 CONFIG | 0.9533333333333334
+04:01:09.505 CONFIG | 0.9533333333333334
+04:01:09.505 CONFIG | 0.9177777777777778
+04:01:09.505 CONFIG | 1.0066666666666668
+04:01:09.505 CONFIG | 0.9355555555555556
+04:01:09.505 CONFIG | 0.9533333333333334
+04:01:09.505 CONFIG | 0.9177777777777778
+04:01:09.505 CONFIG | 0.9711111111111111
+04:01:09.505 CONFIG | 0.9533333333333334
+04:01:09.506 CONFIG | 0.9711111111111111
+04:01:09.506 CONFIG | 0.9533333333333334
+04:01:09.506 CONFIG | 0.9533333333333334
+04:01:09.506 CONFIG | 0.9177777777777778
+04:01:09.506 CONFIG | 1.0066666666666668
+04:01:09.506 CONFIG | 0.9355555555555556
+04:01:09.506 CONFIG | 0.9533333333333334
+04:01:09.506 CONFIG | 0.9177777777777778
+04:01:09.506 CONFIG | 0.9711111111111111
+04:01:09.506 CONFIG | 0.9533333333333334
+04:01:09.506 CONFIG | 0.9711111111111111
+04:01:09.506 CONFIG | 0.9177777777777778
+04:01:09.506 CONFIG | 0.9177777777777778
+04:01:09.506 CONFIG | 0.9
+04:01:09.506 CONFIG | 0.9444444444444445
+04:01:09.506 CONFIG | 0.908888888888889
+04:01:09.506 CONFIG | 0.9177777777777778
+04:01:09.506 CONFIG | 0.9
+04:01:09.506 CONFIG | 0.9266666666666667
+04:01:09.506 CONFIG | 0.9177777777777778
+04:01:09.506 CONFIG | 0.9266666666666667
+04:01:09.506 CONFIG | 1.0066666666666668
+04:01:09.506 CONFIG | 1.0066666666666668
+04:01:09.506 CONFIG | 0.9444444444444445
+04:01:09.506 CONFIG | 1.1
+04:01:09.506 CONFIG | 0.9755555555555556
+04:01:09.506 CONFIG | 1.0066666666666668
+04:01:09.506 CONFIG | 0.9444444444444445
+04:01:09.506 CONFIG | 1.037777777777778
+04:01:09.506 CONFIG | 1.0066666666666668
+04:01:09.506 CONFIG | 1.037777777777778
+04:01:09.506 CONFIG | 0.9355555555555556
+04:01:09.506 CONFIG | 0.9355555555555556
+04:01:09.506 CONFIG | 0.908888888888889
+04:01:09.507 CONFIG | 0.9755555555555556
+04:01:09.507 CONFIG | 0.9222222222222223
+04:01:09.507 CONFIG | 0.9355555555555556
+04:01:09.507 CONFIG | 0.908888888888889
+04:01:09.507 CONFIG | 0.9488888888888889
+04:01:09.507 CONFIG | 0.9355555555555556
+04:01:09.507 CONFIG | 0.9488888888888889
+04:01:09.507 CONFIG | 0.9533333333333334
+04:01:09.507 CONFIG | 0.9533333333333334
+04:01:09.507 CONFIG | 0.9177777777777778
+04:01:09.507 CONFIG | 1.0066666666666668
+04:01:09.507 CONFIG | 0.9355555555555556
+04:01:09.507 CONFIG | 0.9533333333333334
+04:01:09.507 CONFIG | 0.9177777777777778
+04:01:09.507 CONFIG | 0.9711111111111111
+04:01:09.507 CONFIG | 0.9533333333333334
+04:01:09.507 CONFIG | 0.9711111111111111
+04:01:09.507 CONFIG | 0.9177777777777778
+04:01:09.507 CONFIG | 0.9177777777777778
+04:01:09.507 CONFIG | 0.9
+04:01:09.507 CONFIG | 0.9444444444444445
+04:01:09.507 CONFIG | 0.908888888888889
+04:01:09.507 CONFIG | 0.9177777777777778
+04:01:09.507 CONFIG | 0.9
+04:01:09.507 CONFIG | 0.9266666666666667
+04:01:09.507 CONFIG | 0.9177777777777778
+04:01:09.507 CONFIG | 0.9266666666666667
+04:01:09.507 CONFIG | 0.9711111111111111
+04:01:09.507 CONFIG | 0.9711111111111111
+04:01:09.507 CONFIG | 0.9266666666666667
+04:01:09.507 CONFIG | 1.037777777777778
+04:01:09.507 CONFIG | 0.9488888888888889
+04:01:09.507 CONFIG | 0.9711111111111111
+04:01:09.507 CONFIG | 0.9266666666666667
+04:01:09.507 CONFIG | 0.9933333333333334
+04:01:09.507 CONFIG | 0.9711111111111111
+04:01:09.508 CONFIG | 0.9933333333333334
+04:01:09.508 CONFIG | 0.9533333333333334
+04:01:09.508 CONFIG | 0.9533333333333334
+04:01:09.508 CONFIG | 0.9177777777777778
+04:01:09.508 CONFIG | 1.0066666666666668
+04:01:09.508 CONFIG | 0.9355555555555556
+04:01:09.508 CONFIG | 0.9533333333333334
+04:01:09.508 CONFIG | 0.9177777777777778
+04:01:09.508 CONFIG | 0.9711111111111111
+04:01:09.508 CONFIG | 0.9533333333333334
+04:01:09.508 CONFIG | 0.9711111111111111
+04:01:09.508 CONFIG | 0.9711111111111111
+04:01:09.508 CONFIG | 0.9711111111111111
+04:01:09.508 CONFIG | 0.9266666666666667
+04:01:09.508 CONFIG | 1.037777777777778
+04:01:09.508 CONFIG | 0.9488888888888889
+04:01:09.508 CONFIG | 0.9711111111111111
+04:01:09.508 CONFIG | 0.9266666666666667
+04:01:09.508 CONFIG | 0.9933333333333334
+04:01:09.508 CONFIG | 0.9711111111111111
+04:01:09.508 CONFIG | 0.9933333333333334
+04:01:09.532 CONFIG | predict cost:584.0
+04:01:09.533 CONFIG | 1
+04:01:09.533 CONFIG | City: Den Haag
+04:01:09.533 CONFIG | 358.0 VS 964.0
+04:01:09.534 CONFIG | predict cost:1255.5
+04:01:09.534 CONFIG | 2
+04:01:09.534 CONFIG | 502.0 VS 1265.0
+04:01:09.535 CONFIG | predict cost:1478.5
+04:01:09.536 CONFIG | 3
+04:01:09.536 CONFIG | 591.0 VS 783.0
+04:01:09.536 CONFIG | predict cost:1425.0
+04:01:09.537 CONFIG | 4
+04:01:09.537 CONFIG | 570.0 VS 1331.0
+04:01:09.538 CONFIG | predict cost:666.5
+04:01:09.539 CONFIG | 5
+04:01:09.539 CONFIG | 782.0 VS 573.0
+04:01:09.539 CONFIG | predict cost:1610.0000000000005
+04:01:09.540 CONFIG | 6
+04:01:09.540 CONFIG | 1449.0 VS 1379.0
+04:01:09.541 CONFIG | predict cost:433.0
+04:01:09.542 CONFIG | 7
+04:01:09.542 CONFIG | 572.0 VS 443.0
+04:01:09.543 CONFIG | predict cost:0.0
+04:01:09.543 CONFIG | 8
+04:01:09.543 CONFIG | 861.0 VS 697.0
+04:01:09.544 CONFIG | predict cost:37.5
+04:01:09.545 CONFIG | 9
+04:01:09.545 CONFIG | 442.0 VS 10.0
+04:01:09.547 CONFIG | predict cost:536.4999999999995
+04:01:09.548 CONFIG | 10
+04:01:09.548 CONFIG | 482.0 VS 495.0
+04:01:09.550 CONFIG | predict cost:825.4999999999995
+04:01:09.550 CONFIG | 11
+04:01:09.550 CONFIG | 660.0 VS 686.0
+04:01:09.552 CONFIG | predict cost:163.99999999999955
+04:01:09.553 CONFIG | 12
+04:01:09.553 CONFIG | 330.0 VS 861.0
+04:01:09.554 CONFIG | predict cost:0.0
+04:01:09.555 CONFIG | 13
+04:01:09.555 CONFIG | 127.0 VS 449.0
+04:01:09.556 CONFIG | predict cost:0.0
+04:01:09.559 CONFIG | 14
+04:01:09.559 CONFIG | 432.0 VS 783.0
+04:01:09.560 CONFIG | predict cost:345.0
+04:01:09.560 CONFIG | 15
+04:01:09.560 CONFIG | 276.0 VS 712.0
+04:01:09.561 CONFIG | predict cost:0.0
+04:01:09.562 CONFIG | 16
+04:01:09.562 CONFIG | 9.0 VS 783.0
+04:01:09.563 CONFIG | predict cost:715.5
+04:01:09.563 CONFIG | 17
+04:01:09.563 CONFIG | 572.0 VS 765.0
+04:01:09.565 CONFIG | predict cost:536.4999999999995
+04:01:09.565 CONFIG | 18
+04:01:09.565 CONFIG | 657.0 VS 495.0
+04:01:09.567 CONFIG | predict cost:886.5
+04:01:09.567 CONFIG | 19
+04:01:09.567 CONFIG | 797.0 VS 538.0
+04:01:09.570 CONFIG | predict cost:702.0
+04:01:09.570 CONFIG | 20
+04:01:09.570 CONFIG | 631.0 VS 607.0
+04:01:09.572 CONFIG | predict cost:323.5000000000009
+04:01:09.574 CONFIG | 21
+04:01:09.574 CONFIG | 298.0 VS 829.0
+04:01:09.575 CONFIG | predict cost:0.0
+04:01:09.576 CONFIG | 22
+04:01:09.576 CONFIG | 9.0 VS 774.0
+04:01:09.577 CONFIG | predict cost:1042.5
+04:01:09.578 CONFIG | 23
+04:01:09.578 CONFIG | 834.0 VS 780.0
+04:01:09.579 CONFIG | predict cost:323.5000000000009
+04:01:09.580 CONFIG | 24
+04:01:09.580 CONFIG | 463.0 VS 829.0
+04:01:09.582 CONFIG | predict cost:929.5
+04:01:09.582 CONFIG | 25
+04:01:09.582 CONFIG | 743.0 VS 1709.0
+04:01:09.584 CONFIG | predict cost:652.0
+04:01:09.585 CONFIG | 26
+04:01:09.585 CONFIG | 728.0 VS 1265.0
+04:01:09.586 CONFIG | predict cost:622.0000000000009
+04:01:09.587 CONFIG | 27
+04:01:09.587 CONFIG | 497.0 VS 416.0
+04:01:09.590 CONFIG | predict cost:929.5
+04:01:09.590 CONFIG | 28
+04:01:09.590 CONFIG | 836.0 VS 1709.0
+04:01:09.593 CONFIG | predict cost:169.4999999999991
+04:01:09.593 CONFIG | 29
+04:01:09.593 CONFIG | 324.0 VS 10.0
+04:01:09.595 CONFIG | predict cost:436.0000000000018
+04:01:09.596 CONFIG | 30
+04:01:09.596 CONFIG | 392.0 VS 594.0
+04:01:09.596 CONFIG | Agent 0 has tasks [(Task 0, 27 kg, 358 CHF, Breda -> Almere), (Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 591 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), (Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 660 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 127 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 432 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 276 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 9 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 572 CHF, Amsterdam -> Breda), (Task 20, 20 kg, 298 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 9 CHF, Breda -> Nijmegen), (Task 23, 20 kg, 463 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 728 CHF, Den Haag -> Groningen), (Task 27, 15 kg, 836 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 392 CHF, Utrecht -> Breda)]
+04:01:09.596 CONFIG | 19
+04:01:16.269 CONFIG | 8879.5VS7848.5
+04:01:16.269 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 23, 20 kg, 463 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 20, 20 kg, 298 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 16, 23 kg, 572 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 10, 12 kg, 660 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 10, 12 kg, 660 CHF, Almere -> Eindhoven), type=PICKUP, currentTask=(Task 21, 11 kg, 9 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 16, 23 kg, 572 CHF, Amsterdam -> Breda), type=DELIVERY, currentTask=(Task 23, 20 kg, 463 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 9 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 298 CHF, Amsterdam -> Nijmegen)]
+04:01:16.269 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 14, 28 kg, 276 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 15, 16 kg, 9 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 13, 17 kg, 432 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 14, 28 kg, 276 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 330 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 15, 16 kg, 9 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 13, 17 kg, 432 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 2, 26 kg, 591 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 9, 26 kg, 482 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 12, 22 kg, 127 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 12, 22 kg, 127 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 29, 29 kg, 392 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 29, 29 kg, 392 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 0, 27 kg, 358 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 2, 26 kg, 591 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 25, 19 kg, 728 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 0, 27 kg, 358 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 27, 15 kg, 836 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 25, 19 kg, 728 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 3, 12 kg, 570 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 27, 15 kg, 836 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 743 CHF, Groningen -> Amsterdam)]
+04:01:16.288 CONFIG | The profit of agent 1 is 4635.500000Wrote tournament/tour/auction2-auction5-auction2.xml
+04:01:16.310 INFO | LogistPlatform finished successfully!
+04:01:16.310 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction5-auction3.xml -a tournament/tour/agents.xml ./config/auction2.xml auction5 auction3
+04:01:16.376 CONFIG | Reading ./config/auction2.xml
+04:01:16.430 CONFIG | Reading config/settings_auction.xml
+04:01:16.487 CONFIG | Reading config/topology/the_netherlands.xml
+04:01:16.508 CONFIG | Reading tournament/tour/agents.xml
+04:01:16.528 CONFIG | Reading config/settings_auction.xml
+04:01:16.534 CONFIG | 0.9533333333333334
+04:01:16.534 CONFIG | 0.9533333333333334
+04:01:16.534 CONFIG | 0.9177777777777778
+04:01:16.534 CONFIG | 1.0066666666666668
+04:01:16.534 CONFIG | 0.9355555555555556
+04:01:16.534 CONFIG | 0.9533333333333334
+04:01:16.534 CONFIG | 0.9177777777777778
+04:01:16.534 CONFIG | 0.9711111111111111
+04:01:16.534 CONFIG | 0.9533333333333334
+04:01:16.534 CONFIG | 0.9711111111111111
+04:01:16.534 CONFIG | 0.9533333333333334
+04:01:16.534 CONFIG | 0.9533333333333334
+04:01:16.534 CONFIG | 0.9177777777777778
+04:01:16.534 CONFIG | 1.0066666666666668
+04:01:16.534 CONFIG | 0.9355555555555556
+04:01:16.534 CONFIG | 0.9533333333333334
+04:01:16.535 CONFIG | 0.9177777777777778
+04:01:16.535 CONFIG | 0.9711111111111111
+04:01:16.535 CONFIG | 0.9533333333333334
+04:01:16.535 CONFIG | 0.9711111111111111
+04:01:16.535 CONFIG | 0.9177777777777778
+04:01:16.535 CONFIG | 0.9177777777777778
+04:01:16.535 CONFIG | 0.9
+04:01:16.535 CONFIG | 0.9444444444444445
+04:01:16.535 CONFIG | 0.908888888888889
+04:01:16.535 CONFIG | 0.9177777777777778
+04:01:16.535 CONFIG | 0.9
+04:01:16.535 CONFIG | 0.9266666666666667
+04:01:16.535 CONFIG | 0.9177777777777778
+04:01:16.535 CONFIG | 0.9266666666666667
+04:01:16.535 CONFIG | 1.0066666666666668
+04:01:16.535 CONFIG | 1.0066666666666668
+04:01:16.535 CONFIG | 0.9444444444444445
+04:01:16.535 CONFIG | 1.1
+04:01:16.535 CONFIG | 0.9755555555555556
+04:01:16.535 CONFIG | 1.0066666666666668
+04:01:16.535 CONFIG | 0.9444444444444445
+04:01:16.535 CONFIG | 1.037777777777778
+04:01:16.535 CONFIG | 1.0066666666666668
+04:01:16.535 CONFIG | 1.037777777777778
+04:01:16.535 CONFIG | 0.9355555555555556
+04:01:16.535 CONFIG | 0.9355555555555556
+04:01:16.535 CONFIG | 0.908888888888889
+04:01:16.535 CONFIG | 0.9755555555555556
+04:01:16.535 CONFIG | 0.9222222222222223
+04:01:16.535 CONFIG | 0.9355555555555556
+04:01:16.535 CONFIG | 0.908888888888889
+04:01:16.535 CONFIG | 0.9488888888888889
+04:01:16.535 CONFIG | 0.9355555555555556
+04:01:16.535 CONFIG | 0.9488888888888889
+04:01:16.535 CONFIG | 0.9533333333333334
+04:01:16.535 CONFIG | 0.9533333333333334
+04:01:16.535 CONFIG | 0.9177777777777778
+04:01:16.535 CONFIG | 1.0066666666666668
+04:01:16.535 CONFIG | 0.9355555555555556
+04:01:16.535 CONFIG | 0.9533333333333334
+04:01:16.535 CONFIG | 0.9177777777777778
+04:01:16.535 CONFIG | 0.9711111111111111
+04:01:16.535 CONFIG | 0.9533333333333334
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9177777777777778
+04:01:16.536 CONFIG | 0.9177777777777778
+04:01:16.536 CONFIG | 0.9
+04:01:16.536 CONFIG | 0.9444444444444445
+04:01:16.536 CONFIG | 0.908888888888889
+04:01:16.536 CONFIG | 0.9177777777777778
+04:01:16.536 CONFIG | 0.9
+04:01:16.536 CONFIG | 0.9266666666666667
+04:01:16.536 CONFIG | 0.9177777777777778
+04:01:16.536 CONFIG | 0.9266666666666667
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9266666666666667
+04:01:16.536 CONFIG | 1.037777777777778
+04:01:16.536 CONFIG | 0.9488888888888889
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9266666666666667
+04:01:16.536 CONFIG | 0.9933333333333334
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9933333333333334
+04:01:16.536 CONFIG | 0.9533333333333334
+04:01:16.536 CONFIG | 0.9533333333333334
+04:01:16.536 CONFIG | 0.9177777777777778
+04:01:16.536 CONFIG | 1.0066666666666668
+04:01:16.536 CONFIG | 0.9355555555555556
+04:01:16.536 CONFIG | 0.9533333333333334
+04:01:16.536 CONFIG | 0.9177777777777778
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9533333333333334
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9266666666666667
+04:01:16.536 CONFIG | 1.037777777777778
+04:01:16.536 CONFIG | 0.9488888888888889
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9266666666666667
+04:01:16.536 CONFIG | 0.9933333333333334
+04:01:16.536 CONFIG | 0.9711111111111111
+04:01:16.536 CONFIG | 0.9933333333333334
+04:01:16.557 CONFIG | predict cost:827.0
+04:01:16.558 CONFIG | 1
+04:01:16.558 CONFIG | City: Den Haag
+04:01:16.558 CONFIG | 358.0 VS 954.0
+04:01:16.558 CONFIG | predict cost:1255.5
+04:01:16.559 CONFIG | 2
+04:01:16.559 CONFIG | 502.0 VS 1270.0
+04:01:16.560 CONFIG | predict cost:1420.0
+04:01:16.560 CONFIG | 3
+04:01:16.560 CONFIG | 568.0 VS 1660.0
+04:01:16.561 CONFIG | predict cost:1298.0
+04:01:16.562 CONFIG | 4
+04:01:16.562 CONFIG | 519.0 VS 1634.0
+04:01:16.562 CONFIG | predict cost:539.5
+04:01:16.563 CONFIG | 5
+04:01:16.563 CONFIG | 953.0 VS 703.0
+04:01:16.564 CONFIG | predict cost:1610.0
+04:01:16.564 CONFIG | 6
+04:01:16.564 CONFIG | 1449.0 VS 2059.0
+04:01:16.565 CONFIG | predict cost:376.0
+04:01:16.565 CONFIG | 7
+04:01:16.565 CONFIG | 702.0 VS 404.0
+04:01:16.566 CONFIG | predict cost:685.9999999999998
+04:01:16.566 CONFIG | 8
+04:01:16.566 CONFIG | 617.0 VS 1412.0
+04:01:16.567 CONFIG | predict cost:519.0000000000002
+04:01:16.567 CONFIG | 9
+04:01:16.567 CONFIG | 415.0 VS 924.0
+04:01:16.568 CONFIG | predict cost:957.5
+04:01:16.569 CONFIG | 10
+04:01:16.569 CONFIG | 766.0 VS 1187.0
+04:01:16.570 CONFIG | predict cost:459.5
+04:01:16.570 CONFIG | 11
+04:01:16.570 CONFIG | 403.0 VS 1050.0
+04:01:16.572 CONFIG | predict cost:730.9999999999998
+04:01:16.573 CONFIG | 12
+04:01:16.573 CONFIG | 584.0 VS 853.0
+04:01:16.573 CONFIG | predict cost:0.0
+04:01:16.574 CONFIG | 13
+04:01:16.574 CONFIG | 650.0 VS 1322.0
+04:01:16.575 CONFIG | predict cost:589.0
+04:01:16.575 CONFIG | 14
+04:01:16.575 CONFIG | 471.0 VS 1505.0
+04:01:16.576 CONFIG | predict cost:810.5
+04:01:16.577 CONFIG | 15
+04:01:16.577 CONFIG | 648.0 VS 864.0
+04:01:16.580 CONFIG | predict cost:335.0
+04:01:16.583 CONFIG | 16
+04:01:16.583 CONFIG | 403.0 VS 1339.0
+04:01:16.584 CONFIG | predict cost:367.5
+04:01:16.585 CONFIG | 17
+04:01:16.585 CONFIG | 413.0 VS 1363.0
+04:01:16.586 CONFIG | predict cost:957.5
+04:01:16.587 CONFIG | 18
+04:01:16.587 CONFIG | 766.0 VS 1509.0
+04:01:16.589 CONFIG | predict cost:311.5
+04:01:16.590 CONFIG | 19
+04:01:16.590 CONFIG | 515.0 VS 1326.0
+04:01:16.592 CONFIG | predict cost:770.5
+04:01:16.592 CONFIG | 20
+04:01:16.592 CONFIG | 616.0 VS 896.0
+04:01:16.594 CONFIG | predict cost:432.0
+04:01:16.594 CONFIG | 21
+04:01:16.594 CONFIG | 420.0 VS 1716.0
+04:01:16.598 CONFIG | predict cost:730.9999999999998
+04:01:16.598 CONFIG | 22
+04:01:16.598 CONFIG | 584.0 VS 1281.0
+04:01:16.601 CONFIG | predict cost:1688.5
+04:01:16.601 CONFIG | 23
+04:01:16.601 CONFIG | 1350.0 VS 2169.0
+04:01:16.603 CONFIG | predict cost:432.0
+04:01:16.603 CONFIG | 24
+04:01:16.603 CONFIG | 403.0 VS 1549.0
+04:01:16.605 CONFIG | predict cost:1540.0
+04:01:16.605 CONFIG | 25
+04:01:16.605 CONFIG | 1232.0 VS 1944.0
+04:01:16.608 CONFIG | predict cost:1240.5
+04:01:16.608 CONFIG | 26
+04:01:16.608 CONFIG | 992.0 VS 3520.0
+04:01:16.612 CONFIG | predict cost:1013.5
+04:01:16.612 CONFIG | 27
+04:01:16.613 CONFIG | 810.0 VS 1720.0
+04:01:16.616 CONFIG | predict cost:1540.0
+04:01:16.616 CONFIG | 28
+04:01:16.617 CONFIG | 1232.0 VS 3334.0
+04:01:16.621 CONFIG | predict cost:0.0
+04:01:16.621 CONFIG | 29
+04:01:16.621 CONFIG | 403.0 VS 375.0
+04:01:16.628 CONFIG | predict cost:367.5
+04:01:16.630 CONFIG | 30
+04:01:16.630 CONFIG | 374.0 VS 1176.0
+04:01:16.630 CONFIG | Agent 0 has tasks [(Task 0, 27 kg, 358 CHF, Breda -> Almere), (Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), (Task 2, 26 kg, 568 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 519 CHF, Utrecht -> Groningen), (Task 5, 26 kg, 1449 CHF, Nijmegen -> Groningen), (Task 7, 28 kg, 617 CHF, Den Haag -> Nijmegen), (Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), (Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 403 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 584 CHF, Breda -> Nijmegen), (Task 12, 22 kg, 650 CHF, Rotterdam -> Almere), (Task 13, 17 kg, 471 CHF, Den Haag -> Apeldoorn), (Task 14, 28 kg, 648 CHF, Eindhoven -> Nijmegen), (Task 15, 16 kg, 403 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 413 CHF, Amsterdam -> Breda), (Task 17, 26 kg, 766 CHF, Apeldoorn -> Den Haag), (Task 18, 25 kg, 515 CHF, Almere -> Rotterdam), (Task 19, 15 kg, 616 CHF, Eindhoven -> Breda), (Task 20, 20 kg, 420 CHF, Amsterdam -> Nijmegen), (Task 21, 11 kg, 584 CHF, Breda -> Nijmegen), (Task 22, 27 kg, 1350 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 403 CHF, Amsterdam -> Nijmegen), (Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 992 CHF, Den Haag -> Groningen), (Task 26, 15 kg, 810 CHF, Eindhoven -> Rotterdam), (Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), (Task 29, 29 kg, 374 CHF, Utrecht -> Breda)]
+04:01:16.631 CONFIG | 27
+04:01:38.423 CONFIG | 13450.500000000002VS11673.5
+04:01:38.423 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 14, 28 kg, 648 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 21, 11 kg, 584 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 11, 11 kg, 584 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 14, 28 kg, 648 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 21, 11 kg, 584 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 584 CHF, Breda -> Nijmegen), type=PICKUP, currentTask=(Task 2, 26 kg, 568 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 3, 12 kg, 519 CHF, Utrecht -> Groningen), type=DELIVERY, currentTask=(Task 2, 26 kg, 568 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 7, 28 kg, 617 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 9, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 13, 17 kg, 471 CHF, Den Haag -> Apeldoorn), type=PICKUP, currentTask=(Task 12, 22 kg, 650 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 7, 28 kg, 617 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 1449 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 13, 17 kg, 471 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 3, 12 kg, 519 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 5, 26 kg, 1449 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 12, 22 kg, 650 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 16, 23 kg, 413 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 20, 20 kg, 420 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 24, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 23, 20 kg, 403 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 27, 15 kg, 1232 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 16, 23 kg, 413 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 0, 27 kg, 358 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 10, 12 kg, 403 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 0, 27 kg, 358 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 18, 25 kg, 515 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 18, 25 kg, 515 CHF, Almere -> Rotterdam), type=DELIVERY, currentTask=(Task 10, 12 kg, 403 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 23, 20 kg, 403 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 420 CHF, Amsterdam -> Nijmegen)]
+04:01:38.423 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 15, 16 kg, 403 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 29, 29 kg, 374 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 15, 16 kg, 403 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 17, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 8, 21 kg, 415 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 17, 26 kg, 766 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 29, 29 kg, 374 CHF, Utrecht -> Breda), type=PICKUP, currentTask=(Task 22, 27 kg, 1350 CHF, Eindhoven -> Groningen), type=PICKUP, currentTask=(Task 26, 15 kg, 810 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 19, 15 kg, 616 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 19, 15 kg, 616 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 26, 15 kg, 810 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 25, 19 kg, 992 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 1, 19 kg, 502 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 22, 27 kg, 1350 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 992 CHF, Den Haag -> Groningen)]
+04:01:38.445 CONFIG | The profit of agent 1 is 223.000000Wrote tournament/tour/auction2-auction5-auction3.xml
+04:01:38.477 INFO | LogistPlatform finished successfully!
+04:01:38.478 FINE | Run command: java -Xmx1024m -classpath logist/logist.jar logist.LogistPlatform -o tournament/tour/auction2-auction5-auction4.xml -a tournament/tour/agents.xml ./config/auction2.xml auction5 auction4
+04:01:38.538 CONFIG | Reading ./config/auction2.xml
+04:01:38.596 CONFIG | Reading config/settings_auction.xml
+04:01:38.660 CONFIG | Reading config/topology/the_netherlands.xml
+04:01:38.683 CONFIG | Reading tournament/tour/agents.xml
+04:01:38.700 CONFIG | Reading config/settings_auction.xml
+04:01:38.706 CONFIG | 0.9533333333333334
+04:01:38.706 CONFIG | 0.9533333333333334
+04:01:38.706 CONFIG | 0.9177777777777778
+04:01:38.706 CONFIG | 1.0066666666666668
+04:01:38.706 CONFIG | 0.9355555555555556
+04:01:38.706 CONFIG | 0.9533333333333334
+04:01:38.706 CONFIG | 0.9177777777777778
+04:01:38.706 CONFIG | 0.9711111111111111
+04:01:38.706 CONFIG | 0.9533333333333334
+04:01:38.706 CONFIG | 0.9711111111111111
+04:01:38.706 CONFIG | 0.9533333333333334
+04:01:38.706 CONFIG | 0.9533333333333334
+04:01:38.706 CONFIG | 0.9177777777777778
+04:01:38.706 CONFIG | 1.0066666666666668
+04:01:38.707 CONFIG | 0.9355555555555556
+04:01:38.707 CONFIG | 0.9533333333333334
+04:01:38.707 CONFIG | 0.9177777777777778
+04:01:38.707 CONFIG | 0.9711111111111111
+04:01:38.707 CONFIG | 0.9533333333333334
+04:01:38.707 CONFIG | 0.9711111111111111
+04:01:38.707 CONFIG | 0.9177777777777778
+04:01:38.707 CONFIG | 0.9177777777777778
+04:01:38.707 CONFIG | 0.9
+04:01:38.707 CONFIG | 0.9444444444444445
+04:01:38.707 CONFIG | 0.908888888888889
+04:01:38.707 CONFIG | 0.9177777777777778
+04:01:38.707 CONFIG | 0.9
+04:01:38.707 CONFIG | 0.9266666666666667
+04:01:38.707 CONFIG | 0.9177777777777778
+04:01:38.707 CONFIG | 0.9266666666666667
+04:01:38.707 CONFIG | 1.0066666666666668
+04:01:38.707 CONFIG | 1.0066666666666668
+04:01:38.707 CONFIG | 0.9444444444444445
+04:01:38.707 CONFIG | 1.1
+04:01:38.707 CONFIG | 0.9755555555555556
+04:01:38.707 CONFIG | 1.0066666666666668
+04:01:38.707 CONFIG | 0.9444444444444445
+04:01:38.707 CONFIG | 1.037777777777778
+04:01:38.707 CONFIG | 1.0066666666666668
+04:01:38.707 CONFIG | 1.037777777777778
+04:01:38.707 CONFIG | 0.9355555555555556
+04:01:38.708 CONFIG | 0.9355555555555556
+04:01:38.708 CONFIG | 0.908888888888889
+04:01:38.708 CONFIG | 0.9755555555555556
+04:01:38.708 CONFIG | 0.9222222222222223
+04:01:38.708 CONFIG | 0.9355555555555556
+04:01:38.708 CONFIG | 0.908888888888889
+04:01:38.708 CONFIG | 0.9488888888888889
+04:01:38.708 CONFIG | 0.9355555555555556
+04:01:38.708 CONFIG | 0.9488888888888889
+04:01:38.708 CONFIG | 0.9533333333333334
+04:01:38.708 CONFIG | 0.9533333333333334
+04:01:38.708 CONFIG | 0.9177777777777778
+04:01:38.708 CONFIG | 1.0066666666666668
+04:01:38.708 CONFIG | 0.9355555555555556
+04:01:38.708 CONFIG | 0.9533333333333334
+04:01:38.708 CONFIG | 0.9177777777777778
+04:01:38.708 CONFIG | 0.9711111111111111
+04:01:38.708 CONFIG | 0.9533333333333334
+04:01:38.708 CONFIG | 0.9711111111111111
+04:01:38.708 CONFIG | 0.9177777777777778
+04:01:38.708 CONFIG | 0.9177777777777778
+04:01:38.708 CONFIG | 0.9
+04:01:38.708 CONFIG | 0.9444444444444445
+04:01:38.708 CONFIG | 0.908888888888889
+04:01:38.708 CONFIG | 0.9177777777777778
+04:01:38.708 CONFIG | 0.9
+04:01:38.708 CONFIG | 0.9266666666666667
+04:01:38.708 CONFIG | 0.9177777777777778
+04:01:38.709 CONFIG | 0.9266666666666667
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9266666666666667
+04:01:38.709 CONFIG | 1.037777777777778
+04:01:38.709 CONFIG | 0.9488888888888889
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9266666666666667
+04:01:38.709 CONFIG | 0.9933333333333334
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9933333333333334
+04:01:38.709 CONFIG | 0.9533333333333334
+04:01:38.709 CONFIG | 0.9533333333333334
+04:01:38.709 CONFIG | 0.9177777777777778
+04:01:38.709 CONFIG | 1.0066666666666668
+04:01:38.709 CONFIG | 0.9355555555555556
+04:01:38.709 CONFIG | 0.9533333333333334
+04:01:38.709 CONFIG | 0.9177777777777778
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9533333333333334
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9711111111111111
+04:01:38.709 CONFIG | 0.9266666666666667
+04:01:38.709 CONFIG | 1.037777777777778
+04:01:38.710 CONFIG | 0.9488888888888889
+04:01:38.710 CONFIG | 0.9711111111111111
+04:01:38.710 CONFIG | 0.9266666666666667
+04:01:38.710 CONFIG | 0.9933333333333334
+04:01:38.710 CONFIG | 0.9711111111111111
+04:01:38.710 CONFIG | 0.9933333333333334
+04:01:38.711 CONFIG | Reading config/settings_auction.xml
+04:01:38.730 CONFIG | predict cost:1286.5
+04:01:38.742 CONFIG | Estimated Self marginal cost for current task is 954.000000
+04:01:38.743 CONFIG | Estimated Opponent marginal cost for current task is 584.000000
+04:01:38.743 CONFIG | 1
+04:01:38.743 CONFIG | City: Breda
+04:01:38.743 CONFIG | 546.0 VS 405.0
+04:01:38.744 CONFIG | predict cost:339.0
+04:01:38.744 CONFIG | Current round is 1
+04:01:38.744 CONFIG | Estimated Self marginal cost for current task is 770.000000
+04:01:38.745 CONFIG | Estimated Opponent marginal cost for current task is 1625.500000
+04:01:38.745 CONFIG | 2
+04:01:38.745 CONFIG | 672.0 VS 650.0
+04:01:38.745 CONFIG | predict cost:1106.0
+04:01:38.746 CONFIG | Current round is 2
+04:01:38.746 CONFIG | Estimated Self marginal cost for current task is 773.500000
+04:01:38.746 CONFIG | Estimated Opponent marginal cost for current task is 1476.000000
+04:01:38.746 CONFIG | 3
+04:01:38.746 CONFIG | 520.0 VS 590.0
+04:01:38.747 CONFIG | predict cost:169.5
+04:01:38.747 CONFIG | Current round is 3
+04:01:38.747 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:01:38.747 CONFIG | Estimated Opponent marginal cost for current task is 1187.000000
+04:01:38.748 CONFIG | 4
+04:01:38.748 CONFIG | 470.0 VS 534.0
+04:01:38.749 CONFIG | predict cost:340.5
+04:01:38.749 CONFIG | Current round is 4
+04:01:38.750 CONFIG | Estimated Self marginal cost for current task is 171.000000
+04:01:38.750 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:01:38.750 CONFIG | 5
+04:01:38.750 CONFIG | 404.0 VS 469.0
+04:01:38.751 CONFIG | predict cost:798.0
+04:01:38.751 CONFIG | Current round is 5
+04:01:38.752 CONFIG | Estimated Self marginal cost for current task is 545.500000
+04:01:38.752 CONFIG | Estimated Opponent marginal cost for current task is 1677.500000
+04:01:38.752 CONFIG | 6
+04:01:38.752 CONFIG | 638.0 VS 1509.0
+04:01:38.752 CONFIG | predict cost:433.0
+04:01:38.753 CONFIG | Current round is 6
+04:01:38.753 CONFIG | Estimated Self marginal cost for current task is 433.000000
+04:01:38.753 CONFIG | Estimated Opponent marginal cost for current task is 183.500000
+04:01:38.754 CONFIG | 7
+04:01:38.754 CONFIG | 404.0 VS 403.0
+04:01:38.754 CONFIG | predict cost:850.0
+04:01:38.754 CONFIG | Current round is 7
+04:01:38.755 CONFIG | Estimated Self marginal cost for current task is 545.500000
+04:01:38.755 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:01:38.755 CONFIG | 8
+04:01:38.755 CONFIG | 765.0 VS 463.0
+04:01:38.756 CONFIG | predict cost:37.5
+04:01:38.756 CONFIG | Current round is 8
+04:01:38.759 CONFIG | Estimated Self marginal cost for current task is 37.500000
+04:01:38.759 CONFIG | Estimated Opponent marginal cost for current task is 335.500000
+04:01:38.759 CONFIG | 9
+04:01:38.759 CONFIG | 402.0 VS 403.0
+04:01:38.759 CONFIG | predict cost:895.9999999999991
+04:01:38.760 CONFIG | Current round is 9
+04:01:38.761 CONFIG | Estimated Self marginal cost for current task is 773.500000
+04:01:38.761 CONFIG | Estimated Opponent marginal cost for current task is 692.000000
+04:01:38.762 CONFIG | 10
+04:01:38.762 CONFIG | 716.0 VS 622.0
+04:01:38.763 CONFIG | predict cost:1247.5
+04:01:38.764 CONFIG | Current round is 10
+04:01:38.766 CONFIG | Estimated Self marginal cost for current task is 793.500000
+04:01:38.767 CONFIG | Estimated Opponent marginal cost for current task is 345.000000
+04:01:38.768 CONFIG | 11
+04:01:38.768 CONFIG | 1122.0 VS 674.0
+04:01:38.770 CONFIG | predict cost:219.0
+04:01:38.770 CONFIG | Current round is 11
+04:01:38.771 CONFIG | Estimated Self marginal cost for current task is 351.000000
+04:01:38.771 CONFIG | Estimated Opponent marginal cost for current task is 164.000000
+04:01:38.771 CONFIG | 12
+04:01:38.771 CONFIG | 402.0 VS 401.0
+04:01:38.772 CONFIG | predict cost:169.5000000000009
+04:01:38.772 CONFIG | Current round is 12
+04:01:38.773 CONFIG | Estimated Self marginal cost for current task is 439.500000
+04:01:38.773 CONFIG | Estimated Opponent marginal cost for current task is 428.000000
+04:01:38.773 CONFIG | 13
+04:01:38.773 CONFIG | 400.0 VS 401.0
+04:01:38.774 CONFIG | predict cost:271.5000000000009
+04:01:38.775 CONFIG | Current round is 13
+04:01:38.776 CONFIG | Estimated Self marginal cost for current task is 285.500000
+04:01:38.776 CONFIG | Estimated Opponent marginal cost for current task is 37.500000
+04:01:38.777 CONFIG | 14
+04:01:38.777 CONFIG | 400.0 VS 399.0
+04:01:38.777 CONFIG | predict cost:0.0
+04:01:38.778 CONFIG | Current round is 14
+04:01:38.778 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:01:38.778 CONFIG | Estimated Opponent marginal cost for current task is 345.000000
+04:01:38.779 CONFIG | 15
+04:01:38.779 CONFIG | 398.0 VS 399.0
+04:01:38.779 CONFIG | predict cost:0.0
+04:01:38.780 CONFIG | Current round is 15
+04:01:38.780 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:01:38.781 CONFIG | Estimated Opponent marginal cost for current task is 37.500000
+04:01:38.781 CONFIG | 16
+04:01:38.782 CONFIG | 398.0 VS 397.0
+04:01:38.782 CONFIG | predict cost:486.0
+04:01:38.783 CONFIG | Current round is 16
+04:01:38.784 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:01:38.785 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:01:38.785 CONFIG | 17
+04:01:38.785 CONFIG | 437.0 VS 397.0
+04:01:38.786 CONFIG | predict cost:692.0
+04:01:38.786 CONFIG | Current round is 17
+04:01:38.787 CONFIG | Estimated Self marginal cost for current task is 652.000000
+04:01:38.787 CONFIG | Estimated Opponent marginal cost for current task is 692.000000
+04:01:38.787 CONFIG | 18
+04:01:38.787 CONFIG | 622.0 VS 554.0
+04:01:38.788 CONFIG | predict cost:773.9999999999991
+04:01:38.788 CONFIG | Current round is 18
+04:01:38.789 CONFIG | Estimated Self marginal cost for current task is 886.500000
+04:01:38.789 CONFIG | Estimated Opponent marginal cost for current task is 0.000000
+04:01:38.790 CONFIG | 19
+04:01:38.790 CONFIG | 696.0 VS 753.0
+04:01:38.792 CONFIG | predict cost:441.0
+04:01:38.792 CONFIG | Current round is 19
+04:01:38.794 CONFIG | Estimated Self marginal cost for current task is 441.000000
+04:01:38.794 CONFIG | Estimated Opponent marginal cost for current task is 416.500000
+04:01:38.795 CONFIG | 20
+04:01:38.795 CONFIG | 396.0 VS 397.0
+04:01:38.797 CONFIG | predict cost:665.4999999999991
+04:01:38.799 CONFIG | Current round is 20
+04:01:38.801 CONFIG | Estimated Self marginal cost for current task is 972.000000
+04:01:38.801 CONFIG | Estimated Opponent marginal cost for current task is 357.000000
+04:01:38.802 CONFIG | 21
+04:01:38.802 CONFIG | 532.0 VS 729.0
+04:01:38.803 CONFIG | predict cost:441.0
+04:01:38.804 CONFIG | Current round is 21
+04:01:38.805 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:01:38.805 CONFIG | Estimated Opponent marginal cost for current task is 164.000000
+04:01:38.805 CONFIG | 22
+04:01:38.805 CONFIG | 396.0 VS 395.0
+04:01:38.806 CONFIG | predict cost:702.0
+04:01:38.806 CONFIG | Current round is 22
+04:01:38.808 CONFIG | Estimated Self marginal cost for current task is 919.000000
+04:01:38.808 CONFIG | Estimated Opponent marginal cost for current task is 403.000000
+04:01:38.808 CONFIG | 23
+04:01:38.808 CONFIG | 631.0 VS 781.0
+04:01:38.809 CONFIG | predict cost:665.4999999999991
+04:01:38.810 CONFIG | Current round is 23
+04:01:38.811 CONFIG | Estimated Self marginal cost for current task is 996.500000
+04:01:38.811 CONFIG | Estimated Opponent marginal cost for current task is 553.000000
+04:01:38.811 CONFIG | 24
+04:01:38.811 CONFIG | 532.0 VS 747.0
+04:01:38.813 CONFIG | predict cost:929.5
+04:01:38.813 CONFIG | Current round is 24
+04:01:38.815 CONFIG | Estimated Self marginal cost for current task is 929.500000
+04:01:38.815 CONFIG | Estimated Opponent marginal cost for current task is 675.500000
+04:01:38.815 CONFIG | 25
+04:01:38.816 CONFIG | 743.0 VS 697.0
+04:01:38.817 CONFIG | predict cost:1175.0000000000018
+04:01:38.817 CONFIG | Current round is 25
+04:01:38.819 CONFIG | Estimated Self marginal cost for current task is 707.500000
+04:01:38.819 CONFIG | Estimated Opponent marginal cost for current task is 971.000000
+04:01:38.819 CONFIG | 26
+04:01:38.819 CONFIG | 1331.0 VS 776.0
+04:01:38.821 CONFIG | predict cost:345.0
+04:01:38.821 CONFIG | Current round is 26
+04:01:38.822 CONFIG | Estimated Self marginal cost for current task is 646.500000
+04:01:38.823 CONFIG | Estimated Opponent marginal cost for current task is 322.000000
+04:01:38.823 CONFIG | 27
+04:01:38.823 CONFIG | 394.0 VS 549.0
+04:01:38.826 CONFIG | predict cost:0.0
+04:01:38.826 CONFIG | Current round is 27
+04:01:38.827 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:01:38.828 CONFIG | Estimated Opponent marginal cost for current task is 675.500000
+04:01:38.828 CONFIG | 28
+04:01:38.828 CONFIG | 697.0 VS 607.0
+04:01:38.829 CONFIG | predict cost:0.0
+04:01:38.829 CONFIG | Current round is 28
+04:01:38.832 CONFIG | Estimated Self marginal cost for current task is 0.000000
+04:01:38.832 CONFIG | Estimated Opponent marginal cost for current task is 234.500000
+04:01:38.834 CONFIG | 29
+04:01:38.834 CONFIG | 394.0 VS 393.0
+04:01:38.837 CONFIG | predict cost:595.4999999999982
+04:01:38.837 CONFIG | Current round is 29
+04:01:38.843 CONFIG | Estimated Self marginal cost for current task is 299.000000
+04:01:38.843 CONFIG | Estimated Opponent marginal cost for current task is 735.000000
+04:01:38.845 CONFIG | 30
+04:01:38.845 CONFIG | 535.0 VS 587.0
+04:01:38.845 CONFIG | Agent 0 has tasks [(Task 2, 26 kg, 520 CHF, Apeldoorn -> Den Haag), (Task 3, 12 kg, 470 CHF, Utrecht -> Groningen), (Task 4, 24 kg, 404 CHF, Utrecht -> Amsterdam), (Task 5, 26 kg, 638 CHF, Nijmegen -> Groningen), (Task 8, 21 kg, 402 CHF, Apeldoorn -> Almere), (Task 12, 22 kg, 400 CHF, Rotterdam -> Almere), (Task 14, 28 kg, 398 CHF, Eindhoven -> Nijmegen), (Task 18, 25 kg, 696 CHF, Almere -> Rotterdam), (Task 19, 15 kg, 396 CHF, Eindhoven -> Breda), (Task 20, 20 kg, 532 CHF, Amsterdam -> Nijmegen), (Task 22, 27 kg, 631 CHF, Eindhoven -> Groningen), (Task 23, 20 kg, 532 CHF, Amsterdam -> Nijmegen), (Task 26, 15 kg, 394 CHF, Eindhoven -> Rotterdam), (Task 29, 29 kg, 535 CHF, Utrecht -> Breda)]
+04:01:38.845 CONFIG | 14
+04:01:41.152 CONFIG | 6468.0VS5815.5
+04:01:41.153 CONFIG | Vehicle 1 [type=PICKUP, currentTask=(Task 18, 25 kg, 696 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 2, 26 kg, 520 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 4, 24 kg, 404 CHF, Utrecht -> Amsterdam), type=DELIVERY, currentTask=(Task 18, 25 kg, 696 CHF, Almere -> Rotterdam), type=PICKUP, currentTask=(Task 12, 22 kg, 400 CHF, Rotterdam -> Almere), type=DELIVERY, currentTask=(Task 2, 26 kg, 520 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 4, 24 kg, 404 CHF, Utrecht -> Amsterdam), type=PICKUP, currentTask=(Task 20, 20 kg, 532 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 12, 22 kg, 400 CHF, Rotterdam -> Almere), type=PICKUP, currentTask=(Task 23, 20 kg, 532 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 3, 12 kg, 470 CHF, Utrecht -> Groningen), type=PICKUP, currentTask=(Task 22, 27 kg, 631 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 23, 20 kg, 532 CHF, Amsterdam -> Nijmegen), type=DELIVERY, currentTask=(Task 20, 20 kg, 532 CHF, Amsterdam -> Nijmegen), type=PICKUP, currentTask=(Task 5, 26 kg, 638 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 22, 27 kg, 631 CHF, Eindhoven -> Groningen), type=DELIVERY, currentTask=(Task 5, 26 kg, 638 CHF, Nijmegen -> Groningen), type=DELIVERY, currentTask=(Task 3, 12 kg, 470 CHF, Utrecht -> Groningen)]
+04:01:41.153 CONFIG | Vehicle 2 [type=PICKUP, currentTask=(Task 26, 15 kg, 394 CHF, Eindhoven -> Rotterdam), type=PICKUP, currentTask=(Task 19, 15 kg, 396 CHF, Eindhoven -> Breda), type=PICKUP, currentTask=(Task 14, 28 kg, 398 CHF, Eindhoven -> Nijmegen), type=DELIVERY, currentTask=(Task 14, 28 kg, 398 CHF, Eindhoven -> Nijmegen), type=PICKUP, currentTask=(Task 8, 21 kg, 402 CHF, Apeldoorn -> Almere), type=DELIVERY, currentTask=(Task 8, 21 kg, 402 CHF, Apeldoorn -> Almere), type=PICKUP, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda), type=DELIVERY, currentTask=(Task 26, 15 kg, 394 CHF, Eindhoven -> Rotterdam), type=DELIVERY, currentTask=(Task 19, 15 kg, 396 CHF, Eindhoven -> Breda), type=DELIVERY, currentTask=(Task 29, 29 kg, 535 CHF, Utrecht -> Breda)]
+04:01:41.159 CONFIG | Current round is 30
+04:01:41.159 CONFIG | Agent 1 has tasks [(Task 0, 27 kg, 405 CHF, Breda -> Almere), (Task 1, 19 kg, 650 CHF, Den Haag -> Groningen), (Task 6, 26 kg, 403 CHF, Almere -> Utrecht), (Task 7, 28 kg, 463 CHF, Den Haag -> Nijmegen), (Task 9, 26 kg, 622 CHF, Apeldoorn -> Den Haag), (Task 10, 12 kg, 674 CHF, Almere -> Eindhoven), (Task 11, 11 kg, 401 CHF, Breda -> Nijmegen), (Task 13, 17 kg, 399 CHF, Den Haag -> Apeldoorn), (Task 15, 16 kg, 397 CHF, Rotterdam -> Apeldoorn), (Task 16, 23 kg, 397 CHF, Amsterdam -> Breda), (Task 17, 26 kg, 554 CHF, Apeldoorn -> Den Haag), (Task 21, 11 kg, 395 CHF, Breda -> Nijmegen), (Task 24, 15 kg, 697 CHF, Groningen -> Amsterdam), (Task 25, 19 kg, 776 CHF, Den Haag -> Groningen), (Task 27, 15 kg, 607 CHF, Groningen -> Amsterdam), (Task 28, 23 kg, 393 CHF, Utrecht -> Almere)]
+04:01:41.159 CONFIG | 16
+04:01:44.705 CONFIG | 7494.0VS5710.0
+04:01:44.705 CONFIG | The profit of agent 1 is 2523.000000
+04:01:44.705 CONFIG | Vehicle 3 [type=PICKUP, currentTask=(Task 0, 27 kg, 405 CHF, Breda -> Almere), type=PICKUP, currentTask=(Task 28, 23 kg, 393 CHF, Utrecht -> Almere), type=DELIVERY, currentTask=(Task 0, 27 kg, 405 CHF, Breda -> Almere), type=DELIVERY, currentTask=(Task 28, 23 kg, 393 CHF, Utrecht -> Almere), type=PICKUP, currentTask=(Task 6, 26 kg, 403 CHF, Almere -> Utrecht), type=DELIVERY, currentTask=(Task 6, 26 kg, 403 CHF, Almere -> Utrecht)]
+04:01:44.705 CONFIG | Vehicle 4 [type=PICKUP, currentTask=(Task 17, 26 kg, 554 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 9, 26 kg, 622 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 13, 17 kg, 399 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 17, 26 kg, 554 CHF, Apeldoorn -> Den Haag), type=DELIVERY, currentTask=(Task 9, 26 kg, 622 CHF, Apeldoorn -> Den Haag), type=PICKUP, currentTask=(Task 1, 19 kg, 650 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 25, 19 kg, 776 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 15, 16 kg, 397 CHF, Rotterdam -> Apeldoorn), type=DELIVERY, currentTask=(Task 13, 17 kg, 399 CHF, Den Haag -> Apeldoorn), type=DELIVERY, currentTask=(Task 15, 16 kg, 397 CHF, Rotterdam -> Apeldoorn), type=PICKUP, currentTask=(Task 27, 15 kg, 607 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 1, 19 kg, 650 CHF, Den Haag -> Groningen), type=DELIVERY, currentTask=(Task 25, 19 kg, 776 CHF, Den Haag -> Groningen), type=PICKUP, currentTask=(Task 24, 15 kg, 697 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 10, 12 kg, 674 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 27, 15 kg, 607 CHF, Groningen -> Amsterdam), type=DELIVERY, currentTask=(Task 24, 15 kg, 697 CHF, Groningen -> Amsterdam), type=PICKUP, currentTask=(Task 16, 23 kg, 397 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 7, 28 kg, 463 CHF, Den Haag -> Nijmegen), type=PICKUP, currentTask=(Task 11, 11 kg, 401 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 16, 23 kg, 397 CHF, Amsterdam -> Breda), type=PICKUP, currentTask=(Task 21, 11 kg, 395 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 10, 12 kg, 674 CHF, Almere -> Eindhoven), type=DELIVERY, currentTask=(Task 21, 11 kg, 395 CHF, Breda -> Nijmegen), type=DELIVERY, currentTask=(Task 7, 28 kg, 463 CHF, Den Haag -> Nijmegen), type=DELIVERY, currentTask=(Task 11, 11 kg, 401 CHF, Breda -> Nijmegen)]
+04:01:44.710 CONFIG | Wrote tournament/tour/auction2-auction5-auction4.xml
+04:01:44.738 INFO | LogistPlatform finished successfully!

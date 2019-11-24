@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 import logist.task.Task;
-import logist.task.TaskSet;
 import AuctionAgent.Action.Type;
 
 public class CentralizedPlan implements Cloneable {

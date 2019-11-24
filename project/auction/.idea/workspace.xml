@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="unnamed" />
+      <artifact name="auction:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -32,10 +32,47 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestAgent/MainAuction.java">
+        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/CentralizedPlan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="198">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AuctionAgent.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AgentOur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3272">
+              <caret line="171" column="45" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#10689#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1152#1179#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/agents.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/auction.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="15" column="21" selection-end-line="91" />
             </state>
           </provider>
         </entry>
@@ -43,29 +80,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/auction2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1295">
+            <state relative-caret-position="220">
               <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/CentralizedPlan.java">
+        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AgentTeamWL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2596">
-              <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AgentOur.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/MyVehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1440">
-              <caret line="197" column="14" lean-forward="true" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#10689#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="66">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -73,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AuctionAgent/PDP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="352">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1394#1411#0" expanded="true" />
@@ -84,49 +121,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/agents.xml">
+        <entry file="file://$PROJECT_DIR$/config/settings_auction.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AuctionAgent/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestAgent/AuctionBestResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestAgent/AuctionHonest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestAgent/TestPlan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+            <state relative-caret-position="468">
+              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -164,6 +162,7 @@
       <find>printf</find>
       <find>println</find>
       <find>inipro</find>
+      <find>set</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,21 +172,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/AuctionAgent/PDP.java" />
-        <option value="$PROJECT_DIR$/src/AuctionAgent/CentralizedPlan.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/MyVehicle.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/AuctionRiskSeeking.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/MyPlan.java" />
-        <option value="$PROJECT_DIR$/config/auction.xml" />
         <option value="$PROJECT_DIR$/src/TestAgent/TestAction.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/AuctionNaive.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/AuctionBestResponse.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/TestVehicle.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/TestPlan.java" />
         <option value="$PROJECT_DIR$/src/TestAgent/AuctionHonest.java" />
-        <option value="$PROJECT_DIR$/config/agents.xml" />
         <option value="$PROJECT_DIR$/src/TestAgent/MainAuction.java" />
-        <option value="$PROJECT_DIR$/src/AuctionAgent/AgentTeamWL.java" />
         <option value="$PROJECT_DIR$/src/AuctionAgent/AgentOur.java" />
+        <option value="$PROJECT_DIR$/config/agents.xml" />
+        <option value="$PROJECT_DIR$/config/settings_auction.xml" />
+        <option value="$PROJECT_DIR$/src/AuctionAgent/CentralizedPlan.java" />
+        <option value="$PROJECT_DIR$/src/AuctionAgent/AgentTeamWL.java" />
+        <option value="$PROJECT_DIR$/config/auction.xml" />
       </list>
     </option>
   </component>
@@ -233,6 +233,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="TestAgent" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="auction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auction" type="462c0819:PsiDirectoryNode" />
+              <item name="tournament" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -241,8 +246,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574620234798" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../logist/logist.jar!/" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="auction" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574625848457" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/AuctionAgent/AgentOur.java" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -309,16 +318,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19513543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19513543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5002764" side_tool="true" visible="true" weight="0.25130343" />
       <window_info anchor="bottom" id="Messages" weight="0.3295099" />
       <window_info anchor="bottom" id="Style Checker" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.13034411" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.092805006" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997236" weight="0.34827945" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997236" weight="0.43899897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.21793535" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,20 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AuctionAgent/MyVehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auction.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestAgent/MyAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -563,34 +558,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/auction2.xml">
+    <entry file="file://$PROJECT_DIR$/src/TestAgent/MainAuction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1295">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/agents.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestAgent/AuctionBestResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        <state relative-caret-position="550">
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestAgent/MainAuction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -601,21 +585,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AgentTeamWL.java">
+    <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AgentTeamWL.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AuctionAgent/PDP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="352">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1394#1411#0" expanded="true" />
@@ -623,20 +603,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AuctionAgent.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AuctionAgent/MyVehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings_auction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AuctionAgent/CentralizedPlan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+        <state relative-caret-position="198">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AgentTeamWL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AuctionAgent/AgentOur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="197" column="14" lean-forward="true" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="14" />
+        <state relative-caret-position="-3272">
+          <caret line="171" column="45" selection-start-line="171" selection-start-column="45" selection-end-line="171" selection-end-column="45" />
           <folding>
             <element signature="e#0#10689#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1152#1179#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/agents.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auction2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="15" column="21" selection-end-line="91" />
         </state>
       </provider>
     </entry>
@@ -646,11 +676,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>unnamed</last-edited>
+          <last-edited>auction:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

@@ -1,0 +1,13 @@
+### auction2.xml ###
+      Agents        |  Win - Draw - Lose  |      auction4       |       auction       |      auction2       |      auction5       |      auction3      
+     auction4       |      6 - 0 - 2      |          -          | LOSE (1665 : 3645)  |  LOSE (468 : 3359)  |  WIN (1311 : 187)   |  WIN (8257 : 223)  
+      auction       |      5 - 0 - 3      | LOSE (3657 : 4135)  |          -          | WIN (12875 : 8025)  | LOSE (2748 : 6800)  |  WIN (20916 : 28)  
+     auction2       |      5 - 0 - 3      | LOSE (3100 : 3177)  |  WIN (8887 : 8243)  |          -          | LOSE (2794 : 5077)  |  WIN (11341 : 28)  
+     auction5       |      4 - 0 - 4      | LOSE (1132 : 2523)  |  LOSE (436 : 3107)  |  LOSE (529 : 4635)  |          -          |  WIN (6386 : 223)  
+     auction3       |      0 - 0 - 8      |  LOSE (137 : 9015)  | LOSE (1083 : 18398) | LOSE (100 : 11884)  |  LOSE (137 : 7951)  |          -         
+
+First company results
+  # wins   : 7
+  # draws  : 0
+  # losses : 13
+
