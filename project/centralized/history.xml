@@ -2,8 +2,5 @@
 
 <history configuration="config/centralized.xml">
 	<agents>
-		<agent name="centralized-random">
+		<agent name="centralized-main">
 			<vehicle name="Vehicle 1"/>
-			<vehicle name="Vehicle 2"/>
-			<vehicle name="Vehicle 3"/>
-			<vehicle name="Vehicle 4"/>

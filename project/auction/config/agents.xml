@@ -11,7 +11,7 @@
 	
 	<agent name="auction-test">
 		<set class-path="out/production/auction/"/>
-		<set class-name="TestAgent.AuctionRiskSeeking"/>
+		<set class-name="TestAgent.AuctionNaive"/>
 	</agent>
 	
 </agents>

@@ -123,6 +123,89 @@ public class CentralizedTemplate implements CentralizedBehavior {
      */
     public List<Obj> generateInitVariables(List<Vehicle> vehicles, TaskSet tasks) {
 
+        /*
+        List<Obj> vars = new ArrayList<>();
+
+        // Get the vehicle with max capacity
+        Vehicle biggestV = Collections.max(vehicles, (Vehicle v1, Vehicle v2) -> v1.capacity() - v2.capacity());
+
+        // Handle the case where the max(load) > max(capacity)
+        Task maxLoadTask = Collections.max(tasks, (Task t1, Task t2) -> t1.weight - t2.weight);
+        int maxLoad = maxLoadTask.weight;
+        if (maxLoad > biggestV.capacity()) {
+
+            System.out.println("UNSOLVABLE");
+            System.exit(-1);
+        }
+
+        // Assign all the tasks randomly to a vehicle which can
+        // accomondate it
+        List<Obj> cars = new ArrayList<>();
+        for (Vehicle v : vehicles) {
+            cars.add(new VehicleVar(v, null));
+        }
+        // Create next for vs
+        VehicleVar vehicle = new VehicleVar(biggestV, null);
+        Obj last = null;
+        Obj current = null;
+
+        for (Iterator<Task> it = tasks.iterator(); it.hasNext(); ) {
+
+            // Get current task
+            Task currentTask = it.next();
+
+            // Get a random vehicle which can accommondate it
+            // Collections.shuffle(cars, new Random(10));
+
+            for (Obj obj : cars) {
+                if (obj.type == Obj.Type.Vehicle && ((VehicleVar) obj).v.capacity() >= currentTask.weight) {
+
+                    int count = 0;
+                    // Find the last action of current vehicle
+                    last = obj;
+                    while (last.next != null) {
+                        last = last.next;
+                        count += 1;
+                    }
+
+                    // Add pick up and delivery to last
+                    current = new PickUp(currentTask, null, count + 1, (VehicleVar) obj);
+                    vars.add(current);
+                    last.next = current;
+                    last = last.next;
+                    count += 1;
+                    current = new Delivery(currentTask, null, count + 1, (VehicleVar) obj);
+                    last.next = current;
+                    vars.add(current);
+
+                    break;
+                }
+            }
+        }
+
+        // Add all vehicle to vars
+        vars.addAll(cars);
+
+        System.out.println(vars.size());
+        // Print initial plan
+        /*
+        for (Obj obj : vars) {
+            if (obj.type == Obj.Type.Vehicle) {
+
+                Obj currentObj = obj;
+                while (currentObj != null) {
+                    System.out.println("OBJ " + currentObj.type.toString() + " TIME " + currentObj.time + "NEXT" + currentObj.next);
+                    currentObj = currentObj.next;
+                }
+            }
+
+            System.out.println();
+        }
+
+        return vars;
+        */
+
+
         List<Obj> vars = new ArrayList<>();
 
         // Get the vehicle with max capacity
@@ -352,10 +435,12 @@ public class CentralizedTemplate implements CentralizedBehavior {
         // Print source vehicle's chain
         current = sourceV;
 
+        /*
         if (checkLoad(newVars) == false) {
             System.out.println("First error in change vehicle");
             System.exit(-1);
         }
+        */
         return newVars;
     }
 
@@ -418,11 +503,13 @@ public class CentralizedTemplate implements CentralizedBehavior {
         source.time = target_time;
 
         // Check load
-        if (checkLoad(newVars) == false) {
+        /*
+        if ((newVars) == false) {
 
             System.out.println("First error in change order");
             System.exit(-1);
         }
+        */
         return newVars;
     }
 
@@ -543,7 +630,7 @@ public class CentralizedTemplate implements CentralizedBehavior {
                     ((VehicleVar) target).v.id() != sourceId) {
 
                 if (load < ((VehicleVar) target).v.capacity()) {
-                    System.out.printf("Getting neighbours by moving %d to %d\n", sourceId, ((VehicleVar) target).v.id());
+                    // System.out.printf("Getting neighbours by moving %d to %d\n", sourceId, ((VehicleVar) target).v.id());
                     neighbours.add(changeVehicle(vars, sourceId, ((VehicleVar) target).v.id()));
 
                 }
@@ -645,9 +732,10 @@ public class CentralizedTemplate implements CentralizedBehavior {
      * @param p
      * @return
      */
-    public List<Obj> stepForward(List<List<Obj>> neighbours, List<Obj> current, double p) {
+    public List<Obj> stepForward(List<List<Obj>> neighbours, List<Obj> current, double p, List<Obj> currentBest) {
         // Step 1. Get best neighbour
         // Step 2. Decide next configuration
+        // Step 3. Save/Update current best
 
         /* Step 1 */
         Collections.shuffle(neighbours);
@@ -764,6 +852,10 @@ public class CentralizedTemplate implements CentralizedBehavior {
             }
         }
 
+        /* Step 3 */
+        if (cost(plans) < cost(currentBest)) {
+
+        }
         return plans;
     }
 
@@ -777,12 +869,14 @@ public class CentralizedTemplate implements CentralizedBehavior {
         /* Step 1 */
         List<Obj> vars = generateInitVariables(vehicles, tasks);
 
+        List<Obj> currentBest = new ArrayList<>();
+        currentBest = vars;
         /* Step 2, 3, 4 */
-        for (int i = 0; i < 2000; i += 1) {
-            System.out.printf("ROUND %d", i);
+        for (int i = 0; i < 5000; i += 1) {
+            System.out.printf("ROUND %d\n", i);
             List<List<Obj>> neighbours = getNeighbours(vars);
 
-            vars = stepForward(neighbours, vars, 0.35);
+            vars = stepForward(neighbours, vars, 0.35, currentBest);
         }
 
         /* Step 5 */
@@ -797,7 +891,7 @@ public class CentralizedTemplate implements CentralizedBehavior {
             total_cost += costPerKm * plan.totalDistance();
         }
 
-        System.out.printf("The total cost of plan with p %f is %f", 0.5, total_cost);
+        System.out.printf("The total cost of plan with p %f is %f", 0.35, total_cost);
         return plans;
 
     }
@@ -837,7 +931,7 @@ public class CentralizedTemplate implements CentralizedBehavior {
         }
         return newVars;
     }
-
+    /*
     public boolean checkLoad(List<Obj> vars) {
 
         for (Obj obj : vars) {
@@ -865,4 +959,5 @@ public class CentralizedTemplate implements CentralizedBehavior {
         }
         return true;
     }
+    */
 }

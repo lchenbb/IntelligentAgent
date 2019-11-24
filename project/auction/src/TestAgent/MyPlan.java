@@ -68,4 +68,18 @@ public class MyPlan {
 
 		return plans;
 	}
+
+	/**
+	 * Calculate cost of plan
+	 * @return
+	 */
+	public double getCost() {
+
+		double cost = 0;
+		for (MyVehicle vehicle : vehicles) {
+
+			cost += vehicle.cost();
+		}
+		return cost;
+	}
 }

@@ -208,8 +208,8 @@ public class AgentTeamWL implements AuctionBehavior {
 		double myMarginalCost = myNewCost - myCost;
 		double oppMarginalCost = oppNewCost - oppCost;
 
-		System.out.printf("Estimated Self marginal cost for current task is %d\n", myMarginalCost);
-		System.out.printf("Estimated Opponent marginal cost for current task is %d\n", oppMarginalCost);
+		System.out.printf("Estimated Self marginal cost for current task is %f\n", myMarginalCost);
+		System.out.printf("Estimated Opponent marginal cost for current task is %f\n", oppMarginalCost);
 
 		// Set starting point of my bid value to be max of estimated opponent's bid and estimated self's bid
 		// calculated by bid ratio
@@ -253,6 +253,13 @@ public class AgentTeamWL implements AuctionBehavior {
 				: pdpAlg.getBestPlan();
 
 		System.out.println(myPlan.getBestPlan().cost() + "VS" + selectedPlan.cost());
+
+		// Calculate the profit
+		long profit = 0;
+		for (Task task : tasks) {
+			profit += task.reward;
+		}
+		System.out.printf("The profit of agent %d is %f\n", agent.id(), profit - selectedPlan.cost());
 
 		selectedPlan.printPlan();
 		for (MyVehicle vehicle : myVehicles) {

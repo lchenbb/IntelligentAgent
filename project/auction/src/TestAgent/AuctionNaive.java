@@ -75,12 +75,23 @@ public class AuctionNaive implements AuctionBehavior {
 
 	@Override
 	public List<Plan> plan(List<Vehicle> vehicles, TaskSet tasks) {
-		Plan planVehicle1 = naivePlan(vehicle, tasks);
+		Plan planFirstVehicle = naivePlan(vehicle, tasks);
 
 		List<Plan> plans = new ArrayList<Plan>();
-		plans.add(planVehicle1);
+		plans.add(planFirstVehicle);
+
 		while (plans.size() < vehicles.size())
 			plans.add(Plan.EMPTY);
+
+		// Get reward
+		long reward = 0;
+		for (Task task : tasks) {
+			reward += task.reward;
+		}
+
+		// Get cost
+		double cost = planFirstVehicle.totalDistance() * vehicle.costPerKm();
+		System.out.printf("The profit of agent %d is %f", agent.id(), reward - cost);
 
 		return plans;
 	}

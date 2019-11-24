@@ -103,7 +103,7 @@ public class MyVehicle {
 		return true;
 	}
 	
-	private double cost(){
+	public double cost(){
 		double cost = 0;
 		City c = initCity;
 		for(MyAction a: actions){
