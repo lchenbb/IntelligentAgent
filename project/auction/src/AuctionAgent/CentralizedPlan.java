@@ -173,20 +173,5 @@ public class CentralizedPlan implements Cloneable {
 		}
 	}
 
-	public void removeTask(TaskSet tasks) {
-		HashMap<Integer, Task> taskMap = new HashMap<Integer, Task>();
-		for (Task task : tasks) {
-			taskMap.put(task.id, task);
-		}
-
-		for (Map.Entry<MyVehicle, LinkedList<Action>> entry : vehicleActions.entrySet()) {
-			LinkedList<Action> actionList = entry.getValue();
-			for (int i = actionList.size() - 1; i > 0; i--) {
-				if (!taskMap.containsKey(actionList.get(i).currentTask.id)) {
-					actionList.remove(i);
-				}
-			}
-		}
-	}
 
 }

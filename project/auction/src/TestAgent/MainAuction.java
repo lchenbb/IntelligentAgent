@@ -9,7 +9,7 @@ public class MainAuction {
 		if (args.length > 0) {
 			logist.LogistPlatform.main(args);
 		} else {
-			String[] defaultArgs = { "config/auction.xml", "auction-our", "auction-our"};
+			String[] defaultArgs = { "config/auction.xml", "auction-our", "auction-test"};
 			logist.LogistPlatform.main(defaultArgs);
 		}
 	}

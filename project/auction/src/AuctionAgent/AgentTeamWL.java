@@ -21,11 +21,6 @@ import logist.topology.Topology;
 import logist.topology.Topology.City;
 import AuctionAgent.Action.Type;
 
-/**
- * A very simple auction agent that assigns all tasks to its first vehicle and
- * handles them sequentially.
- * 
- */
 @SuppressWarnings("unused")
 public class AgentTeamWL implements AuctionBehavior {
 
@@ -44,19 +39,19 @@ public class AgentTeamWL implements AuctionBehavior {
 	private List<MyVehicle> myVehicles;
 	private List<MyVehicle> oppVehicles;
 
-	private List<City> allCities;
+	private List<City> cityList;
 	private List<City> myVehicleCities;
 
-	private double initialBidRatio = 0.5;
-	private double initialNum = 4;
+	private double greedyBidRatio = 0.5;
+	private double greedyStartRound = 4;
 
-	private double oppRatio = 0.85;
-	private double myMarginBidRatio = 0.8;
+	private double oppRatio = 0.9;
+	private double myMarginBidRatio = 0.85;
 
-	final static double oppRatioUpper = 0.9;
+	final static double oppRatioUpper = 0.95;
 	final static double oppRatioLower = 0.8;
 
-	final static double myRatioUpper = 0.85;
+	final static double myRatioUpper = 0.9;
 	final static double myRatioLower = 0.75;
 
 	private double bidOppMin = Double.MAX_VALUE;
@@ -66,7 +61,6 @@ public class AgentTeamWL implements AuctionBehavior {
 	private double bidAboutPositionMin = 0.9;
 	private double bidAboutPositionMax = 1.1;
 	double[][] propobality;
-	// private double ratio=0.85;
 
 	@Override
 	public void setup(Topology topology, TaskDistribution distribution, Agent agent) {
@@ -88,7 +82,7 @@ public class AgentTeamWL implements AuctionBehavior {
 		myVehicles = new ArrayList<MyVehicle>(vehicles.size());
 		oppVehicles = new ArrayList<MyVehicle>(vehicles.size());
 
-		allCities = topology.cities();
+		cityList = topology.cities();
 		myVehicleCities = new ArrayList<Topology.City>();
 
 		for (Vehicle vehicle : vehicles) {
@@ -97,12 +91,14 @@ public class AgentTeamWL implements AuctionBehavior {
 			myVehicleCities.add(vehicle.homeCity());
 		}
 
+		// Initialize opponent agent, since we are only required to handle 2 agents auction,
+		// it is enough to have one opponent to fight
 		for (Vehicle vehicle : vehicles) {
 			Random random = new Random();
 			City randomCity;
 			do {
-				int randomNum = random.nextInt(allCities.size());
-				randomCity = allCities.get(randomNum);
+				int randomNum = random.nextInt(cityList.size());
+				randomCity = cityList.get(randomNum);
 			} while (myVehicleCities.contains(randomCity));
 
 			MyVehicle oppVehicle = new MyVehicle(null, randomCity, vehicle.capacity(), vehicle.costPerKm());
@@ -116,44 +112,82 @@ public class AgentTeamWL implements AuctionBehavior {
 		initPro();
 	}
 
+
+	/**
+	 * This signal informs the agent about the outcome of an auction. winner
+	 * is the id of the agent that won the task. The actual bids of all agents is given
+	 * as an array bids indexed by agent id. A null offer indicates that the
+	 * agent did not participate in the auction.
+	 *
+	 * @param previous
+	 * @param winner
+	 * @param bids
+	 */
 	@Override
 	public void auctionResult(Task previous, int winner, Long[] bids) {
 		double myBid = bids[agent.id()];
-		double oppBid = bids[1 - agent.id()];
+
+		// Loop to find minimum opponent's bid
+		double oppBid = Double.MAX_VALUE;
+		for (int i = 0; i < bids.length; i += 1) {
+
+			if (i != agent.id())
+				oppBid = Math.min(bids[i], oppBid);
+		}
+
+		// Set opponents' bid to min bid if it is smaller
 		if (oppBid < bidOppMin) {
 			bidOppMin = oppBid;
 		}
 
-		System.out.println(round);
+		System.out.printf("Current round is %d\n", round);
+
 		if (winner == agent.id()) {
+
+			// Handle the case of winning the auction
+			// Since we have already won the bid, we may increase the bid a little
+			// to have higher profit
+
 			myCost = myNewCost;
 			myPlan.updatePlan();
 
-			myMarginBidRatio = Math.min(myRatioLower, myMarginBidRatio + 0.01);
-			oppRatio = Math.min(oppRatioLower, oppRatio + 0.01);
+			// Update margin bid ratio and opponent ratio
+			myMarginBidRatio = Math.min(myRatioLower,  0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio + 0.5));
+			oppRatio = Math.min(oppRatioLower, 0.8 * oppRatio + 0.2 * (oppRatio + 0.5));
 
 		} else {
+			// Handle the case of losing the auction the bid, we may decrease the bid
+			// to increase our probability to win in the next bid
+			// Since we have already lost
+
 			oppCost = oppNewCost;
 			oppPlan.updatePlan();
 
-			myMarginBidRatio = Math.max(myRatioUpper, myMarginBidRatio - 0.01);
-			oppRatio = Math.max(oppRatioUpper, oppRatio - 0.01);
+			myMarginBidRatio = Math.max(myRatioUpper, 0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio - 0.5));
+			oppRatio = Math.max(oppRatioUpper, 0.8 * myMarginBidRatio + 0.2 * (myMarginBidRatio - 0.5));
 		}
 
 		if (round == 1) {
-			City predictCity = null;
+			// Handle the starting phase
+
 			double costDiff = Double.MAX_VALUE;
-			for (City city : allCities) {
+			City predictCity = null;
+
+			for (City city : cityList) {
 				if (!myVehicleCities.contains(city)) {
+
+					// Calculate the difference between bid and cost to deliver the first task
 					double diff = Math.abs((city.distanceTo(previous.pickupCity)
 							+ previous.pickupCity.distanceTo(previous.deliveryCity)) * oppVehicles.get(0).getCostPerKm()
 							- oppBid);
+
 					if (diff < costDiff) {
 						costDiff = diff;
 						predictCity = city;
 					}
 				}
 			}
+
 			oppVehicles.get(0).setInitCity(predictCity);
 			System.out.println("City: " + predictCity);
 		}
@@ -164,58 +198,57 @@ public class AgentTeamWL implements AuctionBehavior {
 	@Override
 	public Long askPrice(Task task) {
 
+		// Do not participate into auction if no enough capacity provided
 		if (myPlan.getBiggestVehicle().getCapacity() < task.weight)
 			return null;
 
+		// Calculate estimated cost of self and opponent
 		myNewCost = myPlan.solveWithNewTask(task).cost();
 		oppNewCost = oppPlan.solveWithNewTask(task).cost();
-
 		double myMarginalCost = myNewCost - myCost;
 		double oppMarginalCost = oppNewCost - oppCost;
 
-		System.out.println("predict cost:" + oppMarginalCost);
+		System.out.printf("Estimated Self marginal cost for current task is %d\n", myMarginalCost);
+		System.out.printf("Estimated Opponent marginal cost for current task is %d\n", oppMarginalCost);
 
-		double mybid = oppMarginalCost * oppRatio;
+		// Set starting point of my bid value to be max of estimated opponent's bid and estimated self's bid
+		// calculated by bid ratio
+		double myBidValue = Math.max(oppMarginalCost * oppRatio, myMarginalCost * myMarginBidRatio);
 
-		if (mybid < myMarginBidRatio * myMarginalCost) {
-			mybid = myMarginBidRatio * myMarginalCost;
+		// Handle maximizing self profit by getting close to the opponent's best bid
+		// This step serves to maximize profit if a task's deliver does not cost anything
+		// Namely we can freeride this task based on previous routing plan
+		if (round > 0 && myBidValue < bidOppMin) {
+			myBidValue = Math.max(bidOppMin - 1, 1);
 		}
 
-		// if(mybid > 1.3*myMarginalCost){
-		// mybid = 1.1*myMarginalCost;
-		// }
-
-		if (round > 0 && mybid < bidOppMin) {
-			mybid = Math.max(bidOppMin - 1, 0);
+		// Greedy start in the beginning rounds
+		if (round < greedyStartRound) {
+			myBidValue *= greedyBidRatio ;
 		}
 
-		if (round < initialNum) {
-			mybid = initialBidRatio * mybid;
-		}
-
-		// mybid = mybid *
-		// propobality[task.pickupCity.id][task.deliveryCity.id];
+		// Move to next round
 		round++;
 
-		return (long) Math.floor(mybid);
+		long myFinalBid = (long) Math.floor(myBidValue);
+
+		return myFinalBid;
 	}
 
 	@Override
 	public List<Plan> plan(List<Vehicle> vehicles, TaskSet tasks) {
 
+		// Output the tasks auctioned by current agent
 		System.out.println("Agent " + agent.id() + " has tasks " + tasks);
 		System.out.println(tasks.size());
 
-		// CentralizedPlan bestPlan = myPlan.getBestPlan();
-		// bestPlan.removeTask(tasks);
-		// System.out.println(bestPlan.getTaskNum());
 		PDPlan pdplan = new PDPlan(myVehicles);
 		pdplan.solveWithTaskSet(tasks);
 
 		List<Plan> plans = new ArrayList<Plan>();
 		PDP pdpAlg = new PDP(myVehicles, tasks);
 		pdpAlg.SLSAlgorithmWithInitPlan(allowedTime, pdplan.getBestPlan());
-		// pdpAlg.SLSAlgorithm(allowedTime);
+
 		CentralizedPlan selectedPlan = pdplan.getBestPlan().cost() < pdpAlg.getBestPlan().cost() ? pdplan.getBestPlan()
 				: pdpAlg.getBestPlan();
 
