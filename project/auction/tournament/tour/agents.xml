@@ -3,25 +3,9 @@
 <agents>
 	<!-- An auto-generated list of agents and their behavior classes -->
 	<!--  - jar directory : ./agents/ -->
-	<!--  - generated on  : Mon Nov 25 03:58:34 HKT 2019 -->
-	<agent name="auction">
-		<set class-path="./agents/auction.jar"/>
-		<set class-name="TestAgent.AuctionBestResponse"/>
-	</agent>
-	<agent name="auction2">
-		<set class-path="./agents/auction.jar"/>
-		<set class-name="TestAgent.AuctionHonest"/>
-	</agent>
-	<agent name="auction3">
-		<set class-path="./agents/auction.jar"/>
-		<set class-name="TestAgent.AuctionNaive"/>
-	</agent>
-	<agent name="auction4">
-		<set class-path="./agents/auction.jar"/>
+	<!--  - generated on  : Thu Dec 05 18:24:47 HKT 2019 -->
+	<agent name="CHEN-LI-ex5">
+		<set class-path="./agents/CHEN-LI-ex5.jar"/>
 		<set class-name="AuctionAgent.AgentOur"/>
-	</agent>
-	<agent name="auction5">
-		<set class-path="./agents/auction.jar"/>
-		<set class-name="AuctionAgent.AgentTeamWL"/>
 	</agent>
 </agents>

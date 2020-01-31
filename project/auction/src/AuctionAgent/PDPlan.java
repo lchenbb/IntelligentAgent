@@ -50,6 +50,11 @@ public class PDPlan {
 			List<CentralizedPlan> planSet = searchPlan.insertTask(task);
 			searchPlan = localChoice(searchPlan, planSet);
 		}
+
+		if (searchPlan == null) {
+			System.out.println("Empty seawch plan");
+			System.exit(-1);
+		}
 	}
 
 	public void updatePlan() {

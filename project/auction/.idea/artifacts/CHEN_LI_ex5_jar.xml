@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="CHEN-LI-ex5:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CHEN_LI_ex5_jar</output-path>
+    <root id="root">
+      <element id="archive" name="CHEN-LI-ex5.jar">
+        <element id="module-output" name="CHEN-LI-ex5" />
+      </element>
+      <element id="library" level="project" name="auction_jar" />
+      <element id="library" level="project" name="logist" />
+    </root>
+  </artifact>
+</component>

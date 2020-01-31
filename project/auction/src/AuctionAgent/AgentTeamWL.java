@@ -1,5 +1,5 @@
 package AuctionAgent;
-
+/*
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,11 +20,7 @@ import logist.topology.Topology;
 import logist.topology.Topology.City;
 import AuctionAgent.Action.Type;
 
-/**
- * A very simple auction agent that assigns all tasks to its first vehicle and
- * handles them sequentially.
- * 
- */
+
 @SuppressWarnings("unused")
 public class AgentTeamWL implements AuctionBehavior {
 
@@ -319,3 +315,4 @@ public class AgentTeamWL implements AuctionBehavior {
 		return plan;
 	}
 }
+*/

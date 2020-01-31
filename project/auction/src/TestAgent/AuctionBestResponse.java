@@ -1,5 +1,6 @@
 package TestAgent;
 
+/*
 import java.util.List;
 
 import logist.behavior.AuctionBehavior;
@@ -59,3 +60,5 @@ public class AuctionBestResponse implements AuctionBehavior {
 		return myplan.getPlans();
 	}
 }
+
+*/

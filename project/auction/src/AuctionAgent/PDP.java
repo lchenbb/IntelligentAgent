@@ -40,6 +40,7 @@ public class PDP {
 
 			// Update centralized plan by move to neighbour or halt for one round
 			CentralizedPlan oldPlan = plan;
+
 			ArrayList<CentralizedPlan> planSet = ChooseNeighbours(oldPlan);
 			plan = localChoice(oldPlan, planSet);
 		}
@@ -63,6 +64,11 @@ public class PDP {
 			for (MyVehicle currentVehicle : vehicles) {
 
 				// Get the actions of the selected vehicle
+
+				if (oldPlan.getVehicleActions() == null) {
+					continue;
+				}
+
 				LinkedList<Action> vehicleActions = oldPlan.getVehicleActions().get(targetVehicle);
 
 				if (currentVehicle != targetVehicle && vehicleActions.size() > 0) {

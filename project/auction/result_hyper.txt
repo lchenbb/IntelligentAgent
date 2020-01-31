@@ -1,0 +1,23 @@
+### auction2.xml ###
+      Agents        |  Win - Draw - Lose  |      auction2       |      auction5       |       auction       |      auction7       |      auction4       |      auction3       |      auction6      
+     auction2       |     10 - 0 - 2      |          -          |  WIN (453 : -382)   |  WIN (1526 : 467)   |  WIN (3677 : 759)   |  WIN (1775 : -171)  |  WIN (978 : -243)   |  WIN (2848 : 504)  
+     auction5       |      8 - 0 - 4      | LOSE (-1637 : -482) |          -          |  WIN (294 : -208)   |  WIN (397 : -102)   |  WIN (1572 : 992)   |  LOSE (-395 : 582)  |  WIN (5354 : 314)  
+      auction       |      7 - 0 - 5      |   WIN (1595 : 47)   |  LOSE (209 : 1013)  |          -          | LOSE (2394 : 3508)  |  WIN (1526 : -434)  |  WIN (946 : -262)   |  WIN (5045 : 440)  
+     auction7       |      7 - 0 - 5      |  LOSE (337 : 1875)  | LOSE (1029 : 1411)  |  WIN (2222 : 1479)  |          -          | LOSE (1135 : 2008)  |  WIN (1597 : 556)   |  WIN (3788 : 991)  
+     auction4       |      5 - 0 - 7      |  WIN (1251 : -804)  |  LOSE (67 : 1519)   |  LOSE (321 : 901)   |  LOSE (901 : 2233)  |          -          |  WIN (2297 : 1294)  |  WIN (2913 : 600)  
+     auction3       |      5 - 0 - 7      |  LOSE (474 : 1391)  |  WIN (817 : -1279)  |  LOSE (-484 : -2)   |  LOSE (830 : 2590)  |  WIN (1025 : -50)   |          -          |  WIN (7238 : 378)  
+     auction6       |     0 - 0 - 12      | LOSE (-290 : 6535)  |  LOSE (235 : 3163)  |  LOSE (549 : 7582)  | LOSE (2399 : 2906)  |  LOSE (741 : 8108)  |  LOSE (458 : 5204)  |          -         
+
+- behavior: AuctionAgent.AgentOur
+- behavior: AuctionAgent.LowerBound7
+- behavior: AuctionAgent.LowerBound6
+- behavior: AuctionAgent.AgentFastChanging
+- behavior: AuctionAgent.Greedy
+- behavior: AuctionAgent.Conservative1
+- behavior: AuctionAgent.NoQuickStart
+
+First company results
+  # wins   : 23
+  # draws  : 0
+  # losses : 19
+

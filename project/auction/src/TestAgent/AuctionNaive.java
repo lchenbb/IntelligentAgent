@@ -1,5 +1,6 @@
 package TestAgent;
 
+/*
 //the list of imports
 import java.util.ArrayList;
 import java.util.List;
@@ -18,11 +19,6 @@ import logist.topology.Topology;
 import logist.topology.Topology.City;
 import logist.LogistSettings.TimeoutKey.*;
 
-/**
- * A very simple auction agent that assigns all tasks to its first vehicle and
- * handles them sequentially.
- * 
- */
 @SuppressWarnings("unused")
 public class AuctionNaive implements AuctionBehavior {
 
@@ -119,3 +115,4 @@ public class AuctionNaive implements AuctionBehavior {
 		return plan;
 	}
 }
+*/
